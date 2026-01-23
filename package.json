@@ -1,0 +1,52 @@
+{
+  "name": "base-aave-flashloan-arbitrage",
+  "version": "1.0.0",
+  "description": "Production-ready Base chain arbitrage bot using Aave V3 flash loans",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "hardhat compile && tsc",
+    "test": "hardhat test",
+    "deploy": "hardhat run scripts/deploy.ts --network base",
+    "start": "node dist/index.js",
+    "backtest": "ts-node src/replay/backtest.ts",
+    "lint": "eslint src --ext .ts",
+    "clean": "hardhat clean && rm -rf dist"
+  },
+  "keywords": [
+    "arbitrage",
+    "defi",
+    "flash-loans",
+    "aave",
+    "base",
+    "mev"
+  ],
+  "author": "NinjaTech AI",
+  "license": "MIT",
+  "dependencies": {
+    "@aave/core-v3": "^1.19.0",
+    "@openzeppelin/contracts": "^5.0.0",
+    "@uniswap/sdk-core": "^4.0.0",
+    "@uniswap/v3-sdk": "^3.11.0",
+    "bignumber.js": "^9.1.2",
+    "csv-writer": "^1.6.0",
+    "decimal.js": "^10.4.3",
+    "dotenv": "^16.3.1",
+    "ethers": "^6.9.0",
+    "lodash": "^4.17.21",
+    "viem": "^1.19.0"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@typechain/ethers-v6": "^0.5.0",
+    "@typechain/hardhat": "^9.0.0",
+    "@types/lodash": "^4.14.202",
+    "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "eslint": "^8.54.0",
+    "hardhat": "^2.19.0",
+    "ts-node": "^10.9.1",
+    "typechain": "^8.3.0",
+    "typescript": "^5.3.2"
+  }
+}
