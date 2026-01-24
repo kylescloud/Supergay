@@ -196,17 +196,17 @@ export const MIN_PROFIT_GWEI = 10000000; // 0.01 ETH in wei
 // Maximum Reasonable Profit Threshold (configurable)
 // This prevents false positives from calculation errors
 // Default: 10% of trade size (e.g., 1 ETH profit on 10 ETH trade)
-export const MAX_PROFIT_PERCENTAGE = 0.10; // 10% maximum profit per trade
+export const MAX_PROFIT_PERCENTAGE = 0.20; // 20% maximum profit per trade
 
 // Validate that profit doesn't exceed this percentage of loan amount
 export function isProfitReasonable(loanAmount: bigint, netProfit: bigint): boolean {
-  const maxProfit = (loanAmount * BigInt(Math.floor(MAX_PROFIT_PERCENTAGE * 10000))) / 10000n;
+  const maxProfit = (loanAmount * BigInt(Math.floor(MAX_PROFIT_PERCENTAGE * 20000))) / 20000n;
   return netProfit > 0n && netProfit <= maxProfit;
 }
 
 // Get maximum allowed profit for a given loan amount
 export function getMaxAllowedProfit(loanAmount: bigint): bigint {
-  return (loanAmount * BigInt(Math.floor(MAX_PROFIT_PERCENTAGE * 10000))) / 10000n;
+  return (loanAmount * BigInt(Math.floor(MAX_PROFIT_PERCENTAGE * 20000))) / 20000n;
 }
 
 // MEV Protection
@@ -220,9 +220,9 @@ export const MEV_CONFIG = {
 // Arbitrage Constants
 export const ARBITRAGE_CONFIG = {
   MAX_HOPS: 4,
-  MIN_LIQUIDITY: 1000000, // $1M minimum liquidity
-  MAX_SLIPPAGE: 0.01, // 1% maximum slippage
-  PRICE_TOLERANCE: 0.001, // 0.1% price tolerance
+  MIN_LIQUIDITY: 10000, // $10k minimum liquidity
+  MAX_SLIPPAGE: 0.03, // 3% maximum slippage
+  PRICE_TOLERANCE: 0.1, // 10% price tolerance
 } as const;
 
 // Block Replay Configuration
