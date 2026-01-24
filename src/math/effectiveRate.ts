@@ -94,14 +94,27 @@ function calculateV3EffectiveRate(
     throw new Error('V3 pool missing sqrtPriceX96 or liquidity');
   }
 
+  // Validate inputs
+  if (pool.liquidity === 0n) {
+    throw new Error('V3 pool has zero liquidity');
+  }
+
   const sqrtPriceX96 = new BigNumber(pool.sqrtPriceX96.toString());
   const liquidity = new BigNumber(pool.liquidity.toString());
-  const fee = pool.fee / 1000000; // Convert from basis points to decimal
+  
+  // Fee is in basis points (100 = 0.01%, 500 = 0.05%, 2500 = 0.25%, 3000 = 0.3%, 10000 = 1%)
+  // Convert to decimal: fee / 10000
+  const fee = pool.fee / 10000;
 
   // Calculate price from sqrtPriceX96
   // price = (sqrtPriceX96 / 2^96)^2
   const Q96 = new BigNumber(2).pow(96);
   const price = sqrtPriceX96.div(Q96).pow(2);
+  
+  // Validate price is reasonable (not zero or infinite)
+  if (price.isZero() || !price.isFinite()) {
+    throw new Error('Invalid pool price calculation');
+  }
   
   // Calculate zero-impact amount out (at current price)
   const amountOutZeroImpact = amountIn.times(price).times(1 - fee);
@@ -113,6 +126,11 @@ function calculateV3EffectiveRate(
   
   // Apply slippage to amount out
   const amountOut = amountOutZeroImpact.times(1 - slippage);
+  
+  // Validate output is reasonable
+  if (amountOut.isNegative() || !amountOut.isFinite()) {
+    throw new Error('Invalid amount out calculation');
+  }
   
   // Gas estimate for V3 swap
   const gasEstimate = 150000; // Typical V3 swap gas

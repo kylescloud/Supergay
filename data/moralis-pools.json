@@ -1,0 +1,118 @@
+{
+  "pools": [
+    {
+      "address": "0x6d43d8cd2b2f9e318c6a8b47db24b5ca4cda43ba",
+      "dex": "Uniswap v3",
+      "dexType": "uniswapV3",
+      "dexVersion": "v2",
+      "token0": {},
+      "token1": {},
+      "liquidityUSD": 738811790115.5055,
+      "volume24hUSD": 4.413913643480187,
+      "priceUSD": 3120.515119127892,
+      "pairLabel": "WETH/PENNY",
+      "isActive": true,
+      "timestamp": 1769238066462
+    },
+    {
+      "address": "0x00100a74d975524df2c7f8156f0f62c6aa7415cb750977aed859f3a5fcac2c64",
+      "dex": "Uniswap: PoolManager",
+      "dexType": "uniswapV2",
+      "dexVersion": "v2",
+      "token0": {},
+      "token1": {},
+      "liquidityUSD": 597069298.194459,
+      "volume24hUSD": 101.97191862770411,
+      "priceUSD": 3006.101664387589,
+      "pairLabel": "WETH/MON",
+      "isActive": true,
+      "timestamp": 1769238066471
+    },
+    {
+      "address": "0x47ca96ea59c13f72745928887f84c9f52c3d7348",
+      "dex": "Aerodrome",
+      "dexType": "aerodrome",
+      "dexVersion": "v2",
+      "token0": {},
+      "token1": {},
+      "liquidityUSD": 43772424.89697607,
+      "volume24hUSD": 25792988.48860314,
+      "priceUSD": 2955.2151386001397,
+      "pairLabel": "WETH/cbETH",
+      "isActive": true,
+      "timestamp": 1769238066471
+    },
+    {
+      "address": "0xc715096eecc3f4a0fdbff055a3db2926adc83244",
+      "dex": "Alien Base",
+      "dexType": "unknown",
+      "dexVersion": "v2",
+      "token0": {},
+      "token1": {},
+      "liquidityUSD": 2012878.991449426,
+      "volume24hUSD": 3004.7326694205967,
+      "priceUSD": 3312.3490709207076,
+      "pairLabel": "cbETH/WETH",
+      "isActive": true,
+      "timestamp": 1769238068044
+    },
+    {
+      "address": "0x9bb646bf0f4da44bfaf3d899e774de065731edfe",
+      "dex": "AlienBase",
+      "dexType": "unknown",
+      "dexVersion": "v2",
+      "token0": {},
+      "token1": {},
+      "liquidityUSD": 1012309.3943412225,
+      "volume24hUSD": 20.811247003861823,
+      "priceUSD": 3310.7514448858215,
+      "pairLabel": "cbETH/WETH",
+      "isActive": true,
+      "timestamp": 1769238068044
+    },
+    {
+      "address": "0x18b63965fd781bb39d5909d0f43cb48cf2c5c94c",
+      "dex": "Uniswap v2",
+      "dexType": "uniswapV2",
+      "dexVersion": "v2",
+      "token0": {},
+      "token1": {},
+      "liquidityUSD": 143123.86522843956,
+      "volume24hUSD": 323.663267691097,
+      "priceUSD": 89552.13481112676,
+      "pairLabel": "cbBTC/HGXD",
+      "isActive": true,
+      "timestamp": 1769238076088
+    }
+  ],
+  "stats": {
+    "totalPairsFound": 1374,
+    "pairsPerToken": {
+      "WETH": 250,
+      "cbETH": 166,
+      "USDbC": 250,
+      "wstETH": 88,
+      "USDC": 250,
+      "weETH": 33,
+      "cbBTC": 250,
+      "ezETH": 32,
+      "GHO": 0,
+      "wrsETH": 0,
+      "LBTC": 0,
+      "EURC": 0,
+      "AAVE": 0,
+      "tBTC": 55
+    },
+    "pairsPerDEX": {
+      "Uniswap v3": 360,
+      "BaseSwap": 39,
+      "Uniswap: PoolManager": 287,
+      "Uniswap v2": 70,
+      "Aerodrome": 235,
+      "Alien Base": 15,
+      "AlienBase": 14
+    },
+    "totalLiquidityUSD": 4.127903048670978e+47,
+    "discoveryTime": 19610
+  }
+}

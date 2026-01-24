@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-01-24T04:42:38.211Z",
+  "results": [
+    {
+      "flashLoanAmount": 1,
+      "tokenSymbol": "WETH",
+      "opportunitiesFound": 0,
+      "scanTime": 0,
+      "errors": [
+        "V3 pool missing sqrtPriceX96 or liquidity"
+      ]
+    },
+    {
+      "flashLoanAmount": 5,
+      "tokenSymbol": "WETH",
+      "opportunitiesFound": 0,
+      "scanTime": 0,
+      "errors": [
+        "V3 pool missing sqrtPriceX96 or liquidity"
+      ]
+    },
+    {
+      "flashLoanAmount": 10,
+      "tokenSymbol": "WETH",
+      "opportunitiesFound": 0,
+      "scanTime": 0,
+      "errors": [
+        "V3 pool missing sqrtPriceX96 or liquidity"
+      ]
+    }
+  ],
+  "summary": {
+    "totalTests": 3,
+    "totalOpportunities": 0,
+    "averageScanTime": 0,
+    "totalErrors": 3
+  }
+}

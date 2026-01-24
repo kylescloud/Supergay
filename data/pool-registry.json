@@ -1,0 +1,3826 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": 1769243610039,
+  "blockNumber": 0,
+  "network": "base",
+  "chainId": 8453,
+  "pools": [
+    {
+      "address": "0xA9DaFa443a02FBc907Cb0093276B3E6F4ef02A46",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769243860075,
+      "sqrtPriceX96": "83882909038436001033424874200",
+      "tick": 1141,
+      "liquidity": "36579297037193903741197",
+      "timestamp": 1769241352182
+    },
+    {
+      "address": "0x3B8000CD10625ABdC7370fb47eD4D4a9C6311fD5",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769243860183,
+      "sqrtPriceX96": "4307008852577720503570345",
+      "tick": -196407,
+      "liquidity": "38280873106995",
+      "timestamp": 1769241352758
+    },
+    {
+      "address": "0x20E068D76f9E90b90604500B84c7e19dCB923e7e",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241353335,
+      "sqrtPriceX96": "71583204874310866237830764295",
+      "tick": -2030,
+      "liquidity": "243232822693999498023178",
+      "timestamp": 1769241353335
+    },
+    {
+      "address": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241353973,
+      "sqrtPriceX96": "4307375110554613819225329",
+      "tick": -196405,
+      "liquidity": "52755251494436847",
+      "timestamp": 1769241353973
+    },
+    {
+      "address": "0xB1419a7f9e8c6e434B1D05377e0Dbc4154E3DE78",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241354604,
+      "sqrtPriceX96": "82584075501542526295648137027",
+      "tick": 829,
+      "liquidity": "5170373731296414107179",
+      "timestamp": 1769241354604
+    },
+    {
+      "address": "0x4c1e404a013bF1917fAf2dBF5E5cEf3E9Bafb5aa",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241355179,
+      "sqrtPriceX96": "143953913124369628326702",
+      "tick": -264381,
+      "liquidity": "16840076555164",
+      "timestamp": 1769241355179
+    },
+    {
+      "address": "0xc6C0d11Ac74e444835cBc11B5500Fa7802632214",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241355749,
+      "sqrtPriceX96": "4295128740",
+      "tick": -887272,
+      "liquidity": "0",
+      "timestamp": 1769241355748
+    },
+    {
+      "address": "0x6Ac0EB56E6c2e7039d40E75e839895d8aa62Fa9b",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241356318,
+      "sqrtPriceX96": "75808884105758738782691900145",
+      "tick": -883,
+      "liquidity": "0",
+      "timestamp": 1769241356318
+    },
+    {
+      "address": "0xf0913aF89C3CF89256196fE5Ea3E5370Dc90c026",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241356894,
+      "sqrtPriceX96": "4707107707007485501758938",
+      "tick": -194630,
+      "liquidity": "0",
+      "timestamp": 1769241356894
+    },
+    {
+      "address": "0x2891a4Ad99014B8020AD80335330f00f8aEfD787",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241357493,
+      "sqrtPriceX96": "160806286104487357989617",
+      "tick": -262166,
+      "liquidity": "0",
+      "timestamp": 1769241357493
+    },
+    {
+      "address": "0x06959273E9A65433De71F5A452D529544E07dDD0",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241358057,
+      "sqrtPriceX96": "79228160975685865280489242098",
+      "tick": -1,
+      "liquidity": "638221581322876",
+      "timestamp": 1769241358057
+    },
+    {
+      "address": "0x35C1281FA244f03d4b7e2C69a019ee5D099FB4CA",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241358714,
+      "sqrtPriceX96": "1461446703485210103287273052203988822378723970341",
+      "tick": 887271,
+      "liquidity": "0",
+      "timestamp": 1769241358714
+    },
+    {
+      "address": "0xE9e25E35aa99A2A60155010802b81A25C45bA185",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241359280,
+      "sqrtPriceX96": "2647494496740085132826584201",
+      "tick": -67978,
+      "liquidity": "991548793",
+      "timestamp": 1769241359280
+    },
+    {
+      "address": "0x720651DE0fE574916fE9846004f3ad7f7E7D4ac4",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241359850,
+      "sqrtPriceX96": "791902717004893218675307",
+      "tick": -230280,
+      "liquidity": "2604945738826857",
+      "timestamp": 1769241359850
+    },
+    {
+      "address": "0x10648BA41B8565907Cfa1496765fA4D95390aa0d",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241360850,
+      "sqrtPriceX96": "83866276858578836296189222934",
+      "tick": 1137,
+      "liquidity": "12982448682479038772827",
+      "timestamp": 1769241360850
+    },
+    {
+      "address": "0x4C36388bE6F416A29C8d8Eee81C771cE6bE14B18",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241361454,
+      "sqrtPriceX96": "4306717997175680325605928",
+      "tick": -196409,
+      "liquidity": "5485081097283367",
+      "timestamp": 1769241361454
+    },
+    {
+      "address": "0x6f4482cBF7b43599078fcb012732e20480015644",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241362029,
+      "sqrtPriceX96": "71585388749431691773962187718",
+      "tick": -2029,
+      "liquidity": "2154978182391227688200",
+      "timestamp": 1769241362029
+    },
+    {
+      "address": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241362621,
+      "sqrtPriceX96": "4307162080781538565877168",
+      "tick": -196406,
+      "liquidity": "1764771684817382295",
+      "timestamp": 1769241362621
+    },
+    {
+      "address": "0x33dfD66802CC936a58a0B25B5E4F792c1CA2312E",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241363189,
+      "sqrtPriceX96": "1461446703485210103287273052203988822378723970341",
+      "tick": 887271,
+      "liquidity": "0",
+      "timestamp": 1769241363189
+    },
+    {
+      "address": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241363779,
+      "sqrtPriceX96": "143930373718590810817772",
+      "tick": -264384,
+      "liquidity": "69916959863906463",
+      "timestamp": 1769241363779
+    },
+    {
+      "address": "0x58603091b4Da10685e114d85E330Cab36e655627",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241364349,
+      "sqrtPriceX96": "81914824350585450179449055753",
+      "tick": 666,
+      "liquidity": "2047996700336458760364",
+      "timestamp": 1769241364349
+    },
+    {
+      "address": "0x97a25cc2793F0ffa90e1667cf7b3C1F130737189",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241364937,
+      "sqrtPriceX96": "402120013353843945051623791219",
+      "tick": 32489,
+      "liquidity": "116949728033925",
+      "timestamp": 1769241364937
+    },
+    {
+      "address": "0xB7727BF6a431072041835eb3f2F5F85999758407",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241365522,
+      "sqrtPriceX96": "1461446703485210103287273052203988822378723970341",
+      "tick": 887271,
+      "liquidity": "0",
+      "timestamp": 1769241365522
+    },
+    {
+      "address": "0x7c92c51b962263dE6449E11B59415C058980F455",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241366132,
+      "sqrtPriceX96": "75781086744016846497842841351",
+      "tick": -890,
+      "liquidity": "7132438762696510146109",
+      "timestamp": 1769241366132
+    },
+    {
+      "address": "0xFdebEDc97D56EDd31AbdcB887570546B257964f2",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241366700,
+      "sqrtPriceX96": "4295128740",
+      "tick": -887272,
+      "liquidity": "0",
+      "timestamp": 1769241366700
+    },
+    {
+      "address": "0xFe8A89A48A242953481f41cd106f7672A1c0472e",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241367282,
+      "sqrtPriceX96": "4295128740",
+      "tick": -887272,
+      "liquidity": "0",
+      "timestamp": 1769241367282
+    },
+    {
+      "address": "0x92722287D2819012dD8EC07b4e426AC00Dd11103",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241367863,
+      "sqrtPriceX96": "79220391201512371149872549045",
+      "tick": -2,
+      "liquidity": "3390302660684",
+      "timestamp": 1769241367863
+    },
+    {
+      "address": "0x4aF882a4D9C657d3c92aeb6126f5901699693417",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241368444,
+      "sqrtPriceX96": "2389911205609713101976516930502",
+      "tick": 68137,
+      "liquidity": "0",
+      "timestamp": 1769241368444
+    },
+    {
+      "address": "0x018046B1D182F7c0978c07610e1173c8e11913FD",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241369013,
+      "sqrtPriceX96": "18699647512047217655827463",
+      "tick": -167040,
+      "liquidity": "0",
+      "timestamp": 1769241369013
+    },
+    {
+      "address": "0x45837e65E4c44cA260aB40E6dc30fF1B466a00cA",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241369586,
+      "sqrtPriceX96": "1316975198071201092396760262580424",
+      "tick": 194380,
+      "liquidity": "208501943951928",
+      "timestamp": 1769241369586
+    },
+    {
+      "address": "0xa2eaa6Ee9917C54a4b30bEAEE3E50AdEf5833Aa2",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241370147,
+      "sqrtPriceX96": "173284741559582622662396",
+      "tick": -260672,
+      "liquidity": "0",
+      "timestamp": 1769241370147
+    },
+    {
+      "address": "0x2CBe9598e25662eCe3217Bf3172d8F092fFbfcb9",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241370775,
+      "sqrtPriceX96": "3876828545598705523286922",
+      "tick": -198512,
+      "liquidity": "0",
+      "timestamp": 1769241370775
+    },
+    {
+      "address": "0xfBB6Eed8e7aa03B138556eeDaF5D271A5E1e43ef",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241371346,
+      "sqrtPriceX96": "2647705676437919151034778620",
+      "tick": -67977,
+      "liquidity": "2457130744628",
+      "timestamp": 1769241371346
+    },
+    {
+      "address": "0xbE03ed0c57Ee301505c26FA9dBFA8cc5ce255fcf",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241371915,
+      "sqrtPriceX96": "25655585460124217563981291",
+      "tick": -160715,
+      "liquidity": "0",
+      "timestamp": 1769241371915
+    },
+    {
+      "address": "0x4d5887d717C93DD96F587F3e61De55C42e61546d",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241372521,
+      "sqrtPriceX96": "791804583239487311009181",
+      "tick": -230283,
+      "liquidity": "6909561458038",
+      "timestamp": 1769241372521
+    },
+    {
+      "address": "0x7B9636266734270DE5bE02544c04E27046903ff8",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241373099,
+      "sqrtPriceX96": "83881851856396797463199490487",
+      "tick": 1141,
+      "liquidity": "2008567132672665337",
+      "timestamp": 1769241373099
+    },
+    {
+      "address": "0x3DdF264AC95D19e81f8c25f4c300C4e59e424d43",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241373667,
+      "sqrtPriceX96": "4308213304404132517130512",
+      "tick": -196402,
+      "liquidity": "1385543841160100",
+      "timestamp": 1769241373667
+    },
+    {
+      "address": "0x106C077A4D5B422E6e01c1442F7b3321c3281AF4",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241374247,
+      "sqrtPriceX96": "4295128740",
+      "tick": -887272,
+      "liquidity": "0",
+      "timestamp": 1769241374246
+    },
+    {
+      "address": "0x6c561B446416E1A00E8E93E221854d6eA4171372",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241374812,
+      "sqrtPriceX96": "4308939946901462618680807",
+      "tick": -196398,
+      "liquidity": "7132654588898072536",
+      "timestamp": 1769241374812
+    },
+    {
+      "address": "0x06b80B12048a37f3762a0015A80Ac0BB37C4e539",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241375383,
+      "sqrtPriceX96": "82393159562850282165885463316",
+      "tick": 783,
+      "liquidity": "3699910137837320",
+      "timestamp": 1769241375383
+    },
+    {
+      "address": "0x8c7080564B5A792A33Ef2FD473fbA6364d5495e5",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241375996,
+      "sqrtPriceX96": "143815115695842279019401",
+      "tick": -264400,
+      "liquidity": "57550231427996315",
+      "timestamp": 1769241375996
+    },
+    {
+      "address": "0x78aDEE7Cc019eECFc31F6b961d51177A5830E738",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241376625,
+      "sqrtPriceX96": "81615161794285813347859672296",
+      "tick": 593,
+      "liquidity": "147562229709952",
+      "timestamp": 1769241376625
+    },
+    {
+      "address": "0x9fee7385a2979D15277C3467Db7D99EF1A2669D7",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241377201,
+      "sqrtPriceX96": "436255278248724419116071094391",
+      "tick": 34119,
+      "liquidity": "21818233631871593",
+      "timestamp": 1769241377201
+    },
+    {
+      "address": "0x59c1991CB22e9c1454d5D061e1e16FDcADf185D5",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241377768,
+      "sqrtPriceX96": "5140502203235580655647513",
+      "tick": -192869,
+      "liquidity": "0",
+      "timestamp": 1769241377767
+    },
+    {
+      "address": "0xa8E4C55D6dAf4D768aeBa2378c1AD94c112Ef48a",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241378333,
+      "sqrtPriceX96": "4563996839840104486588688",
+      "tick": -195248,
+      "liquidity": "295854125856330",
+      "timestamp": 1769241378333
+    },
+    {
+      "address": "0x31789CBCcE6C48881be05A21f165A13DaC41DA7b",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241378925,
+      "sqrtPriceX96": "152297653235634118168836",
+      "tick": -263254,
+      "liquidity": "851238722757",
+      "timestamp": 1769241378925
+    },
+    {
+      "address": "0x97A4cdAc86De66bad1C9f00497C9D761349b5652",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241379596,
+      "sqrtPriceX96": "410999416711244476991257553786",
+      "tick": 32926,
+      "liquidity": "140152126021121",
+      "timestamp": 1769241379596
+    },
+    {
+      "address": "0xC986BD739c99F4fda7b82a8BcB49cb159bF5c993",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241380142,
+      "sqrtPriceX96": "79224966924585359125066499188",
+      "tick": -1,
+      "liquidity": "9750421215",
+      "timestamp": 1769241380142
+    },
+    {
+      "address": "0x72D0c3728EF9AF20EF0a1736cf6C21962d9b9873",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241380708,
+      "sqrtPriceX96": "2838845942266267739712333939778",
+      "tick": 71580,
+      "liquidity": "0",
+      "timestamp": 1769241380708
+    },
+    {
+      "address": "0x0F1aB94784F8ddd61D80e39a415278f335c240d1",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241381301,
+      "sqrtPriceX96": "23948700305409723300948383",
+      "tick": -162092,
+      "liquidity": "3112918542",
+      "timestamp": 1769241381301
+    },
+    {
+      "address": "0x0b3A78Ca6133e6A4E351eEDd396EFD485EF299Dd",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241381868,
+      "sqrtPriceX96": "172726529971870326309930",
+      "tick": -260736,
+      "liquidity": "0",
+      "timestamp": 1769241381868
+    },
+    {
+      "address": "0x8e1BD372B4506AD8b134c630d9526Cb69D29dcfB",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241382432,
+      "sqrtPriceX96": "74090134449382932341328723508",
+      "tick": -1342,
+      "liquidity": "73866859354586436",
+      "timestamp": 1769241382432
+    },
+    {
+      "address": "0xeC558e484cC9f2210714E345298fdc53B253c27D",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241383004,
+      "sqrtPriceX96": "2647403621215168167048502375",
+      "tick": -67979,
+      "liquidity": "426611618511",
+      "timestamp": 1769241383004
+    },
+    {
+      "address": "0xecA826E450a8AC6Cf9Ab228AE12B84D0407212a7",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241383577,
+      "sqrtPriceX96": "25241525840163056992143004",
+      "tick": -161040,
+      "liquidity": "0",
+      "timestamp": 1769241383577
+    },
+    {
+      "address": "0x568CF5F8453212E5699FDA5f7f7b58bc4B1DA1FF",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241384137,
+      "sqrtPriceX96": "153469235542657077489580",
+      "tick": -263100,
+      "liquidity": "0",
+      "timestamp": 1769241384137
+    },
+    {
+      "address": "0x240d07e4a0CeeA5d2C351cd9B5f6e6128C1987Fe",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241384694,
+      "sqrtPriceX96": "792242886762337261366193",
+      "tick": -230271,
+      "liquidity": "0",
+      "timestamp": 1769241384694
+    },
+    {
+      "address": "0x6fb974DcEa795d10AdE524bcc3fC9e3E9D29EA87",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241385266,
+      "sqrtPriceX96": "83670698439433848521359817079",
+      "tick": 1091,
+      "liquidity": "22445465373478574",
+      "timestamp": 1769241385266
+    },
+    {
+      "address": "0xe584Fe0C7505025c3819C82C99944b79a7cc009D",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241385879,
+      "sqrtPriceX96": "4310946747914118412040459",
+      "tick": -196389,
+      "liquidity": "15497372341729",
+      "timestamp": 1769241385879
+    },
+    {
+      "address": "0xa8F8A457f22D53f90998354879664d14cEE2f009",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241386446,
+      "sqrtPriceX96": "71938156098362208216166134907",
+      "tick": -1931,
+      "liquidity": "19442405742408683",
+      "timestamp": 1769241386446
+    },
+    {
+      "address": "0x0b1C2DCbBfA744ebD3fC17fF1A96A1E1Eb4B2d69",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241387013,
+      "sqrtPriceX96": "4307414302315287032836677",
+      "tick": -196405,
+      "liquidity": "11582203684028245",
+      "timestamp": 1769241387013
+    },
+    {
+      "address": "0xFa038A1d7F6b68E29B02136939eAc4C81B612D60",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241387653,
+      "sqrtPriceX96": "82752469406353449551438306227",
+      "tick": 870,
+      "liquidity": "2044585484979662",
+      "timestamp": 1769241387653
+    },
+    {
+      "address": "0x233571eAE953D9d59eEFc0769F71Dc19287DDCCB",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241388224,
+      "sqrtPriceX96": "143870200824911960782198",
+      "tick": -264392,
+      "liquidity": "42645061969374",
+      "timestamp": 1769241388224
+    },
+    {
+      "address": "0x9CD9012204dD12ACC228A7E8e4093E148845669B",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241388803,
+      "sqrtPriceX96": "81333452593211030394728329172",
+      "tick": 524,
+      "liquidity": "122785238751004",
+      "timestamp": 1769241388802
+    },
+    {
+      "address": "0x1CC3aDD0725c847A36110118a8E0A2cC410FEC5c",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241389353,
+      "sqrtPriceX96": "4295128740",
+      "tick": -887272,
+      "liquidity": "0",
+      "timestamp": 1769241389353
+    },
+    {
+      "address": "0x4F964c5637F9052DC03eAf4308D0EE32D0A3b044",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241389923,
+      "sqrtPriceX96": "4564153595690665413499437",
+      "tick": -195247,
+      "liquidity": "1883933131748",
+      "timestamp": 1769241389923
+    },
+    {
+      "address": "0xBdc631F8EE9111E980585e301c1F0B9D70F68f0f",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241390500,
+      "sqrtPriceX96": "75946863992997275923773193705",
+      "tick": -846,
+      "liquidity": "0",
+      "timestamp": 1769241390500
+    },
+    {
+      "address": "0xe65ef07833bE37659919Bbe7eC366a2EC889c884",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241391069,
+      "sqrtPriceX96": "4295128740",
+      "tick": -887272,
+      "liquidity": "0",
+      "timestamp": 1769241391069
+    },
+    {
+      "address": "0x015E02B9B3cEED65ef5a4a21ee11C27573Ee9A29",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241391712,
+      "sqrtPriceX96": "128333810231728547313481",
+      "tick": -266678,
+      "liquidity": "0",
+      "timestamp": 1769241391712
+    },
+    {
+      "address": "0x4fEfC6745c3CBdc8069f6133F61a0951467ddf3F",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241392277,
+      "sqrtPriceX96": "79418894676667356025170642366",
+      "tick": 48,
+      "liquidity": "15188532",
+      "timestamp": 1769241392277
+    },
+    {
+      "address": "0x6CdbC1Be895c3e81D133711c2FA7B569A960289e",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241392850,
+      "sqrtPriceX96": "13124032523563571632538207",
+      "tick": -174122,
+      "liquidity": "0",
+      "timestamp": 1769241392850
+    },
+    {
+      "address": "0xe69f60f5770df72B429ce334A247D0408Cb14090",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241393413,
+      "sqrtPriceX96": "73258403822976387588776339845",
+      "tick": -1567,
+      "liquidity": "7407686164855",
+      "timestamp": 1769241393413
+    },
+    {
+      "address": "0x3e7586D52A9D07F8611B8ecf6CCc8a689c34a659",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241394063,
+      "sqrtPriceX96": "2639619067447089767343661310",
+      "tick": -68038,
+      "liquidity": "384752331",
+      "timestamp": 1769241394063
+    },
+    {
+      "address": "0xEFE7Ba8Ce82E7d5C7792da173f069E9060619482",
+      "dex": "uniswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241394632,
+      "sqrtPriceX96": "792243630700668809505412",
+      "tick": -230271,
+      "liquidity": "0",
+      "timestamp": 1769241394632
+    },
+    {
+      "address": "0x9c15578cCC8e6530DD1C282e679aa2D63F1be607",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241395197,
+      "reserve0": "58799628819652498",
+      "reserve1": "65909181382443530",
+      "timestamp": 1769241395197
+    },
+    {
+      "address": "0xe902EF54E437967c8b37D30E80ff887955c90DB6",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241395758,
+      "reserve0": "62858463654187855",
+      "reserve1": "185568375",
+      "timestamp": 1769241395758
+    },
+    {
+      "address": "0xF848c131722ceEC41109597f60be73cCb4Fe74Ed",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241396324,
+      "reserve0": "275267204056190",
+      "reserve1": "222619029498900",
+      "timestamp": 1769241396324
+    },
+    {
+      "address": "0x88A43bbDF9D098eEC7bCEda4e2494615dfD9bB9C",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241396899,
+      "reserve0": "751188811888115503789",
+      "reserve1": "2214265698378",
+      "timestamp": 1769241396899
+    },
+    {
+      "address": "0x64AAedA9c8A8839933707c6c2FaCd520768AB034",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241397506,
+      "reserve0": "50219877838109480",
+      "reserve1": "54549375054128889",
+      "timestamp": 1769241397506
+    },
+    {
+      "address": "0x4fE4a5F570B046e3704Acd72fef6c508a310D3aA",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241398072,
+      "reserve0": "14349507563363537382",
+      "reserve1": "47325930",
+      "timestamp": 1769241398072
+    },
+    {
+      "address": "0x4ED6664ac7FD98Ef58788Ea77fF00AC6ED233678",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241398651,
+      "reserve0": "979886492063473",
+      "reserve1": "1038079786143961",
+      "timestamp": 1769241398651
+    },
+    {
+      "address": "0x18a9B853F0F55D5AF8c57EB2574471f1Ce10E79F",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241399245,
+      "reserve0": "749992242135",
+      "reserve1": "24748129670985",
+      "timestamp": 1769241399245
+    },
+    {
+      "address": "0xcEC60680894DFfC387568d0e4D67C1C16958663d",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241399850,
+      "reserve0": "638321963240",
+      "reserve1": "2287",
+      "timestamp": 1769241399850
+    },
+    {
+      "address": "0x17dA8a93956aDD11368999d3999B5700f0752aA4",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241400390,
+      "reserve0": "36550187901374451",
+      "reserve1": "35386800688010581",
+      "timestamp": 1769241400390
+    },
+    {
+      "address": "0x5E29096E17506105bFEC3CA29Ebf2385EEAaA4D1",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241400964,
+      "reserve0": "5823515386325408",
+      "reserve1": "21500",
+      "timestamp": 1769241400964
+    },
+    {
+      "address": "0xC5ACcD3e4f6dF1912498775807e0972B3ec43F29",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241401540,
+      "reserve0": "3513159",
+      "reserve1": "3524159",
+      "timestamp": 1769241401540
+    },
+    {
+      "address": "0x0d00ae15444e5aa81a7B3340946488D1FEBE5CA9",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241402116,
+      "reserve0": "47",
+      "reserve1": "38956",
+      "timestamp": 1769241402116
+    },
+    {
+      "address": "0x0C93B4603d3e322fCD53Abf89B7aC9d3D331f404",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241402682,
+      "reserve0": "12110353541145",
+      "reserve1": "1081221",
+      "timestamp": 1769241402682
+    },
+    {
+      "address": "0xBDC24Dc777e7CaB0c23CAfaf4A5c904c3eEd1fFB",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241403340,
+      "reserve0": "1",
+      "reserve1": "13528204",
+      "timestamp": 1769241403340
+    },
+    {
+      "address": "0xf12e118F218b1A2F88b3fED2bDd5c3b8Ab296516",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241403921,
+      "reserve0": "462013008",
+      "reserve1": "1",
+      "timestamp": 1769241403921
+    },
+    {
+      "address": "0xE5947c01fb3A4B6703f9416c29Ff736285BFd403",
+      "dex": "uniswap-v2",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 30,
+      "isActive": true,
+      "lastUpdated": 1769243610039
+    },
+    {
+      "address": "0xA170bBA3532f972409939ad64Bcf42445d2Cc9Bc",
+      "dex": "baseswap",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241405054,
+      "reserve0": "100114827",
+      "reserve1": "1",
+      "timestamp": 1769241405054
+    },
+    {
+      "address": "0x47C59970b19c1274f4E82F5852CA61bFf50796e6",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241405624,
+      "sqrtPriceX96": "1461446703485210103287273052203988822378723970341",
+      "tick": 887271,
+      "liquidity": "0",
+      "timestamp": 1769241405624
+    },
+    {
+      "address": "0x469869821505249869Ae8af9Aa503a1fd51e7F23",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241406198,
+      "sqrtPriceX96": "4307938605237850699583407",
+      "tick": -196403,
+      "liquidity": "1401130712082",
+      "timestamp": 1769241406198
+    },
+    {
+      "address": "0x61b8e24A432d7534B4d5aC2461a5eAecfbdb7D2E",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241406770,
+      "sqrtPriceX96": "71692792480140615836830401664",
+      "tick": -1999,
+      "liquidity": "999949",
+      "timestamp": 1769241406770
+    },
+    {
+      "address": "0x482Fe995c4a52bc79271aB29A53591363Ee30a89",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241407335,
+      "sqrtPriceX96": "4307505995712255336906752",
+      "tick": -196405,
+      "liquidity": "40018120446100",
+      "timestamp": 1769241407335
+    },
+    {
+      "address": "0x40d9447E958f636aA8fbFCB8210115BF45c96CB9",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241407914,
+      "sqrtPriceX96": "4295128740",
+      "tick": -887272,
+      "liquidity": "0",
+      "timestamp": 1769241407914
+    },
+    {
+      "address": "0xD3f749adA01aF29a713545Fb6b8E782B49A75a20",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241408477,
+      "sqrtPriceX96": "79226122784479877766500429987",
+      "tick": -1,
+      "liquidity": "1259314926230",
+      "timestamp": 1769241408476
+    },
+    {
+      "address": "0x0269014dDb6bfaaf5FD9c8A4aCc5250dd68350D9",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241409043,
+      "sqrtPriceX96": "2399752469275508393713155206",
+      "tick": -69943,
+      "liquidity": "0",
+      "timestamp": 1769241409043
+    },
+    {
+      "address": "0xb81B9Aef36c76d740850C31C45697c83468DCB54",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769243869991,
+      "sqrtPriceX96": "83865832912056247642577479125",
+      "tick": 1137,
+      "liquidity": "1587633956144147322955",
+      "timestamp": 1769241409612
+    },
+    {
+      "address": "0x22ca6d83aB887A535ae1C6011cc36eA9D1255C31",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769243870099,
+      "sqrtPriceX96": "4306258168271459403667373",
+      "tick": -196411,
+      "liquidity": "7063689686349478",
+      "timestamp": 1769241410354
+    },
+    {
+      "address": "0xa4F9dB7D9F39139e1eC45fbb708924CdFC09e8b9",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241411024,
+      "sqrtPriceX96": "71584211960715341631125080179",
+      "tick": -2030,
+      "liquidity": "21969225872187858",
+      "timestamp": 1769241411024
+    },
+    {
+      "address": "0x57713F7716e0b0F65ec116912F834E49805480d2",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241411593,
+      "sqrtPriceX96": "4307214086133653984755960",
+      "tick": -196406,
+      "liquidity": "13052892571084872",
+      "timestamp": 1769241411593
+    },
+    {
+      "address": "0x358228caAf6C235CDF982bb99E919f6e1028905b",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241412248,
+      "sqrtPriceX96": "143939777308148629054247",
+      "tick": -264383,
+      "liquidity": "141903999965866",
+      "timestamp": 1769241412248
+    },
+    {
+      "address": "0x2D3033a65E7E9370177e9d4d70dba55341D1b276",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241412824,
+      "sqrtPriceX96": "81741434371467783241194377898",
+      "tick": 624,
+      "liquidity": "337086063036631",
+      "timestamp": 1769241412824
+    },
+    {
+      "address": "0x27D8d938d9cfb97A85CA70DefA4D44762A2e1884",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241413390,
+      "sqrtPriceX96": "79232559979698976259650529434",
+      "tick": 1,
+      "liquidity": "18038256280",
+      "timestamp": 1769241413389
+    },
+    {
+      "address": "0x7D41D5003DcD7351C8dbBd156b166A42399a3151",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241413959,
+      "sqrtPriceX96": "2595276131789667695918550655",
+      "tick": -68377,
+      "liquidity": "0",
+      "timestamp": 1769241413959
+    },
+    {
+      "address": "0xBC533343834eaeE1077838a3F6A979688C834D76",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241414519,
+      "sqrtPriceX96": "4309087030608115559430088",
+      "tick": -196398,
+      "liquidity": "17457439126311",
+      "timestamp": 1769241414518
+    },
+    {
+      "address": "0x41595326AaBe6132FC6C7aE71Af087A3A9DBC9F6",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241415090,
+      "sqrtPriceX96": "4308771500724412605612567",
+      "tick": -196399,
+      "liquidity": "19621516459369870",
+      "timestamp": 1769241415090
+    },
+    {
+      "address": "0x99Dc44b6b406491Cad1Dd60AaF8992c498D4d5ba",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241415658,
+      "sqrtPriceX96": "144088720929585890811755",
+      "tick": -264362,
+      "liquidity": "27386543550",
+      "timestamp": 1769241415658
+    },
+    {
+      "address": "0x8d297E4bb28a0ECc9616E1f53213953C5a18bA11",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241416703,
+      "sqrtPriceX96": "79192000422870520974347360168",
+      "tick": -10,
+      "liquidity": "225697362",
+      "timestamp": 1769241416703
+    },
+    {
+      "address": "0xf6e34c3b65AD4A5f102A3fFf63fd5F0aEcb27EC6",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "isActive": true,
+      "lastUpdated": 1769241417294,
+      "sqrtPriceX96": "1320466673772619325362522447619577",
+      "tick": 194433,
+      "liquidity": "0",
+      "timestamp": 1769241417294
+    },
+    {
+      "address": "0xdb96bDfdA012aA9292E1D44FEBAd2C7C7c279A4e",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241417860,
+      "sqrtPriceX96": "4316942711542560705188100",
+      "tick": -196361,
+      "liquidity": "4793300180871",
+      "timestamp": 1769241417860
+    },
+    {
+      "address": "0x6fa08690355261b5360b2302bbF78f63e2B014f5",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241418554,
+      "sqrtPriceX96": "4324849139968089829591328",
+      "tick": -196325,
+      "liquidity": "1869980204359",
+      "timestamp": 1769241418554
+    },
+    {
+      "address": "0xC5cB2554A3cD47B71766F709141eC49e40448202",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241419130,
+      "sqrtPriceX96": "2505293362144502728968",
+      "tick": -345406,
+      "liquidity": "0",
+      "timestamp": 1769241419130
+    },
+    {
+      "address": "0xF66dC6C9c8083f1CbC3bDe0d3FEf206c15a4B64e",
+      "dex": "sushiswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241419705,
+      "sqrtPriceX96": "79267784519130042428790663799",
+      "tick": 10,
+      "liquidity": "0",
+      "timestamp": 1769241419705
+    },
+    {
+      "address": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241420367,
+      "sqrtPriceX96": "83883140638553199462555947995",
+      "tick": 1141,
+      "liquidity": "1023720905514179494577180",
+      "timestamp": 1769241420367
+    },
+    {
+      "address": "0xF6C0A374a483101e04EF5F7Ac9Bd15d9142BAC95",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241420934,
+      "sqrtPriceX96": "4306977003320060758052047",
+      "tick": -196407,
+      "liquidity": "155409131830443",
+      "timestamp": 1769241420934
+    },
+    {
+      "address": "0xBd59a718E60bd868123C6E949c9fd97185EFbDB7",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241421504,
+      "sqrtPriceX96": "71583314374243308394843947149",
+      "tick": -2030,
+      "liquidity": "770787158131629496809198",
+      "timestamp": 1769241421504
+    },
+    {
+      "address": "0x72AB388E2E2F6FaceF59E3C3FA2C4E29011c2D38",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241422069,
+      "sqrtPriceX96": "4307695175890150273061392",
+      "tick": -196404,
+      "liquidity": "5621453900467265256",
+      "timestamp": 1769241422069
+    },
+    {
+      "address": "0x302976A386fbb375033bE3Ac1E4112F76cf42ef7",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241423102,
+      "sqrtPriceX96": "82579745126676535065406585992",
+      "tick": 828,
+      "liquidity": "396676599136671098",
+      "timestamp": 1769241423102
+    },
+    {
+      "address": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241423676,
+      "sqrtPriceX96": "143954443979561490349895",
+      "tick": -264381,
+      "liquidity": "135013934892556011",
+      "timestamp": 1769241423676
+    },
+    {
+      "address": "0x4c98E9C2439C0d4621C62FeE2fED6D042fa8c570",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241424241,
+      "sqrtPriceX96": "81775708754892671696746973113",
+      "tick": 633,
+      "liquidity": "38163494188093",
+      "timestamp": 1769241424241
+    },
+    {
+      "address": "0x5b2C49f59e2fE626435bB2698b62908EE5563C42",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241424804,
+      "sqrtPriceX96": "5353845115325775973647094",
+      "tick": -192056,
+      "liquidity": "0",
+      "timestamp": 1769241424804
+    },
+    {
+      "address": "0xc11821470AA1ef276dE8c5c3D0dB84EFC806fA11",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241425371,
+      "sqrtPriceX96": "154278306865531500288265",
+      "tick": -262995,
+      "liquidity": "492389182938",
+      "timestamp": 1769241425371
+    },
+    {
+      "address": "0x29Ed55B18Af0Add137952CB3E29FB77B32fCE426",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241426035,
+      "sqrtPriceX96": "79228209880658696026573661459",
+      "tick": 0,
+      "liquidity": "135059271493608",
+      "timestamp": 1769241426035
+    },
+    {
+      "address": "0x55B40f8911402568414ec6e7e0d2D87c3D19e65C",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241426611,
+      "sqrtPriceX96": "2402159431840963588231994904376",
+      "tick": 68239,
+      "liquidity": "11316",
+      "timestamp": 1769241426611
+    },
+    {
+      "address": "0x57821Eb8CfF3640C47D70e6E708773B53C113b5C",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241427213,
+      "sqrtPriceX96": "1225563001321575186678742200068470",
+      "tick": 192941,
+      "liquidity": "0",
+      "timestamp": 1769241427213
+    },
+    {
+      "address": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241427819,
+      "sqrtPriceX96": "2647706152420253043679382547",
+      "tick": -67977,
+      "liquidity": "1222045337516",
+      "timestamp": 1769241427819
+    },
+    {
+      "address": "0x953F8b29049520eBE5c406ba255e3A9EcD36aDfC",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 100,
+      "isActive": true,
+      "lastUpdated": 1769241428418,
+      "sqrtPriceX96": "791904210227732488620687",
+      "tick": -230280,
+      "liquidity": "3739140923325015",
+      "timestamp": 1769241428418
+    },
+    {
+      "address": "0xc0efC182479319ff258EcA420e2647cD82D3790c",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241429012,
+      "sqrtPriceX96": "83866989110149111930330500329",
+      "tick": 1138,
+      "liquidity": "8502905591453213473",
+      "timestamp": 1769241429012
+    },
+    {
+      "address": "0xe58b73fF901325b8b2056B29712C50237242F520",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241429592,
+      "sqrtPriceX96": "4306079331393080821105748",
+      "tick": -196412,
+      "liquidity": "51085622281332",
+      "timestamp": 1769241429592
+    },
+    {
+      "address": "0x5bc04dAAE99cc364068DCd0a68736a63D933B544",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241430158,
+      "sqrtPriceX96": "3122061472919709572766683338",
+      "tick": -64680,
+      "liquidity": "0",
+      "timestamp": 1769241430158
+    },
+    {
+      "address": "0xB775272E537cc670C65DC852908aD47015244EaF",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241430731,
+      "sqrtPriceX96": "4307070146173316557915415",
+      "tick": -196407,
+      "liquidity": "285381706082417346",
+      "timestamp": 1769241430731
+    },
+    {
+      "address": "0x7312Da426e5a5c26Ad97f6BA7d5D5c793114e56B",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241431302,
+      "sqrtPriceX96": "81490008326421603022633267265",
+      "tick": 563,
+      "liquidity": "0",
+      "timestamp": 1769241431302
+    },
+    {
+      "address": "0xd974D59e30054cf1aBedeD0C9947B0D8Baf90029",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241431874,
+      "sqrtPriceX96": "143935595384158533196342",
+      "tick": -264383,
+      "liquidity": "10473191032047238",
+      "timestamp": 1769241431874
+    },
+    {
+      "address": "0xc72A0E227D30DE44c480d96a71D4411CE856b903",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "decimals": 18,
+        "name": "Renzo Restaked ETH"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241432474,
+      "sqrtPriceX96": "81825356023715135231599890720",
+      "tick": 645,
+      "liquidity": "3827338140296468",
+      "timestamp": 1769241432474
+    },
+    {
+      "address": "0x0D486753B99b1e0548d3505D8B797c673b58Cad3",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241433043,
+      "sqrtPriceX96": "435768337502452181279113136258",
+      "tick": 34097,
+      "liquidity": "12965407505066",
+      "timestamp": 1769241433043
+    },
+    {
+      "address": "0x5Dd2c409580f566bB9e6A95143AaDDFC6d6FAD7B",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241433613,
+      "sqrtPriceX96": "3961339671291671466576572",
+      "tick": -198080,
+      "liquidity": "0",
+      "timestamp": 1769241433612
+    },
+    {
+      "address": "0xcB5efa901172C092fac066f3773Ad0e022A87D72",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241434177,
+      "sqrtPriceX96": "4556339113821649199525599",
+      "tick": -195282,
+      "liquidity": "241681370127",
+      "timestamp": 1769241434177
+    },
+    {
+      "address": "0xDeAbDc16042b871934B6ea2afdB2da824c9cD315",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241434785,
+      "sqrtPriceX96": "79241657359581099545720327083",
+      "tick": 3,
+      "liquidity": "940043",
+      "timestamp": 1769241434785
+    },
+    {
+      "address": "0x26e263efdc91f0d3279E2Ec2Bd58A7Ca5C2fCE62",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241435357,
+      "sqrtPriceX96": "2647811320736510021368064116",
+      "tick": -67976,
+      "liquidity": "149355066833",
+      "timestamp": 1769241435357
+    },
+    {
+      "address": "0xCF2E4a0618AE3D77F1811785433D03E9645E1b06",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "decimals": 18,
+        "name": "Base tBTC v2"
+      },
+      "fee": 500,
+      "isActive": true,
+      "lastUpdated": 1769241435927,
+      "sqrtPriceX96": "23732790180783053834708552",
+      "tick": -162273,
+      "liquidity": "2430748315",
+      "timestamp": 1769241435927
+    },
+    {
+      "address": "0x103E501A688FFa9533DBAfBc763Ac8f022e578df",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241436497,
+      "sqrtPriceX96": "4306163734663062547540478",
+      "tick": -196411,
+      "liquidity": "12720092926459",
+      "timestamp": 1769241436496
+    },
+    {
+      "address": "0xE9d76696f8A35e2E2520e3125875C3af23f1E69c",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241437090,
+      "sqrtPriceX96": "4309087533177214351968032",
+      "tick": -196398,
+      "liquidity": "617788730060286",
+      "timestamp": 1769241437089
+    },
+    {
+      "address": "0x5b3613ef9a535b48e82e2800aCb77053DFeC93b1",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241437659,
+      "sqrtPriceX96": "135434081283584101721128",
+      "tick": -265601,
+      "liquidity": "0",
+      "timestamp": 1769241437659
+    },
+    {
+      "address": "0x576bcf3E94890B2dF7eBf38B0021B297Bb81f4f6",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241438228,
+      "sqrtPriceX96": "4172610797631866957119337",
+      "tick": -197041,
+      "liquidity": "0",
+      "timestamp": 1769241438228
+    },
+    {
+      "address": "0x833173d11a5A3730893E6414A390890687f56011",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241438813,
+      "sqrtPriceX96": "155076604523730906202264",
+      "tick": -262892,
+      "liquidity": "0",
+      "timestamp": 1769241438813
+    },
+    {
+      "address": "0xa002b68292131d2f70518d7dFf63bd9D99d189F2",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241439383,
+      "sqrtPriceX96": "79281803399961974459807018698",
+      "tick": 13,
+      "liquidity": "8174085923",
+      "timestamp": 1769241439383
+    },
+    {
+      "address": "0x11b33f64cf3831c15c8B984011514720D3F02A20",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241439996,
+      "sqrtPriceX96": "2388716608409958921053806961366",
+      "tick": 68127,
+      "liquidity": "0",
+      "timestamp": 1769241439996
+    },
+    {
+      "address": "0x748Bb91Fc5F4200302D9A79185bC161260a1B461",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 2500,
+      "isActive": true,
+      "lastUpdated": 1769241440569,
+      "sqrtPriceX96": "2731401549562040575005916109",
+      "tick": -67354,
+      "liquidity": "0",
+      "timestamp": 1769241440569
+    },
+    {
+      "address": "0x98D2e8e18De100Ff872eAa60392D580146a9d606",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241441104,
+      "sqrtPriceX96": "83488361473067267988261035686",
+      "tick": 1047,
+      "liquidity": "3527740261467882",
+      "timestamp": 1769241441104
+    },
+    {
+      "address": "0x16DE087BB1a220c7Fc388F3F0dfd38EB1FCdf8b0",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241441697,
+      "sqrtPriceX96": "4322893955157136816003649",
+      "tick": -196334,
+      "liquidity": "1670040818504",
+      "timestamp": 1769241441696
+    },
+    {
+      "address": "0x118EFEF7DB0712F03E067122b8F89E7a4B79262f",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241442263,
+      "sqrtPriceX96": "4291042825420362809660277",
+      "tick": -196481,
+      "liquidity": "3943409872849",
+      "timestamp": 1769241442263
+    },
+    {
+      "address": "0x20FBFEB86c69241F1d41B972C556d3a2A9f5BECB",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "decimals": 18,
+        "name": "Wrapped eETH"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241442839,
+      "sqrtPriceX96": "80929911726387715354948815921",
+      "tick": 425,
+      "liquidity": "0",
+      "timestamp": 1769241442839
+    },
+    {
+      "address": "0xA97C08bc49C246e583a3557f2922DaA9e5D1b404",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241443405,
+      "sqrtPriceX96": "144177535791072143809588",
+      "tick": -264350,
+      "liquidity": "118222614657",
+      "timestamp": 1769241443405
+    },
+    {
+      "address": "0xb2aEBaB052D834E8931e990035ab648835337026",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "decimals": 18,
+        "name": "Wrapped liquid staked Ether 2.0"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241443976,
+      "sqrtPriceX96": "75814079840126214843716192929",
+      "tick": -881,
+      "liquidity": "0",
+      "timestamp": 1769241443976
+    },
+    {
+      "address": "0x21A2baF7cB4e905866327d62E356223E703C2Ce0",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "decimals": 18,
+        "name": "Coinbase Wrapped Staked ETH"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241444638,
+      "sqrtPriceX96": "164341513949483820326748",
+      "tick": -261731,
+      "liquidity": "0",
+      "timestamp": 1769241444638
+    },
+    {
+      "address": "0xe513d88B4894ea0281B3DBE0066B8A72F103c125",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241445205,
+      "sqrtPriceX96": "79440871956283595054634012248",
+      "tick": 53,
+      "liquidity": "2010116563",
+      "timestamp": 1769241445205
+    },
+    {
+      "address": "0xBD65764C8Eb1b8858D323066F488b73f6fe22DC9",
+      "dex": "pancakeswap-v3",
+      "dexVersion": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "decimals": 8,
+        "name": "Coinbase Wrapped BTC"
+      },
+      "fee": 10000,
+      "isActive": true,
+      "lastUpdated": 1769241445769,
+      "sqrtPriceX96": "2686483627238980368688947367",
+      "tick": -67686,
+      "liquidity": "0",
+      "timestamp": 1769241445768
+    }
+  ],
+  "stats": {
+    "totalPools": 159,
+    "poolsByDEX": {
+      "uniswap-v3": 73,
+      "baseswap": 17,
+      "uniswap-v2": 1,
+      "sushiswap-v3": 24,
+      "pancakeswap-v3": 44
+    },
+    "poolsByToken": {
+      "0x4200000000000000000000000000000000000006": 79,
+      "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22": 36,
+      "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA": 39,
+      "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452": 22,
+      "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913": 54,
+      "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A": 12,
+      "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf": 47,
+      "0x2416092f143378750bb29b79eD961ab195CcEea5": 10,
+      "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b": 19
+    },
+    "activePools": 159
+  }
+}

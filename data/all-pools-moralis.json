@@ -1,0 +1,25 @@
+{
+  "pools": [],
+  "stats": {
+    "totalPairsFound": 3707,
+    "pairsPerToken": {
+      "WETH": 1000,
+      "cbETH": 166,
+      "USDbC": 628,
+      "wstETH": 88,
+      "USDC": 1000,
+      "weETH": 33,
+      "cbBTC": 705,
+      "ezETH": 32,
+      "GHO": 0,
+      "wrsETH": 0,
+      "LBTC": 0,
+      "EURC": 0,
+      "AAVE": 0,
+      "tBTC": 55
+    },
+    "pairsPerDEX": {},
+    "totalLiquidityUSD": 0,
+    "discoveryTime": 31862
+  }
+}

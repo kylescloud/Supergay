@@ -87,13 +87,29 @@ export class ExchangeGraph {
    */
   buildFromPools(pools: PoolState[], loanAmount: bigint): void {
     for (const pool of pools) {
-      // Add edge for token0 -> token1
-      const rate1 = this.calculatePoolRate(pool, pool.token0, pool.token1, loanAmount);
-      this.addEdge(pool.token0, pool.token1, pool, rate1.rate, rate1.gasEstimate);
+      try {
+        // Add edge for token0 -> token1
+        const rate1 = this.calculatePoolRate(pool, pool.token0, pool.token1, loanAmount);
+        if (rate1.rate > 0) {
+          this.addEdge(pool.token0, pool.token1, pool, rate1.rate, rate1.gasEstimate);
+        } else {
+          console.log(`Skipping edge ${pool.token0.symbol} -> ${pool.token1.symbol}: rate is ${rate1.rate}`);
+        }
+      } catch (error: any) {
+        console.error(`Error calculating rate for ${pool.token0.symbol} -> ${pool.token1.symbol}: ${error.message}`);
+      }
 
-      // Add edge for token1 -> token0
-      const rate2 = this.calculatePoolRate(pool, pool.token1, pool.token0, loanAmount);
-      this.addEdge(pool.token1, pool.token0, pool, rate2.rate, rate2.gasEstimate);
+      try {
+        // Add edge for token1 -> token0
+        const rate2 = this.calculatePoolRate(pool, pool.token1, pool.token0, loanAmount);
+        if (rate2.rate > 0) {
+          this.addEdge(pool.token1, pool.token0, pool, rate2.rate, rate2.gasEstimate);
+        } else {
+          console.log(`Skipping edge ${pool.token1.symbol} -> ${pool.token0.symbol}: rate is ${rate2.rate}`);
+        }
+      } catch (error: any) {
+        console.error(`Error calculating rate for ${pool.token1.symbol} -> ${pool.token0.symbol}: ${error.message}`);
+      }
     }
   }
 

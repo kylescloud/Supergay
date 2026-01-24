@@ -39,6 +39,16 @@ export class PoolRegistryManager {
     try {
       const fileData = await fs.readFile(this.filePath, 'utf-8');
       this.data = JSON.parse(fileData);
+      
+      // Convert string values back to BigInt for pool data
+      this.data.pools = this.data.pools.map((pool: any) => ({
+        ...pool,
+        reserve0: pool.reserve0 ? BigInt(pool.reserve0) : undefined,
+        reserve1: pool.reserve1 ? BigInt(pool.reserve1) : undefined,
+        liquidity: pool.liquidity ? BigInt(pool.liquidity) : undefined,
+        sqrtPriceX96: pool.sqrtPriceX96 ? BigInt(pool.sqrtPriceX96) : undefined,
+      }));
+      
       console.log(`Loaded registry with ${this.data.pools.length} pools`);
     } catch (error) {
       console.log('No existing registry found, starting fresh');
@@ -49,7 +59,16 @@ export class PoolRegistryManager {
   async save(): Promise<void> {
     try {
       await fs.mkdir(path.dirname(this.filePath), { recursive: true });
-      await fs.writeFile(this.filePath, JSON.stringify(this.data, null, 2), 'utf-8');
+      
+      // Convert BigInt to string for JSON serialization
+      const serializedData = JSON.stringify(this.data, (key, value) => {
+        if (typeof value === 'bigint') {
+          return value.toString();
+        }
+        return value;
+      }, 2);
+      
+      await fs.writeFile(this.filePath, serializedData, 'utf-8');
       console.log(`Saved registry to ${this.filePath}`);
       await this.saveCSV();
       console.log(`Saved CSV to ${this.csvPath}`);

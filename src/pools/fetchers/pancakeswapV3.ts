@@ -71,13 +71,18 @@ export class PancakeSwapV3Fetcher {
         };
       }
 
-      const poolAddresses = events.map(event => ({
-        address: 'args' in event ? event.args : null?.pool,
-        token0: 'args' in event ? event.args : null?.token0,
-        token1: 'args' in event ? event.args : null?.token1,
-        fee: 'args' in event ? event.args : null?.fee,
-        blockNumber: event.blockNumber
-      })).filter(p => p.address);
+      const poolAddresses = events.map(event => {
+        if ('args' in event && event.args) {
+          return {
+            address: event.args.pool,
+            token0: event.args.token0,
+            token1: event.args.token1,
+            fee: event.args.fee,
+            blockNumber: event.blockNumber
+          };
+        }
+        return null;
+      }).filter((p): p is NonNullable<typeof p> => p !== null);
 
       console.log(`Fetching state for ${poolAddresses.length} pools...`);
 

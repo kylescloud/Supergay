@@ -1,0 +1,24 @@
+[
+  {
+    "dex": "uniswap-v3",
+    "address": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "token1Symbol": "USDC",
+    "fee": 100,
+    "version": "v3",
+    "liquidity": "50093460203148612"
+  },
+  {
+    "dex": "uniswap-v3",
+    "address": "0x4c1e404a013bF1917fAf2dBF5E5cEf3E9Bafb5aa",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "token1Symbol": "cbBTC",
+    "fee": 100,
+    "version": "v3",
+    "liquidity": "16840076555164"
+  }
+]

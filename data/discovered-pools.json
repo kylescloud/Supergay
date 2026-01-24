@@ -1,0 +1,87 @@
+[
+  {
+    "dex": "uniswap-v3",
+    "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "token0Symbol": "cbETH",
+    "token1": "0x4200000000000000000000000000000000000006",
+    "token1Symbol": "WETH",
+    "poolAddress": "0xA9DaFa443a02FBc907Cb0093276B3E6F4ef02A46",
+    "fee": 100
+  },
+  {
+    "dex": "uniswap-v3",
+    "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "token0Symbol": "cbETH",
+    "token1": "0x4200000000000000000000000000000000000006",
+    "token1Symbol": "WETH",
+    "poolAddress": "0x10648BA41B8565907Cfa1496765fA4D95390aa0d",
+    "fee": 500
+  },
+  {
+    "dex": "uniswap-v3",
+    "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "token0Symbol": "cbETH",
+    "token1": "0x4200000000000000000000000000000000000006",
+    "token1Symbol": "WETH",
+    "poolAddress": "0x7B9636266734270DE5bE02544c04E27046903ff8",
+    "fee": 3000
+  },
+  {
+    "dex": "uniswap-v3",
+    "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "token0Symbol": "cbETH",
+    "token1": "0x4200000000000000000000000000000000000006",
+    "token1Symbol": "WETH",
+    "poolAddress": "0x6fb974DcEa795d10AdE524bcc3fC9e3E9D29EA87",
+    "fee": 10000
+  },
+  {
+    "dex": "uniswap-v3",
+    "token0": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "token0Symbol": "cbBTC",
+    "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "token1Symbol": "USDbC",
+    "poolAddress": "0x4aF882a4D9C657d3c92aeb6126f5901699693417",
+    "fee": 500
+  },
+  {
+    "dex": "uniswap-v2",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "token1Symbol": "USDbC",
+    "poolAddress": "0xe902EF54E437967c8b37D30E80ff887955c90DB6"
+  },
+  {
+    "dex": "uniswap-v2",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+    "token1Symbol": "wstETH",
+    "poolAddress": "0xF848c131722ceEC41109597f60be73cCb4Fe74Ed"
+  },
+  {
+    "dex": "uniswap-v2",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "token1Symbol": "USDC",
+    "poolAddress": "0x88A43bbDF9D098eEC7bCEda4e2494615dfD9bB9C"
+  },
+  {
+    "dex": "uniswap-v2",
+    "token0": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+    "token0Symbol": "weETH",
+    "token1": "0x4200000000000000000000000000000000000006",
+    "token1Symbol": "WETH",
+    "poolAddress": "0x64AAedA9c8A8839933707c6c2FaCd520768AB034"
+  },
+  {
+    "dex": "uniswap-v2",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+    "token1Symbol": "cbBTC",
+    "poolAddress": "0x4fE4a5F570B046e3704Acd72fef6c508a310D3aA"
+  }
+]

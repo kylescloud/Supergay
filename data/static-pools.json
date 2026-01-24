@@ -1,0 +1,117 @@
+{
+  "pools": [
+    {
+      "address": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
+      "dexName": "Uniswap V3",
+      "dexType": "V3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 500,
+      "reserve0": "0",
+      "reserve1": "0",
+      "blockNumber": 0,
+      "isActive": true
+    },
+    {
+      "address": "0x88A43bbDF9D098eEC7bCEda4e2494615dfD9bB9C",
+      "dexName": "Uniswap V2",
+      "dexType": "V2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "reserve0": "0",
+      "reserve1": "0",
+      "blockNumber": 0,
+      "isActive": true
+    },
+    {
+      "address": "0x6c561B446416E1A00E8E93E221854d6eA4171372",
+      "dexName": "Uniswap V3",
+      "dexType": "V3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "fee": 3000,
+      "reserve0": "0",
+      "reserve1": "0",
+      "blockNumber": 0,
+      "isActive": true
+    },
+    {
+      "address": "0xe902EF54E437967c8b37D30E80ff887955c90DB6",
+      "dexName": "Uniswap V2",
+      "dexType": "V2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "decimals": 18,
+        "name": "Wrapped Ether"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 3000,
+      "reserve0": "0",
+      "reserve1": "0",
+      "blockNumber": 0,
+      "isActive": true
+    },
+    {
+      "address": "0xC5ACcD3e4f6dF1912498775807e0972B3ec43F29",
+      "dexName": "Uniswap V2",
+      "dexType": "V2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "decimals": 6,
+        "name": "USD Coin"
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "decimals": 6,
+        "name": "USD Base Coin"
+      },
+      "fee": 3000,
+      "reserve0": "0",
+      "reserve1": "0",
+      "blockNumber": 0,
+      "isActive": true
+    }
+  ],
+  "lastUpdated": "2026-01-24T00:00:00.000Z",
+  "blockNumber": 41214009,
+  "totalPools": 5
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "dex": "uniswap-v3",
+    "address": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "token1Symbol": "USDC",
+    "fee": 100,
+    "version": "v3",
+    "liquidity": "52038675167786718"
+  },
+  {
+    "dex": "uniswap-v3",
+    "address": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+    "token1Symbol": "USDC",
+    "fee": 500,
+    "version": "v3",
+    "liquidity": "1763690274884509745"
+  },
+  {
+    "dex": "uniswap-v3",
+    "address": "0x3B8000CD10625ABdC7370fb47eD4D4a9C6311fD5",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "token1Symbol": "USDbC",
+    "fee": 100,
+    "version": "v3",
+    "liquidity": "41505153960453"
+  },
+  {
+    "dex": "uniswap-v3",
+    "address": "0x4C36388bE6F416A29C8d8Eee81C771cE6bE14B18",
+    "token0": "0x4200000000000000000000000000000000000006",
+    "token0Symbol": "WETH",
+    "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+    "token1Symbol": "USDbC",
+    "fee": 500,
+    "version": "v3",
+    "liquidity": "5555614325771331"
+  },
+  {
+    "dex": "pancakeswap-v3",
+    "address": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
+    "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "token0Symbol": "cbETH",
+    "token1": "0x4200000000000000000000000000000000000006",
+    "token1Symbol": "WETH",
+    "fee": 100,
+    "version": "v3",
+    "liquidity": "734112154131258778399710"
+  },
+  {
+    "dex": "pancakeswap-v3",
+    "address": "0xc0efC182479319ff258EcA420e2647cD82D3790c",
+    "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+    "token0Symbol": "cbETH",
+    "token1": "0x4200000000000000000000000000000000000006",
+    "token1Symbol": "WETH",
+    "fee": 500,
+    "version": "v3",
+    "liquidity": "8502905591453213473"
+  }
+]

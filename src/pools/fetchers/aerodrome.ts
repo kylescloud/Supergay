@@ -91,7 +91,10 @@ export class AerodromeFetcher {
         const events = await this.factory.queryFilter(pairCreatedFilter, 0, currentBlock);
         
         console.log(`Found ${events.length} PairCreated events`);
-        poolAddresses = events.map(e => e.args?.pair).filter(Boolean) as string[];
+        poolAddresses = events
+          .filter((e): e is ethers.EventLog => 'args' in e && e.args !== null)
+          .map(e => e.args!.pair)
+          .filter(Boolean) as string[];
         stats.totalRequested = events.length;
       }
 

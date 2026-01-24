@@ -1,0 +1,1269 @@
+{
+  "pools": [
+    {
+      "address": "0xA9DaFa443a02FBc907Cb0093276B3E6F4ef02A46",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x3B8000CD10625ABdC7370fb47eD4D4a9C6311fD5",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x20E068D76f9E90b90604500B84c7e19dCB923e7e",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xB1419a7f9e8c6e434B1D05377e0Dbc4154E3DE78",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x4c1e404a013bF1917fAf2dBF5E5cEf3E9Bafb5aa",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xc6C0d11Ac74e444835cBc11B5500Fa7802632214",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x6Ac0EB56E6c2e7039d40E75e839895d8aa62Fa9b",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xf0913aF89C3CF89256196fE5Ea3E5370Dc90c026",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x2891a4Ad99014B8020AD80335330f00f8aEfD787",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x06959273E9A65433De71F5A452D529544E07dDD0",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x35C1281FA244f03d4b7e2C69a019ee5D099FB4CA",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xE9e25E35aa99A2A60155010802b81A25C45bA185",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x720651DE0fE574916fE9846004f3ad7f7E7D4ac4",
+      "token0": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x10648BA41B8565907Cfa1496765fA4D95390aa0d",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x4C36388bE6F416A29C8d8Eee81C771cE6bE14B18",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x6f4482cBF7b43599078fcb012732e20480015644",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x33dfD66802CC936a58a0B25B5E4F792c1CA2312E",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x58603091b4Da10685e114d85E330Cab36e655627",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x97a25cc2793F0ffa90e1667cf7b3C1F130737189",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xB7727BF6a431072041835eb3f2F5F85999758407",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x7c92c51b962263dE6449E11B59415C058980F455",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xFdebEDc97D56EDd31AbdcB887570546B257964f2",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xFe8A89A48A242953481f41cd106f7672A1c0472e",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x92722287D2819012dD8EC07b4e426AC00Dd11103",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x4aF882a4D9C657d3c92aeb6126f5901699693417",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x018046B1D182F7c0978c07610e1173c8e11913FD",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x45837e65E4c44cA260aB40E6dc30fF1B466a00cA",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xa2eaa6Ee9917C54a4b30bEAEE3E50AdEf5833Aa2",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x2CBe9598e25662eCe3217Bf3172d8F092fFbfcb9",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xfBB6Eed8e7aa03B138556eeDaF5D271A5E1e43ef",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xbE03ed0c57Ee301505c26FA9dBFA8cc5ce255fcf",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x4d5887d717C93DD96F587F3e61De55C42e61546d",
+      "token0": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x7B9636266734270DE5bE02544c04E27046903ff8",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x3DdF264AC95D19e81f8c25f4c300C4e59e424d43",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x106C077A4D5B422E6e01c1442F7b3321c3281AF4",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x6c561B446416E1A00E8E93E221854d6eA4171372",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x06b80B12048a37f3762a0015A80Ac0BB37C4e539",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x8c7080564B5A792A33Ef2FD473fbA6364d5495e5",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x78aDEE7Cc019eECFc31F6b961d51177A5830E738",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x9fee7385a2979D15277C3467Db7D99EF1A2669D7",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x59c1991CB22e9c1454d5D061e1e16FDcADf185D5",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0xa8E4C55D6dAf4D768aeBa2378c1AD94c112Ef48a",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x31789CBCcE6C48881be05A21f165A13DaC41DA7b",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x97A4cdAc86De66bad1C9f00497C9D761349b5652",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0xC986BD739c99F4fda7b82a8BcB49cb159bF5c993",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x72D0c3728EF9AF20EF0a1736cf6C21962d9b9873",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x0F1aB94784F8ddd61D80e39a415278f335c240d1",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x0b3A78Ca6133e6A4E351eEDd396EFD485EF299Dd",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x8e1BD372B4506AD8b134c630d9526Cb69D29dcfB",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0xeC558e484cC9f2210714E345298fdc53B253c27D",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0xecA826E450a8AC6Cf9Ab228AE12B84D0407212a7",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x568CF5F8453212E5699FDA5f7f7b58bc4B1DA1FF",
+      "token0": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x240d07e4a0CeeA5d2C351cd9B5f6e6128C1987Fe",
+      "token0": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x6fb974DcEa795d10AdE524bcc3fC9e3E9D29EA87",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xe584Fe0C7505025c3819C82C99944b79a7cc009D",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xa8F8A457f22D53f90998354879664d14cEE2f009",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x0b1C2DCbBfA744ebD3fC17fF1A96A1E1Eb4B2d69",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xFa038A1d7F6b68E29B02136939eAc4C81B612D60",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x233571eAE953D9d59eEFc0769F71Dc19287DDCCB",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x9CD9012204dD12ACC228A7E8e4093E148845669B",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x1CC3aDD0725c847A36110118a8E0A2cC410FEC5c",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x4F964c5637F9052DC03eAf4308D0EE32D0A3b044",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xBdc631F8EE9111E980585e301c1F0B9D70F68f0f",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xe65ef07833bE37659919Bbe7eC366a2EC889c884",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x015E02B9B3cEED65ef5a4a21ee11C27573Ee9A29",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x4fEfC6745c3CBdc8069f6133F61a0951467ddf3F",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x6CdbC1Be895c3e81D133711c2FA7B569A960289e",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xe69f60f5770df72B429ce334A247D0408Cb14090",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x3e7586D52A9D07F8611B8ecf6CCc8a689c34a659",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xEFE7Ba8Ce82E7d5C7792da173f069E9060619482",
+      "token0": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "uniswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x9c15578cCC8e6530DD1C282e679aa2D63F1be607",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xe902EF54E437967c8b37D30E80ff887955c90DB6",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xF848c131722ceEC41109597f60be73cCb4Fe74Ed",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x88A43bbDF9D098eEC7bCEda4e2494615dfD9bB9C",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x64AAedA9c8A8839933707c6c2FaCd520768AB034",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x4fE4a5F570B046e3704Acd72fef6c508a310D3aA",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x4ED6664ac7FD98Ef58788Ea77fF00AC6ED233678",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x18a9B853F0F55D5AF8c57EB2574471f1Ce10E79F",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xcEC60680894DFfC387568d0e4D67C1C16958663d",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x17dA8a93956aDD11368999d3999B5700f0752aA4",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x5E29096E17506105bFEC3CA29Ebf2385EEAaA4D1",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xC5ACcD3e4f6dF1912498775807e0972B3ec43F29",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x0d00ae15444e5aa81a7B3340946488D1FEBE5CA9",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x0C93B4603d3e322fCD53Abf89B7aC9d3D331f404",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xBDC24Dc777e7CaB0c23CAfaf4A5c904c3eEd1fFB",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xf12e118F218b1A2F88b3fED2bDd5c3b8Ab296516",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xE5947c01fb3A4B6703f9416c29Ff736285BFd403",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0xA170bBA3532f972409939ad64Bcf42445d2Cc9Bc",
+      "token0": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "baseswap",
+      "version": "v2"
+    },
+    {
+      "address": "0x47C59970b19c1274f4E82F5852CA61bFf50796e6",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x469869821505249869Ae8af9Aa503a1fd51e7F23",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x61b8e24A432d7534B4d5aC2461a5eAecfbdb7D2E",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x482Fe995c4a52bc79271aB29A53591363Ee30a89",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x40d9447E958f636aA8fbFCB8210115BF45c96CB9",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xD3f749adA01aF29a713545Fb6b8E782B49A75a20",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x0269014dDb6bfaaf5FD9c8A4aCc5250dd68350D9",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xb81B9Aef36c76d740850C31C45697c83468DCB54",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x22ca6d83aB887A535ae1C6011cc36eA9D1255C31",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xa4F9dB7D9F39139e1eC45fbb708924CdFC09e8b9",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x57713F7716e0b0F65ec116912F834E49805480d2",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x358228caAf6C235CDF982bb99E919f6e1028905b",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x2D3033a65E7E9370177e9d4d70dba55341D1b276",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x27D8d938d9cfb97A85CA70DefA4D44762A2e1884",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x7D41D5003DcD7351C8dbBd156b166A42399a3151",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xBC533343834eaeE1077838a3F6A979688C834D76",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x41595326AaBe6132FC6C7aE71Af087A3A9DBC9F6",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x99Dc44b6b406491Cad1Dd60AaF8992c498D4d5ba",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0x8d297E4bb28a0ECc9616E1f53213953C5a18bA11",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0xf6e34c3b65AD4A5f102A3fFf63fd5F0aEcb27EC6",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 3000
+    },
+    {
+      "address": "0xdb96bDfdA012aA9292E1D44FEBAd2C7C7c279A4e",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x6fa08690355261b5360b2302bbF78f63e2B014f5",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xC5cB2554A3cD47B71766F709141eC49e40448202",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xF66dC6C9c8083f1CbC3bDe0d3FEf206c15a4B64e",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "sushiswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xF6C0A374a483101e04EF5F7Ac9Bd15d9142BAC95",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xBd59a718E60bd868123C6E949c9fd97185EFbDB7",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x72AB388E2E2F6FaceF59E3C3FA2C4E29011c2D38",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x302976A386fbb375033bE3Ac1E4112F76cf42ef7",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x4c98E9C2439C0d4621C62FeE2fED6D042fa8c570",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x5b2C49f59e2fE626435bB2698b62908EE5563C42",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xc11821470AA1ef276dE8c5c3D0dB84EFC806fA11",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x29Ed55B18Af0Add137952CB3E29FB77B32fCE426",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x55B40f8911402568414ec6e7e0d2D87c3D19e65C",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x57821Eb8CfF3640C47D70e6E708773B53C113b5C",
+      "token0": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0x953F8b29049520eBE5c406ba255e3A9EcD36aDfC",
+      "token0": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 100
+    },
+    {
+      "address": "0xc0efC182479319ff258EcA420e2647cD82D3790c",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xe58b73fF901325b8b2056B29712C50237242F520",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x5bc04dAAE99cc364068DCd0a68736a63D933B544",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xB775272E537cc670C65DC852908aD47015244EaF",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x7312Da426e5a5c26Ad97f6BA7d5D5c793114e56B",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xd974D59e30054cf1aBedeD0C9947B0D8Baf90029",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xc72A0E227D30DE44c480d96a71D4411CE856b903",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x0D486753B99b1e0548d3505D8B797c673b58Cad3",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x5Dd2c409580f566bB9e6A95143AaDDFC6d6FAD7B",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xcB5efa901172C092fac066f3773Ad0e022A87D72",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xDeAbDc16042b871934B6ea2afdB2da824c9cD315",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x26e263efdc91f0d3279E2Ec2Bd58A7Ca5C2fCE62",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0xCF2E4a0618AE3D77F1811785433D03E9645E1b06",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 500
+    },
+    {
+      "address": "0x103E501A688FFa9533DBAfBc763Ac8f022e578df",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0xE9d76696f8A35e2E2520e3125875C3af23f1E69c",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0x5b3613ef9a535b48e82e2800aCb77053DFeC93b1",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0x576bcf3E94890B2dF7eBf38B0021B297Bb81f4f6",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0x833173d11a5A3730893E6414A390890687f56011",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0xa002b68292131d2f70518d7dFf63bd9D99d189F2",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0x11b33f64cf3831c15c8B984011514720D3F02A20",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0x748Bb91Fc5F4200302D9A79185bC161260a1B461",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 2500
+    },
+    {
+      "address": "0x98D2e8e18De100Ff872eAa60392D580146a9d606",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x16DE087BB1a220c7Fc388F3F0dfd38EB1FCdf8b0",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x118EFEF7DB0712F03E067122b8F89E7a4B79262f",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x20FBFEB86c69241F1d41B972C556d3a2A9f5BECB",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xA97C08bc49C246e583a3557f2922DaA9e5D1b404",
+      "token0": "0x4200000000000000000000000000000000000006",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xb2aEBaB052D834E8931e990035ab648835337026",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0x21A2baF7cB4e905866327d62E356223E703C2Ce0",
+      "token0": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xe513d88B4894ea0281B3DBE0066B8A72F103c125",
+      "token0": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "token1": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    },
+    {
+      "address": "0xBD65764C8Eb1b8858D323066F488b73f6fe22DC9",
+      "token0": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "token1": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "pancakeswap-v3",
+      "version": "v3",
+      "fee": 10000
+    }
+  ],
+  "stats": {
+    "totalPools": 159,
+    "poolsPerDEX": {
+      "uniswap-v3": 73,
+      "uniswap-v2": 18,
+      "sushiswap-v3": 24,
+      "pancakeswap-v3": 44,
+      "baseswap": 18
+    },
+    "discoveryTime": 131690
+  }
+}

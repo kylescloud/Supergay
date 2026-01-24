@@ -11,8 +11,7 @@ import {
 import { FlashLoanOptimizer } from '../strategies/flashLoanOptimizer';
 import { GasConvexityFilter } from '../strategies/gasConvexityFilter';
 import { TimeDecayScoring } from '../strategies/timeDecayScoring';
-import { TOKENS, isProfitReasonable } from '../config/constants';
-import type { Pool } from '../pools/types';
+import { TOKENS } from '../config/constants';
 
 /**
  * Opportunity Finder
@@ -76,31 +75,18 @@ export class OpportunityFinder {
    */
   async findOpportunities(
     baseTokenSymbol: string = 'WETH',
-    loanAmount: bigint = BigInt('10000000000000000000'), // 10 ETH
-    refreshPools: boolean = false
+    loanAmount: bigint = BigInt('10000000000000000000') // 10 ETH
   ): Promise<ArbitrageOpportunity[]> {
     console.log(`\n=== Finding Arbitrage Opportunities ===`);
     console.log(`Base Token: ${baseTokenSymbol}`);
     console.log(`Loan Amount: ${ethers.formatEther(loanAmount)} ETH`);
-    console.log(`Refresh Pools: ${refreshPools}`);
-
-    // Ensure initialization
-    if (!this.isInitialized) {
-      await this.initialize();
-    }
 
     const baseToken = this.getBaseToken(baseTokenSymbol);
     const currentBlock = await this.provider.getBlockNumber();
 
-    // Refresh pools if requested
-    if (refreshPools) {
-      console.log('\nRefreshing pool states...');
-      await this.poolDiscovery.discoverAllPools();
-    }
-
-    // Build block snapshot using pool discovery
-    console.log('\nBuilding block snapshot from pool registry...');
-    const snapshot = await this.buildSnapshotFromPoolRegistry(currentBlock);
+    // Build block snapshot
+    console.log('\nBuilding block snapshot...');
+    const snapshot = await this.stateSnapshotManager.buildBlockSnapshot(currentBlock);
     console.log(`Snapshot: ${snapshot.poolStates.size} pools captured`);
 
     // Find opportunities using all strategies
@@ -136,8 +122,8 @@ export class OpportunityFinder {
     console.log(`Found ${fragmentationOpps.length} fragmentation opportunities`);
     allOpportunities.push(...fragmentationOpps);
 
-    // Strategy 4: Stable-volatile arbitrage
-    console.log('\n[Strategy 4] Running Stable-Volatile Arbitrage...');
+    // Strategy 4: Stable-volatile curve arbitrage
+    console.log('\n[Strategy 4] Running Stable-Volatile Curve Arbitrage...');
     const stableVolatileOpps = await this.stableVolatileStrategy.findOpportunities(
       snapshot.poolStates,
       baseToken,
@@ -146,93 +132,55 @@ export class OpportunityFinder {
     console.log(`Found ${stableVolatileOpps.length} stable-volatile opportunities`);
     allOpportunities.push(...stableVolatileOpps);
 
-    console.log(`\n[Validation] Running profit reasonableness checks...`);
-
-    // Process opportunities
+    // Remove duplicates
     const uniqueOpps = this.removeDuplicateOpportunities(allOpportunities);
-    
-    // Filter out unrealistic profit opportunities
-    const profitValidatedOpps = uniqueOpps.filter(opp => {
-      const isReasonable = isProfitReasonable(opp.loanAmount, opp.netProfit);
-      if (!isReasonable) {
-        console.log(`  ⚠️  Filtered out unrealistic opportunity: ${opp.id}`);
-        console.log(`     Loan: ${ethers.formatEther(opp.loanAmount)} ETH`);
-        console.log(`     Profit: ${ethers.formatEther(opp.netProfit)} ETH (${(Number(opp.netProfit) / Number(opp.loanAmount) * 100).toFixed(2)}%)`);
-      }
-      return isReasonable;
-    });
-    
-    console.log(`  ✅ Profit validation: ${profitValidatedOpps.length}/${uniqueOpps.length} opportunities passed`);
-    
-    const optimizedOpps = await this.flashLoanOptimizer.batchOptimizeOpportunities(profitValidatedOpps);
+    console.log(`\nTotal unique opportunities: ${uniqueOpps.length}`);
+
+    // Optimize flash loan sizes
+    console.log('\nOptimizing flash loan sizes...');
+    const optimizedOpps = await this.flashLoanOptimizer.batchOptimizeOpportunities(uniqueOpps);
+    console.log(`Optimized ${optimizedOpps.length} opportunities`);
+
+    // Filter by gas convexity
+    console.log('\nFiltering by gas convexity...');
     const gasFilteredOpps = await this.gasConvexityFilter.filterOpportunities(optimizedOpps);
+    console.log(`After gas filter: ${gasFilteredOpps.length} opportunities`);
+
+    // Filter out MEV bait
+    console.log('\nFiltering out MEV bait...');
     const mevFilteredOpps = this.gasConvexityFilter.filterMEVBait(gasFilteredOpps);
+    console.log(`After MEV filter: ${mevFilteredOpps.length} opportunities`);
+
+    // Score by time decay
+    console.log('\nScoring by time decay...');
     const scoredOpps = await this.timeDecayScoring.scoreOpportunities(mevFilteredOpps);
+    console.log(`Scored ${scoredOpps.length} opportunities`);
 
-    scoredOpps.sort((a, b) => b.score - a.score);
-
-    return scoredOpps;
-  }
-
-  /**
-   * Build snapshot from pool registry
-   */
-  private async buildSnapshotFromPoolRegistry(blockNumber: number) {
-    const registry = this.poolDiscovery.getRegistry();
-    const allPools = registry.getAllPools();
-    
-    const poolStates = new Map<string, PoolState>();
-
-    const versionMap: Record<string, 'v2' | 'v3' | 'v4' | 'curve'> = {
-      'V2': 'v2',
-      'V3': 'v3',
-      'V4': 'v4',
-      'Curve': 'curve',
-    };
-
-    for (const pool of allPools) {
-      try {
-        // Skip pools without required state data (check both uppercase and lowercase)
-        if ((pool.dexVersion === 'V3' || pool.dexVersion === 'v3') && (!pool.sqrtPriceX96 || !pool.liquidity)) {
-          console.log(`Skipping V3 pool ${pool.address} - missing sqrtPriceX96 or liquidity`);
-          continue;
-        }
-        
-        if ((pool.dexVersion === 'V2' || pool.dexVersion === 'v2') && (!pool.reserve0 || !pool.reserve1)) {
-          console.log(`Skipping V2 pool ${pool.address} - missing reserves`);
-          continue;
-        }
-        
-        // Convert Pool to PoolState
-        const poolState: PoolState = {
-          address: pool.address,
-          dex: pool.dex,
-          token0: pool.token0,
-          token1: pool.token1,
-          reserve0: pool.reserve0,
-          reserve1: pool.reserve1,
-          fee: pool.fee || 0,
-          sqrtPriceX96: pool.sqrtPriceX96,
-          tick: pool.tick || 0,
-          liquidity: pool.liquidity,
-          version: versionMap[pool.dexVersion] || 'v3',
-        };
-        
-        poolStates.set(pool.address, poolState);
-      } catch (error) {
-        console.error(`Error converting pool ${pool.address}:`, error);
+    // Sort by score (descending) and profit (descending)
+    scoredOpps.sort((a, b) => {
+      if (b.score !== a.score) {
+        return b.score - a.score;
       }
+      return b.expectedProfitUSD - a.expectedProfitUSD;
+    });
+
+    // Return top opportunities
+    const topOpps = scoredOpps.slice(0, 10);
+    console.log(`\n=== Top ${topOpps.length} Opportunities ===`);
+    for (let i = 0; i < topOpps.length; i++) {
+      const opp = topOpps[i];
+      console.log(`\n[${i + 1}] ${opp.id}`);
+      console.log(`    Profit: $${opp.expectedProfitUSD.toFixed(4)}`);
+      console.log(`    Score: ${opp.score.toFixed(4)}`);
+      console.log(`    Path: ${opp.path.map(t => t.symbol).join(' → ')}`);
+      console.log(`    DEXs: ${opp.dexes.join(' → ')}`);
     }
 
-    return {
-      blockNumber,
-      poolStates,
-      timestamp: Date.now(),
-    };
+    return topOpps;
   }
 
   /**
-   * Find opportunities at a specific block (for backtesting)
+   * Find opportunities for a specific block (for backtesting)
    */
   async findOpportunitiesAtBlock(
     blockNumber: number,
@@ -241,30 +189,29 @@ export class OpportunityFinder {
   ): Promise<ArbitrageOpportunity[]> {
     console.log(`\n=== Finding Opportunities at Block ${blockNumber} ===`);
 
-    // Build block snapshot at specific block
+    const baseToken = this.getBaseToken(baseTokenSymbol);
+
+    // Build snapshot at specific block
     const snapshot = await this.stateSnapshotManager.buildBlockSnapshot(blockNumber);
     console.log(`Snapshot: ${snapshot.poolStates.size} pools captured`);
 
-    const baseToken = this.getBaseToken(baseTokenSymbol);
+    // Find opportunities using all strategies (same as above but with block number)
     const allOpportunities: ArbitrageOpportunity[] = [];
 
-    // Run all strategies
-    for (const strategy of [
+    const strategies = [
       this.multiHopStrategy,
       this.feeTierStrategy,
       this.liquidityFragmentationStrategy,
       this.stableVolatileStrategy,
-    ]) {
-      try {
-        const opps = await strategy.findOpportunities(
-          snapshot.poolStates,
-          baseToken,
-          loanAmount
-        );
-        allOpportunities.push(...opps);
-      } catch (error) {
-        console.error(`Error in ${strategy.getName()}:`, error);
-      }
+    ];
+
+    for (const strategy of strategies) {
+      const opps = await strategy.findOpportunities(
+        snapshot.poolStates,
+        baseToken,
+        loanAmount
+      );
+      allOpportunities.push(...opps);
     }
 
     // Process opportunities
@@ -360,12 +307,5 @@ export class OpportunityFinder {
     }
 
     return true;
-  }
-
-  /**
-   * Get pool discovery instance
-   */
-  getPoolDiscovery(): PoolDiscovery {
-    return this.poolDiscovery;
   }
 }

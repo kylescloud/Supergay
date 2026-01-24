@@ -1,0 +1,34 @@
+{
+  "testResults": [
+    {
+      "test": "Get WETH Token Pairs",
+      "status": "PASS",
+      "message": "Found 10 pairs in 186ms"
+    },
+    {
+      "test": "Pagination Test",
+      "status": "PASS",
+      "message": "Retrieved 100 pairs across multiple pages"
+    },
+    {
+      "test": "Filter by DEX",
+      "status": "PASS",
+      "message": "Filtered to 34 Uniswap pairs"
+    },
+    {
+      "test": "Filter by Liquidity",
+      "status": "PASS",
+      "message": "Filtered to 1 high-liquidity pairs"
+    },
+    {
+      "test": "DEX Type Detection",
+      "status": "PASS",
+      "message": "Successfully mapped DEX names to internal types"
+    },
+    {
+      "test": "Fee Tier Extraction",
+      "status": "PASS",
+      "message": "Successfully extracted fee tiers from pair labels"
+    }
+  ]
+}

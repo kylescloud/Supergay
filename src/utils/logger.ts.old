@@ -1,0 +1,426 @@
+/**
+ * Real-Time Arbitrage Bot Logger
+ * 
+ * Comprehensive logging system for tracking all arbitrage opportunities,
+ * execution details, fees, and performance metrics.
+ */
+
+import fs from 'fs';
+import path from 'path';
+import { ethers } from 'ethers';
+import { ArbitrageOpportunity } from '../types';
+
+export interface OpportunityLogEntry {
+  timestamp: string;
+  blockNumber: number;
+  
+  // Flash Loan Details
+  flashLoanAsset: string;
+  flashLoanAmount: string;
+  flashLoanAmountFormatted: string;
+  
+  // Arbitrage Strategy
+  strategy: string;
+  
+  // Token Details
+  tokens: {
+    symbol: string;
+    address: string;
+    decimals: number;
+  }[];
+  
+  // DEX Details
+  dexes: string[];
+  
+  // Profit Calculations
+  grossProfit: string;
+  grossProfitFormatted: string;
+  
+  // Fees
+  fees: {
+    slippage: string;
+    swapFees: string;
+    gas: string;
+    flashLoanPremium: string;
+    total: string;
+  };
+  feesFormatted: {
+    slippage: string;
+    swapFees: string;
+    gas: string;
+    flashLoanPremium: string;
+    total: string;
+  };
+  
+  // Net Profit
+  netProfit: string;
+  netProfitFormatted: string;
+  
+  // Execution Decision
+  meetsThreshold: boolean;
+  minProfitThreshold: string;
+  minProfitThresholdFormatted: string;
+  
+  // Transaction Details (if executed)
+  transaction?: {
+    hash: string;
+    status: 'pending' | 'success' | 'failed';
+    gasUsed: string;
+    gasPrice: string;
+    actualProfit: string;
+    errorMessage?: string;
+  };
+  
+  // Additional Metrics
+  score: number;
+  latency: number;
+}
+
+export class ArbitrageLogger {
+  private logFilePath: string;
+  private writeStream: fs.WriteStream;
+  private minProfitThreshold: bigint;
+
+  constructor(
+    logDir: string = './logs',
+    minProfitThreshold: bigint = BigInt('10000000000000000') // 0.01 ETH
+  ) {
+    // Create logs directory if it doesn't exist
+    if (!fs.existsSync(logDir)) {
+      fs.mkdirSync(logDir, { recursive: true });
+    }
+
+    // Create log file with timestamp
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    this.logFilePath = path.join(logDir, `arbitrage-opportunities-${timestamp}.log`);
+    
+    // Create write stream
+    this.writeStream = fs.createWriteStream(this.logFilePath, { flags: 'a' });
+    
+    this.minProfitThreshold = minProfitThreshold;
+    
+    // Write header
+    this.writeHeader();
+  }
+
+  /**
+   * Write log file header
+   */
+  private writeHeader(): void {
+    const header = `
+╔══════════════════════════════════════════════════════════════════════════════╗
+║                    ARBITRAGE BOT - OPPORTUNITY LOG                            ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+Started: ${new Date().toISOString()}
+Minimum Profit Threshold: ${ethers.formatEther(this.minProfitThreshold)} ETH
+
+═══════════════════════════════════════════════════════════════════════════════
+
+`;
+    this.writeStream.write(header);
+  }
+
+  /**
+   * Log a detected opportunity
+   */
+  async logOpportunity(
+    opportunity: ArbitrageOpportunity,
+    loanAmount: bigint,
+    flashLoanAsset: string,
+    gasEstimate: bigint,
+    gasPrice: bigint,
+    flashLoanFeeRate: number = 0.0009 // 0.09% Aave V3
+  ): Promise<void> {
+    const entry = await this.createLogEntry(
+      opportunity,
+      loanAmount,
+      flashLoanAsset,
+      gasEstimate,
+      gasPrice,
+      flashLoanFeeRate
+    );
+
+    this.writeEntry(entry);
+    this.printEntryToConsole(entry);
+  }
+
+  /**
+   * Create log entry from opportunity
+   */
+  private async createLogEntry(
+    opportunity: ArbitrageOpportunity,
+    loanAmount: bigint,
+    flashLoanAsset: string,
+    gasEstimate: bigint,
+    gasPrice: bigint,
+    flashLoanFeeRate: number
+  ): Promise<OpportunityLogEntry> {
+    // Calculate fees
+    const flashLoanPremium = (loanAmount * BigInt(Math.floor(flashLoanFeeRate * 10000))) / BigInt(10000);
+    const gasCost = gasEstimate * gasPrice;
+    const swapFees = this.calculateSwapFees(opportunity);
+    const slippage = this.calculateSlippage(opportunity);
+    
+    const totalFees = flashLoanPremium + gasCost + swapFees + slippage;
+    
+    const netProfit = opportunity.grossProfit - totalFees;
+    const meetsThreshold = netProfit >= this.minProfitThreshold;
+
+    const entry: OpportunityLogEntry = {
+      timestamp: new Date().toISOString(),
+      blockNumber: opportunity.blockNumber,
+      
+      flashLoanAsset,
+      flashLoanAmount: loanAmount.toString(),
+      flashLoanAmountFormatted: `${ethers.formatEther(loanAmount)} ${flashLoanAsset}`,
+      
+      strategy: 'Unknown', // Strategy name not available in opportunity type
+      
+      tokens: opportunity.path.map(token => ({
+        symbol: token.symbol,
+        address: token.address,
+        decimals: token.decimals,
+      })),
+      
+      dexes: opportunity.dexes,
+      
+      grossProfit: opportunity.grossProfit.toString(),
+      grossProfitFormatted: `${ethers.formatEther(opportunity.grossProfit)} ETH`,
+      
+      fees: {
+        slippage: slippage.toString(),
+        swapFees: swapFees.toString(),
+        gas: gasCost.toString(),
+        flashLoanPremium: flashLoanPremium.toString(),
+        total: totalFees.toString(),
+      },
+      feesFormatted: {
+        slippage: `${ethers.formatEther(slippage)} ETH`,
+        swapFees: `${ethers.formatEther(swapFees)} ETH`,
+        gas: `${ethers.formatEther(gasCost)} ETH`,
+        flashLoanPremium: `${ethers.formatEther(flashLoanPremium)} ETH`,
+        total: `${ethers.formatEther(totalFees)} ETH`,
+      },
+      
+      netProfit: netProfit.toString(),
+      netProfitFormatted: `${ethers.formatEther(netProfit)} ETH`,
+      
+      meetsThreshold,
+      minProfitThreshold: this.minProfitThreshold.toString(),
+      minProfitThresholdFormatted: `${ethers.formatEther(this.minProfitThreshold)} ETH`,
+      
+      score: opportunity.score || 0,
+      latency: opportunity.latency || 0,
+    };
+
+    return entry;
+  }
+
+  /**
+   * Calculate swap fees for the opportunity
+   */
+  private calculateSwapFees(opportunity: ArbitrageOpportunity): bigint {
+    // Simplified fee calculation - in production, this would be more accurate
+    const totalVolume = opportunity.loanAmount || BigInt(0);
+    const estimatedFeeRate = BigInt(3000); // 0.3% average
+    return (totalVolume * estimatedFeeRate) / BigInt(1000000);
+  }
+
+  /**
+   * Calculate slippage for the opportunity
+   */
+  private calculateSlippage(opportunity: ArbitrageOpportunity): bigint {
+    // Simplified slippage calculation
+    const totalVolume = opportunity.loanAmount || BigInt(0);
+    const slippageRate = BigInt(500); // 0.05% estimated slippage
+    return (totalVolume * slippageRate) / BigInt(1000000);
+  }
+
+  /**
+   * Write entry to log file
+   */
+  private writeEntry(entry: OpportunityLogEntry): void {
+    const formattedEntry = this.formatEntry(entry);
+    this.writeStream.write(formattedEntry);
+  }
+
+  /**
+   * Format entry for logging
+   */
+  private formatEntry(entry: OpportunityLogEntry): string {
+    const separator = '═'.repeat(100);
+    
+    let formatted = `
+${separator}
+📊 OPPORTUNITY DETECTED
+${separator}
+
+🕒 Timestamp:      ${entry.timestamp}
+🔢 Block Number:   ${entry.blockNumber}
+⚡ Latency:        ${entry.latency}ms
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💰 FLASH LOAN DETAILS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Asset:            ${entry.flashLoanAsset}
+Amount:           ${entry.flashLoanAmountFormatted}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 ARBITRAGE STRATEGY
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Strategy:         ${entry.strategy}
+Score:            ${entry.score.toFixed(4)}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🔄 TOKEN PATH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${entry.tokens.map((token, i) => 
+  `  ${i + 1}. ${token.symbol} (${token.address}) - ${token.decimals} decimals`
+).join('\n')}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🏦 DEX ROUTE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${entry.dexes.map((dex, i) => `  Hop ${i + 1}: ${dex}`).join('\n')}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+💵 PROFIT CALCULATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Gross Profit:     ${entry.grossProfitFormatted}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📊 FEES BREAKDOWN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Slippage:         ${entry.feesFormatted.slippage}
+Swap Fees:        ${entry.feesFormatted.swapFees}
+Gas Cost:         ${entry.feesFormatted.gas}
+Flash Loan Fee:   ${entry.feesFormatted.flashLoanPremium}
+─────────────────────────────────────────────────────────────────────────────
+Total Fees:       ${entry.feesFormatted.total}
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎉 NET PROFIT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Net Profit:       ${entry.netProfitFormatted}
+Threshold:        ${entry.minProfitThresholdFormatted}
+Decision:         ${entry.meetsThreshold ? '✅ EXECUTE' : '❌ SKIP'}
+
+${separator}
+`;
+
+    return formatted;
+  }
+
+  /**
+   * Print entry to console with colors
+   */
+  private printEntryToConsole(entry: OpportunityLogEntry): void {
+    const colors = {
+      reset: '\x1b[0m',
+      green: '\x1b[32m',
+      red: '\x1b[31m',
+      yellow: '\x1b[33m',
+      blue: '\x1b[34m',
+      cyan: '\x1b[36m',
+      bold: '\x1b[1m',
+    };
+
+    console.log(`\n${colors.cyan}${'═'.repeat(80)}${colors.reset}`);
+    console.log(`${colors.bold}${colors.green}🎯 NEW ARBITRAGE OPPORTUNITY${colors.reset}`);
+    console.log(`${colors.cyan}${'═'.repeat(80)}${colors.reset}\n`);
+    
+    console.log(`${colors.blue}Strategy:${colors.reset}         ${entry.strategy}`);
+    console.log(`${colors.blue}Block:${colors.reset}            ${entry.blockNumber}`);
+    console.log(`${colors.blue}Flash Loan:${colors.reset}        ${entry.flashLoanAmountFormatted}\n`);
+    
+    console.log(`${colors.yellow}Profit Breakdown:${colors.reset}`);
+    console.log(`  Gross:            ${colors.green}${entry.grossProfitFormatted}${colors.reset}`);
+    console.log(`  Total Fees:       ${colors.red}${entry.feesFormatted.total}${colors.reset}`);
+    console.log(`    - Slippage:     ${entry.feesFormatted.slippage}`);
+    console.log(`    - Swap Fees:    ${entry.feesFormatted.swapFees}`);
+    console.log(`    - Gas:          ${entry.feesFormatted.gas}`);
+    console.log(`    - Flash Fee:    ${entry.feesFormatted.flashLoanPremium}`);
+    
+    console.log(`  ${colors.bold}Net Profit:${colors.reset}      ${entry.meetsThreshold ? colors.green : colors.red}${entry.netProfitFormatted}${colors.reset}`);
+    console.log(`  Threshold:        ${entry.minProfitThresholdFormatted}`);
+    console.log(`  Decision:         ${entry.meetsThreshold ? colors.green + '✅ EXECUTE' + colors.reset : colors.red + '❌ SKIP' + colors.reset}`);
+    
+    console.log(`${colors.cyan}${'═'.repeat(80)}${colors.reset}\n`);
+  }
+
+  /**
+   * Log execution attempt
+   */
+  logExecutionAttempt(
+    opportunity: ArbitrageOpportunity,
+    txHash: string
+  ): void {
+    const entry = `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 EXECUTION INITIATED
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Transaction Hash:  ${txHash}
+Strategy:          ${opportunity.strategy}
+Net Profit:        ${ethers.formatEther(opportunity.netProfit || BigInt(0))} ETH
+Timestamp:         ${new Date().toISOString()}
+
+`;
+    this.writeStream.write(entry);
+    console.log(`${entry.green}🚀 Executing transaction: ${txHash}${this.reset}`);
+  }
+
+  /**
+   * Log execution result
+   */
+  logExecutionResult(
+    txHash: string,
+    status: 'success' | 'failed',
+    gasUsed: bigint,
+    actualProfit?: bigint,
+    errorMessage?: string
+  ): void {
+    const colors = {
+      reset: '\x1b[0m',
+      green: '\x1b[32m',
+      red: '\x1b[31m',
+    };
+
+    const statusEmoji = status === 'success' ? '✅' : '❌';
+    const statusColor = status === 'success' ? colors.green : colors.red;
+
+    const entry = `
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+${statusEmoji} EXECUTION RESULT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Transaction Hash:  ${txHash}
+Status:            ${status.toUpperCase()}
+Gas Used:          ${gasUsed.toString()}
+${actualProfit ? `Actual Profit:     ${ethers.formatEther(actualProfit)} ETH` : ''}
+${errorMessage ? `Error:             ${errorMessage}` : ''}
+Timestamp:         ${new Date().toISOString()}
+
+`;
+    this.writeStream.write(entry);
+    console.log(`${statusColor}${statusEmoji} Execution ${status.toUpperCase()}: ${txHash}${colors.reset}`);
+  }
+
+  /**
+   * Close the logger
+   */
+  close(): void {
+    this.writeStream.write(`
+═══════════════════════════════════════════════════════════════════════════════
+Ended: ${new Date().toISOString()}
+═══════════════════════════════════════════════════════════════════════════════
+`);
+    this.writeStream.end();
+  }
+
+  /**
+   * Get log file path
+   */
+  getLogFilePath(): string {
+    return this.logFilePath;
+  }
+}

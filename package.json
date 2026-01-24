@@ -10,7 +10,17 @@
     "start": "node dist/index.js",
     "backtest": "ts-node src/replay/backtest.ts",
     "lint": "eslint src --ext .ts",
-    "clean": "hardhat clean && rm -rf dist"
+    "clean": "hardhat clean && rm -rf dist",
+    "bot": "ts-node scripts/run-production-bot.ts",
+    "bot:test": "ts-node scripts/simple-scan-test.ts",
+    "pools:discover": "ts-node scripts/discover-pools-moralis.ts",
+    "pools:load": "ts-node scripts/load-moralis-pools.ts",
+    "pools:test": "ts-node scripts/test-moralis-integration.ts",
+    "pools:discover:all": "ts-node scripts/discover-all-pools-moralis.ts",
+    "pools:load:all": "ts-node scripts/load-all-pools-to-registry.ts",
+    "pools:discover:factory": "ts-node scripts/discover-all-pools-factory.ts",
+    "pools:load:factory": "ts-node scripts/load-factory-pools-to-registry.ts",
+    "pools:test:registry": "ts-node scripts/test-pool-registry.ts"
   },
   "keywords": [
     "arbitrage",
@@ -33,6 +43,7 @@
     "dotenv": "^16.3.1",
     "ethers": "^6.9.0",
     "lodash": "^4.17.21",
+    "node-telegram-bot-api": "^0.67.0",
     "viem": "^1.19.0"
   },
   "devDependencies": {
@@ -41,11 +52,12 @@
     "@typechain/hardhat": "^9.0.0",
     "@types/lodash": "^4.14.202",
     "@types/node": "^20.10.0",
+    "@types/node-telegram-bot-api": "^0.64.13",
     "@typescript-eslint/eslint-plugin": "^6.13.0",
     "@typescript-eslint/parser": "^6.13.0",
     "eslint": "^8.54.0",
     "hardhat": "^2.19.0",
-    "ts-node": "^10.9.1",
+    "ts-node": "^10.9.2",
     "typechain": "^8.3.0",
     "typescript": "^5.3.2"
   }
