@@ -1,5 +1,6 @@
 import { ethers } from 'ethers';
 import { FlashLoanArbitrage__factory } from '../../artifacts/contracts/FlashLoanArbitrage.sol/FlashLoanArbitrage.js';
+import { PRIVATE_RPC_NODES } from '../config/constants.js';
 import fs from 'fs';
 
 interface Opportunity {
@@ -26,17 +27,37 @@ interface FlashLoanParams {
 
 export class FlashLoanExecutor {
   private provider: ethers.JsonRpcProvider;
+  private backupProvider: ethers.JsonRpcProvider | null = null;
   private wallet: ethers.Wallet;
   private flashLoanContract: ethers.Contract;
   private config: any;
   private executionHistory: Map<string, any> = new Map();
+  private currentRPCIndex: number = 0;
 
   constructor(
     privateKey: string,
     contractAddress: string,
-    providerUrl: string
+    providerUrl?: string
   ) {
-    this.provider = new ethers.JsonRpcProvider(providerUrl);
+    // Use private RPC by default, fallback to provided URL or public RPC
+    const rpcUrl = providerUrl || PRIVATE_RPC_NODES[0];
+    
+    // Initialize primary provider with private RPC
+    this.provider = new ethers.JsonRpcProvider(rpcUrl, undefined, {
+      staticNetwork: true,
+      batchMaxCount: 10,
+      batchStallTime: 10
+    });
+    
+    // Initialize backup provider if available
+    if (PRIVATE_RPC_NODES.length > 1) {
+      this.backupProvider = new ethers.JsonRpcProvider(PRIVATE_RPC_NODES[1], undefined, {
+        staticNetwork: true,
+        batchMaxCount: 10,
+        batchStallTime: 10
+      });
+    }
+    
     this.wallet = new ethers.Wallet(privateKey, this.provider);
     this.flashLoanContract = FlashLoanArbitrage__factory.connect(
       contractAddress,
@@ -52,6 +73,46 @@ export class FlashLoanExecutor {
       throw new Error('Config file not found!');
     }
   }
+  
+  private async testRPCConnection(rpcUrl: string): Promise<boolean> {
+    try {
+      const testProvider = new ethers.JsonRpcProvider(rpcUrl);
+      await testProvider.getBlockNumber();
+      return true;
+    } catch (error) {
+      console.log(`   ⚠️  RPC connection test failed for ${rpcUrl}`);
+      return false;
+    }
+  }
+  
+  private async switchToBackupRPC(): Promise<void> {
+    if (!this.backupProvider) {
+      throw new Error('No backup RPC available');
+    }
+    
+    const backupConnected = await this.testRPCConnection(PRIVATE_RPC_NODES[1]);
+    if (backupConnected) {
+      this.provider = this.backupProvider;
+      this.wallet = new ethers.Wallet(this.wallet.privateKey, this.provider);
+      this.flashLoanContract = FlashLoanArbitrage__factory.connect(
+        this.flashLoanContract.target as string,
+        this.wallet
+      );
+      this.currentRPCIndex = 1;
+      console.log('   🔄 Switched to backup private RPC');
+    } else {
+      throw new Error('All private RPCs failed');
+    }
+  }
+  
+  private async ensureRPCHealth(): Promise<void> {
+    try {
+      await this.provider.getBlockNumber();
+    } catch (error) {
+      console.log('   ⚠️  Primary RPC failed, attempting to switch...');
+      await this.switchToBackupRPC();
+    }
+  }
 
   async executeOpportunity(opportunity: Opportunity): Promise<boolean> {
     console.log(`\n🚀 Executing opportunity: ${opportunity.id}`);
@@ -60,6 +121,9 @@ export class FlashLoanExecutor {
     console.log(`   Profit after gas: ${opportunity.profitAfterGas.toFixed(4)}%`);
 
     try {
+      // Ensure RPC health before execution
+      await this.ensureRPCHealth();
+      
       // Check if opportunity meets minimum threshold
       const minProfit = this.config.minProfitPercent || 0.1;
       if (opportunity.profitAfterGas < minProfit) {
@@ -149,14 +213,29 @@ export class FlashLoanExecutor {
     // Start with $10,000 worth of tokens
     const flashLoanAmount = ethers.parseUnits('10000', 18); // Default to 18 decimals
 
+    // Map opportunity dexTypes to specific DEX names
+    const dexTypes = (opportunity as any).dexTypes || ['MultiDEX'];
+    const dexIdentifiers = (opportunity as any).dexIdentifiers || ['MultiDEX'];
+
+    // Build routes with specific DEX types
+    const routes: Array<{
+      dex: string;
+      pools: string[];
+      path: string[];
+    }> = [];
+
+    for (let i = 0; i < pools.length; i++) {
+      routes.push({
+        dex: dexTypes[i] || dexIdentifiers[i] || 'MultiDEX',
+        pools: [pools[i]],
+        path: [path[i], path[i + 1]]
+      });
+    }
+
     return {
       asset: flashLoanAsset,
       amount: flashLoanAmount,
-      routes: [{
-        dex: 'MultiDEX',
-        pools: pools,
-        path: path
-      }]
+      routes: routes
     };
   }
 

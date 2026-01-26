@@ -158,6 +158,12 @@ export const DEX_CONFIG = {
     router: '0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24',
     version: 'v2',
   },
+  // Hydrex (V2-style)
+  hydrex: {
+    factory: '0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7',
+    router: '0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7',
+    version: 'v2',
+  },
 } as const;
 
 // Curve Pool Addresses on Base (Stable Pools)

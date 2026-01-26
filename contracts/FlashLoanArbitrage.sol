@@ -42,7 +42,7 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
     uint256 public minProfit;
     uint256 public maxGasPrice;
 
-    // DEX Router addresses (settable) - Only 10 required DEXs
+    // DEX Router addresses (settable) - 11 required DEXs
     address public uniswapV4PoolManager;
     address public uniswapV4UniversalRouter;
     address public uniswapV3Router;
@@ -54,6 +54,7 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
     address public aerodromeSlipStreamRouter; // Aerodrome SlipStream (V3-style)
     address public aerodromeSlipStream2Router; // Aerodrome SlipStream 2 (V3-style)
     address public baseSwapRouter; // BaseSwap (V2-style)
+    address public hydrexRouter; // Hydrex (V2-style)
 
     // DEX Type enumeration
     enum DEXType {
@@ -65,7 +66,8 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
         AerodromeV3,     // 5
         SushiSwapV3,     // 6
         PancakeSwapV3,   // 7
-        BaseSwap         // 8
+        BaseSwap,        // 8
+        Hydrex           // 9
     }
 
     // Events
@@ -150,6 +152,9 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
         
         // BaseSwap (V2-style)
         baseSwapRouter = 0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24;
+        
+        // Hydrex (V2-style)
+        hydrexRouter = 0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7;
     }
 
     /**
@@ -219,6 +224,9 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
             } else if (swap.dexType == uint8(DEXType.UniswapV3)) {
                 // Uniswap V3 / SushiSwap V3 / PancakeSwap V3 / Aerodrome SlipStream / Aerodrome SlipStream 2
                 _swapV3(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount, swap.fee, swap.dexRouter);
+            } else if (swap.dexType == uint8(DEXType.Hydrex)) {
+                // Hydrex (V2-style)
+                _swapV2(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount, swap.dexRouter);
             } else if (swap.dexType == uint8(DEXType.UniswapV4)) {
                 // Uniswap V4
                 _swapV4(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount, swap.swapData);
@@ -399,6 +407,8 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
             aerodromeSlipStream2Router = router;
         } else if (keccak256(bytes(dex)) == keccak256(bytes("baseSwapRouter"))) {
             baseSwapRouter = router;
+        } else if (keccak256(bytes(dex)) == keccak256(bytes("hydrexRouter"))) {
+            hydrexRouter = router;
         } else {
             revert InvalidDEX();
         }

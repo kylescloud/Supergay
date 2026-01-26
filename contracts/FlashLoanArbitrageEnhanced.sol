@@ -30,6 +30,14 @@ contract FlashLoanArbitrageEnhanced is FlashLoanSimpleReceiverBase, Ownable {
     address public alienBaseRouter = 0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7;
     address public swapBasedRouter = 0xaaa3b1F1bd7BCc97fD1917c18ADE665C5D31F066;
     
+    // Additional DEX Routers (6 missing DEXs added)
+    address public sushiswapV3Router = 0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506;
+    address public pancakeSwapV3Router = 0x1b81D678ffb9C0263b24A97847620C99d213eB14;
+    address public baseSwapRouter = 0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24;
+    address public aerodromeSlipStreamRouter = 0xBE6D8f0d05cC4be24d5167a3eF062215bE6D18a5;
+    address public aerodromeSlipStream2Router = 0x51ca29d9828867C363572C37c424E3d6b380c61e;
+    address public hydrexRouter = 0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7; // V2-style, same as AlienBase
+    
     // Route structure
     struct Route {
         string dex;
@@ -202,6 +210,18 @@ contract FlashLoanArbitrageEnhanced is FlashLoanSimpleReceiverBase, Ownable {
                 balance = executeAlienBaseSwap(route.pools, route.path, balance, route.deadline);
             } else if (keccak256(bytes(route.dex)) == keccak256(bytes("SwapBased"))) {
                 balance = executeSwapBasedSwap(route.pools, route.path, balance, route.deadline);
+            } else if (keccak256(bytes(route.dex)) == keccak256(bytes("SushiSwapV3"))) {
+                balance = executeSushiSwapV3Swap(route.pools, route.path, balance, route.deadline);
+            } else if (keccak256(bytes(route.dex)) == keccak256(bytes("PancakeSwapV3"))) {
+                balance = executePancakeSwapV3Swap(route.pools, route.path, balance, route.deadline);
+            } else if (keccak256(bytes(route.dex)) == keccak256(bytes("BaseSwap"))) {
+                balance = executeBaseSwapSwap(route.pools, route.path, balance, route.deadline);
+            } else if (keccak256(bytes(route.dex)) == keccak256(bytes("AerodromeSlipStream"))) {
+                balance = executeAerodromeSlipStreamSwap(route.pools, route.path, balance, route.deadline);
+            } else if (keccak256(bytes(route.dex)) == keccak256(bytes("AerodromeSlipStream2"))) {
+                balance = executeAerodromeSlipStream2Swap(route.pools, route.path, balance, route.deadline);
+            } else if (keccak256(bytes(route.dex)) == keccak256(bytes("Hydrex"))) {
+                balance = executeHydrexSwap(route.pools, route.path, balance, route.deadline);
             } else if (keccak256(bytes(route.dex)) == keccak256(bytes("MultiDEX"))) {
                 balance = executeMultiDEXSwap(route.pools, route.path, balance, route.deadline);
             } else {
@@ -338,6 +358,150 @@ contract FlashLoanArbitrageEnhanced is FlashLoanSimpleReceiverBase, Ownable {
     }
     
     /**
+     * @dev Execute swap on SushiSwap V3
+     */
+    function executeSushiSwapV3Swap(
+        address[] memory pools,
+        address[] memory path,
+        uint256 amountIn,
+        uint256 deadline
+    ) internal returns (uint256) {
+        require(pools.length > 0, "No pools provided");
+        require(path.length >= 2, "Invalid path");
+        require(block.timestamp <= deadline, "Transaction expired");
+        
+        ISwapRouter.ExactInputSingleParams memory params = ISwapRouter.ExactInputSingleParams({
+            tokenIn: path[0],
+            tokenOut: path[1],
+            fee: 3000,
+            recipient: address(this),
+            amountIn: amountIn,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+        });
+        
+        IERC20(path[0]).safeApprove(sushiswapV3Router, amountIn);
+        uint256 amountOut = ISwapRouter(sushiswapV3Router).exactInputSingle(params);
+        IERC20(path[0]).safeApprove(sushiswapV3Router, 0);
+        
+        return amountOut;
+    }
+    
+    /**
+     * @dev Execute swap on PancakeSwap V3
+     */
+    function executePancakeSwapV3Swap(
+        address[] memory pools,
+        address[] memory path,
+        uint256 amountIn,
+        uint256 deadline
+    ) internal returns (uint256) {
+        require(pools.length > 0, "No pools provided");
+        require(path.length >= 2, "Invalid path");
+        require(block.timestamp <= deadline, "Transaction expired");
+        
+        ISwapRouter.ExactInputSingleParams memory params = ISwapRouter.ExactInputSingleParams({
+            tokenIn: path[0],
+            tokenOut: path[1],
+            fee: 3000,
+            recipient: address(this),
+            amountIn: amountIn,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+        });
+        
+        IERC20(path[0]).safeApprove(pancakeSwapV3Router, amountIn);
+        uint256 amountOut = ISwapRouter(pancakeSwapV3Router).exactInputSingle(params);
+        IERC20(path[0]).safeApprove(pancakeSwapV3Router, 0);
+        
+        return amountOut;
+    }
+    
+    /**
+     * @dev Execute swap on BaseSwap
+     */
+    function executeBaseSwapSwap(
+        address[] memory pools,
+        address[] memory path,
+        uint256 amountIn,
+        uint256 deadline
+    ) internal returns (uint256) {
+        return executeUniswapV2Swap(pools, path, amountIn, deadline);
+    }
+    
+    /**
+     * @dev Execute swap on Aerodrome SlipStream
+     */
+    function executeAerodromeSlipStreamSwap(
+        address[] memory pools,
+        address[] memory path,
+        uint256 amountIn,
+        uint256 deadline
+    ) internal returns (uint256) {
+        require(pools.length > 0, "No pools provided");
+        require(path.length >= 2, "Invalid path");
+        require(block.timestamp <= deadline, "Transaction expired");
+        
+        ISwapRouter.ExactInputSingleParams memory params = ISwapRouter.ExactInputSingleParams({
+            tokenIn: path[0],
+            tokenOut: path[1],
+            fee: 3000,
+            recipient: address(this),
+            amountIn: amountIn,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+        });
+        
+        IERC20(path[0]).safeApprove(aerodromeSlipStreamRouter, amountIn);
+        uint256 amountOut = ISwapRouter(aerodromeSlipStreamRouter).exactInputSingle(params);
+        IERC20(path[0]).safeApprove(aerodromeSlipStreamRouter, 0);
+        
+        return amountOut;
+    }
+    
+    /**
+     * @dev Execute swap on Aerodrome SlipStream 2
+     */
+    function executeAerodromeSlipStream2Swap(
+        address[] memory pools,
+        address[] memory path,
+        uint256 amountIn,
+        uint256 deadline
+    ) internal returns (uint256) {
+        require(pools.length > 0, "No pools provided");
+        require(path.length >= 2, "Invalid path");
+        require(block.timestamp <= deadline, "Transaction expired");
+        
+        ISwapRouter.ExactInputSingleParams memory params = ISwapRouter.ExactInputSingleParams({
+            tokenIn: path[0],
+            tokenOut: path[1],
+            fee: 3000,
+            recipient: address(this),
+            amountIn: amountIn,
+            amountOutMinimum: 0,
+            sqrtPriceLimitX96: 0
+        });
+        
+        IERC20(path[0]).safeApprove(aerodromeSlipStream2Router, amountIn);
+        uint256 amountOut = ISwapRouter(aerodromeSlipStream2Router).exactInputSingle(params);
+        IERC20(path[0]).safeApprove(aerodromeSlipStream2Router, 0);
+        
+        return amountOut;
+    }
+    
+    /**
+     * @dev Execute swap on Hydrex
+     */
+    function executeHydrexSwap(
+        address[] memory pools,
+        address[] memory path,
+        uint256 amountIn,
+        uint256 deadline
+    ) internal returns (uint256) {
+        return executeUniswapV2Swap(pools, path, amountIn, deadline);
+    }
+    
+    /**
      * @dev Execute multi-DEX swap
      */
     function executeMultiDEXSwap(
@@ -392,6 +556,25 @@ contract FlashLoanArbitrageEnhanced is FlashLoanSimpleReceiverBase, Ownable {
         aerodromeRouter = _aerodromeRouter;
         alienBaseRouter = _alienBaseRouter;
         swapBasedRouter = _swapBasedRouter;
+    }
+    
+    /**
+     * @dev Set additional DEX router addresses
+     */
+    function setAdditionalRouters(
+        address _sushiswapV3Router,
+        address _pancakeSwapV3Router,
+        address _baseSwapRouter,
+        address _aerodromeSlipStreamRouter,
+        address _aerodromeSlipStream2Router,
+        address _hydrexRouter
+    ) external onlyOwner {
+        sushiswapV3Router = _sushiswapV3Router;
+        pancakeSwapV3Router = _pancakeSwapV3Router;
+        baseSwapRouter = _baseSwapRouter;
+        aerodromeSlipStreamRouter = _aerodromeSlipStreamRouter;
+        aerodromeSlipStream2Router = _aerodromeSlipStream2Router;
+        hydrexRouter = _hydrexRouter;
     }
     
     /**

@@ -48,6 +48,8 @@ export interface ArbitrageOpportunity {
   blockNumber: number;
   score: number;
   entropy: number;
+  dexTypes: string[];
+  dexIdentifiers: string[];
 }
 
 export interface EffectiveRateResult {

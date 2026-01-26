@@ -35,7 +35,8 @@
       "reserve1": "5514673238",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x3B3B3DCFF8669297bEf410cDDCeA4c362074135A",
@@ -60,7 +61,8 @@
       "reserve1": "79177001128106880694137281",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xA3c528201B493c212f5671B5bc4f3DC4f6fe4248",
@@ -85,7 +87,8 @@
       "reserve1": "148116705476898618530581365",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x0B1E820Eb65289896CbB6B152Ee1fa12ec3D2B18",
@@ -110,7 +113,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "988083101308083501",
-      "reserve1": "12628221084100572"
+      "reserve1": "12628221084100572",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x8905bbA0C5762f9B25008d42fd2B84fd8fdE779D",
@@ -135,7 +139,8 @@
       "reserve1": "74981405277818596784158147",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xF22482a194b7Df297599a8d05c418C4F36CbE560",
@@ -160,7 +165,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "57078467569153725455774",
-      "reserve1": "154179656318105762695145231"
+      "reserve1": "154179656318105762695145231",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x1CC5E366Ec89b0cA2a30A4B4440c1B1C0b5fb466",
@@ -185,7 +191,8 @@
       "reserve1": "25544754468158338953019",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xC4BB445227c34Ceb0A0FF970a3e501BBEee8b68e",
@@ -210,7 +217,8 @@
       "reserve1": "142443303967589901978619811",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x23dA62CE083687cD72EBCBA36eEc6752fa51B715",
@@ -235,7 +243,8 @@
       "reserve1": "780189628605101374",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x7Dc3662f4C2C41c5752652e8B417a9024c2B1f63",
@@ -260,7 +269,8 @@
       "reserve1": "41240438722620515323",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x2F97BBD562ba6C4d298B370929EA20291afF9ff5",
@@ -285,7 +295,8 @@
       "reserve1": "264172975807636122145239788",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x05851Baf22D01323dD52c9bff129838e6E361514",
@@ -310,7 +321,8 @@
       "reserve1": "412519895713322463184462855",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xfb2be279dCAFE6b5364e4C49A0A39aedf9c38ac7",
@@ -335,7 +347,8 @@
       "reserve1": "140483585242501472213416734",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x039F7c7E22c1C3Bba5e871029ca72d5DDeAd295B",
@@ -360,7 +373,8 @@
       "reserve1": "78952249563764767650725533",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
@@ -385,7 +399,8 @@
       "reserve1": "35042496442429062294024307",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6",
@@ -410,7 +425,8 @@
       "reserve1": "3986056638580163477584358",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x2223F9FE624F69Da4D8256A7bCc9104FBA7F8f75",
@@ -435,7 +451,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "281964379650262698800205",
-      "reserve1": "127279770941"
+      "reserve1": "127279770941",
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x861Ee8B9F7e42eDCF4f1B5614c6595F71A879f3f",
@@ -460,7 +477,8 @@
       "reserve1": "21513104197498241529090",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x081eC5d6b68A28C9e3a73eC97E351161dBB5e8ef",
@@ -485,7 +503,8 @@
       "reserve1": "1205531409517775673148",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x80aBe24A3ef1fc593aC5Da960F232ca23B2069d0",
@@ -510,7 +529,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "167998252336752834",
-      "reserve1": "3205370626840630379210"
+      "reserve1": "3205370626840630379210",
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xB304b47e039E20AFAd75FA2ada6CD8D95a9eea41",
@@ -535,7 +555,8 @@
       "reserve1": "347831638",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x51b8F730F8BF77236E6040Cc503A560B3C52E12c",
@@ -560,7 +581,8 @@
       "reserve1": "72976026001082657141276462",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xBD159Df3aAD190FBA5864Bc9470F81cf0F25851c",
@@ -585,7 +607,8 @@
       "reserve1": "704711976585079259891732",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x90Ea5A6Ebe41d8191Fa43dB3967E915e44979F5E",
@@ -610,7 +633,8 @@
       "reserve1": "425640422021679128823631373",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x7D2df286eB2369adbDcd98A501DdBDe0838d60F2",
@@ -635,7 +659,8 @@
       "reserve1": "9453721195070162475852549",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xF8bB13359C402F399b152Ca5df7a8B00eC2A6deE",
@@ -660,7 +685,8 @@
       "reserve1": "96566577527098254926680206",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x0162cCBE8961b9e33c788c463F4c9428333b2D6f",
@@ -685,7 +711,8 @@
       "reserve1": "5098173845533266839396432",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xdb7a2D387F33D2Af138654403A773b085f41cb5e",
@@ -710,7 +737,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "27184853786715285194517",
-      "reserve1": "280510759857414019416227477"
+      "reserve1": "280510759857414019416227477",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xEa1C17AA0cB7b5616246D6b0C18Eb0394dC629Fa",
@@ -735,7 +763,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "11288823226374354937918",
-      "reserve1": "512996181030020910908135687"
+      "reserve1": "512996181030020910908135687",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x6379Cd78dc80e0281A70343032ac636fcA42A7f9",
@@ -760,7 +789,8 @@
       "reserve1": "5645512917",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xa739cd9917cCdbD8350be373C2E58607bdf0Bf24",
@@ -785,7 +815,8 @@
       "reserve1": "61283356835606500997997735",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x231Fd286f78364Dc3f6a0f7E0B9A88540A6ED729",
@@ -810,7 +841,8 @@
       "reserve1": "325606996803070643706536059",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xd2d670C91d14d9AbcCA7749f65e3181b2124e12d",
@@ -835,7 +867,8 @@
       "reserve1": "13016487168297446816917407",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xe81269AA26Cf6e645825A742DE75A027d4DC15D4",
@@ -860,7 +893,8 @@
       "reserve1": "2000370219262421470542051",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xCe12aE0538f24B3cf37bb362948039A956BdD894",
@@ -885,7 +919,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "133295772813607383139126",
-      "reserve1": "231061790634750988662287"
+      "reserve1": "231061790634750988662287",
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x294799C95eab673d44C37E96CE350Ff9E66E6A70",
@@ -910,7 +945,8 @@
       "reserve1": "193065132629849807549379276",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xBa1963BB6c0D0d60Cea960AA37218d13b69503A1",
@@ -935,7 +971,8 @@
       "reserve1": "2853066580818574664184459",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x12cf9a7818d6b38FD76D1a85731D97D0A04DBadF",
@@ -960,7 +997,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "99015884835919526139070750",
-      "reserve1": "7678690319621061436"
+      "reserve1": "7678690319621061436",
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x6513b587E9592dC1ed90D7B9FaC1D4189273d400",
@@ -985,7 +1023,8 @@
       "reserve1": "63959532860693276670323699",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xA13e3f675794Fcb15413eF0fB120Db22d4b9eC27",
@@ -1010,7 +1049,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "43882219973984420409201",
-      "reserve1": "1264150491"
+      "reserve1": "1264150491",
+      "dexIdentifier": "Hydrex"
     },
     {
       "address": "0x95b9662f58d638b65Ac957ACb1365697c34c832b",
@@ -1035,7 +1075,8 @@
       "reserve1": "7982744927552841410249626",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x9614b1eA284824d61BAd91FAc2cB4165aE28b446",
@@ -1060,7 +1101,8 @@
       "reserve1": "330089712337038172071809620",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x1ec9ab3986Efdac4d31Ecb325E39a4a6A2974E6B",
@@ -1085,7 +1127,8 @@
       "reserve1": "674985737414428753776040",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "QuickSwap"
     },
     {
       "address": "0x7464850CC1cFb54A2223229b77B1BCA2f888D946",
@@ -1110,7 +1153,8 @@
       "reserve1": "19174976111069816931577106",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x6F93d1f8cDAdDc61214c59A2741F2F0271CF6E2C",
@@ -1135,7 +1179,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "52874255393881992933302491",
-      "reserve1": "360946700751130194780480"
+      "reserve1": "360946700751130194780480",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x3dA7a82535f18772daD2f9e7D9C58e30E4241088",
@@ -1160,7 +1205,8 @@
       "reserve1": "422696021789849421491508",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xF3E7E359b75a7223BA9D71065C57DDd4F5D8747e",
@@ -1185,7 +1231,8 @@
       "reserve1": "226453983347455275198584",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xeb3458046d3aA2fdbBbF4FEe58C755744ec42ce2",
@@ -1210,7 +1257,8 @@
       "reserve1": "56353270904960143806068",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xEdBB53445B0Ff73852AB86C3605b3426CF9123c7",
@@ -1235,7 +1283,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "18427686806489057288838",
-      "reserve1": "1220888245625320347043"
+      "reserve1": "1220888245625320347043",
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x0e555c9c62A08Fb21E93CB8F7b71ffA52aa5E5cb",
@@ -1260,7 +1309,8 @@
       "reserve1": "227144931743336869465523",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x849736a0bd70ce72A0802A09FCE8DA9e2718583F",
@@ -1285,7 +1335,8 @@
       "reserve1": "158926544465175569064985840",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x19C3c7EEfb070EE00ddE367A9768De1DF52cbE5d",
@@ -1310,7 +1361,8 @@
       "reserve1": "58235314377453602081254366",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x8fe8145564FB355De820a04d1D5cdd84c360ed14",
@@ -1335,7 +1387,8 @@
       "reserve1": "160524792932428795886099068",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x7F85E0C38Ba63F7236117472Fa71faf655769C8A",
@@ -1360,7 +1413,8 @@
       "reserve1": "77214726349",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "BaseSwap"
     },
     {
       "address": "0x55f3b570A62A346e98D88E20A36CC41c5da69980",
@@ -1385,7 +1439,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "155472906433437844072235414511",
-      "reserve1": "3663945385648325170"
+      "reserve1": "3663945385648325170",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xd79Ef386f26E40B5e60e4aeB324F2678F6eBbF49",
@@ -1410,7 +1465,8 @@
       "reserve1": "6557518324889378137",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xe9B0A6bc01B9b4eE44C7B012EC7d5A5EEAcc40df",
@@ -1435,7 +1491,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "707435891502487555430317",
-      "reserve1": "9043305569"
+      "reserve1": "9043305569",
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x79E83b8419c8f6af03829C344ab71ba9f8823327",
@@ -1460,7 +1517,8 @@
       "reserve1": "225522958759895895",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xbbAaA1c0bDa7A491ef39b133bDD8673e98904EB0",
@@ -1485,7 +1543,8 @@
       "reserve1": "82386798405675311588155915",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x6a50f42882Df3D1D3BDFf40dFAD03e9D7F2d5D08",
@@ -1510,7 +1569,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "62520546499515302891200",
-      "reserve1": "126285520789279460171904818"
+      "reserve1": "126285520789279460171904818",
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x76a66e9A9F4D31Ce2eB89585FcF0b5d7701D36a7",
@@ -1535,7 +1595,8 @@
       "reserve1": "3008378109666028505",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xFF5375BD65056DBe6119256FC3bE2eb0fFA8a840",
@@ -1560,7 +1621,8 @@
       "reserve1": "22382559729649526009",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SushiSwapV3"
     },
     {
       "address": "0x3667af77FF1481aca513d2C97A32C0ac31ba813D",
@@ -1585,7 +1647,8 @@
       "reserve1": "107952405682",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x10eA4FC84b3ba9e0D6A7c26c6dA0e98B81038D9d",
@@ -1610,7 +1673,8 @@
       "reserve1": "287471858442852349065004",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xE4faa73134C66832c272f067adC401f0963A9D7a",
@@ -1635,7 +1699,8 @@
       "reserve1": "139233386316668402877636552",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x7d8D5B295904AEB80BBE25109250B74C392ae597",
@@ -1660,7 +1725,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "20688761130622047703050",
-      "reserve1": "319877322161065488236737885"
+      "reserve1": "319877322161065488236737885",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x24dFbc9e3eEDA5A4d5C8851eD4E656d306815498",
@@ -1685,7 +1751,8 @@
       "reserve1": "355012737322493181452505470",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x30Ec7B2f5be26d03D20AC86554dAadD2b738CA0F",
@@ -1710,7 +1777,8 @@
       "reserve1": "8615385221069582228534693",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xb407763A30ec03921C5518812B48d891293d5384",
@@ -1735,7 +1803,8 @@
       "reserve1": "437769459993080517",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x0dE3Ce0C23cEB3108CAb1472153fa5e2Eb674F46",
@@ -1760,7 +1829,8 @@
       "reserve1": "115808046172767108014795771",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x82d7472559414164F01e05A90f1cf487BFc96B46",
@@ -1785,7 +1855,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "92637244330",
-      "reserve1": "52713344515269463020534636"
+      "reserve1": "52713344515269463020534636",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xcAD535f733AC903F66F1Ec6468cdebc840Fc2632",
@@ -1810,7 +1881,8 @@
       "reserve1": "701124616753709314147415",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xF5A85420e4ffC5b464321264d253dd05F9b45a55",
@@ -1835,7 +1907,8 @@
       "reserve1": "311560480687494404212373865",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xaAD3B9047DCa4D5565471a3CCE2767c56535ec65",
@@ -1860,7 +1933,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "7157533792145949645",
-      "reserve1": "316437907626528087255236"
+      "reserve1": "316437907626528087255236",
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x306B7e51db2026C0aec193371dFfC1DeC03366dd",
@@ -1885,7 +1959,8 @@
       "reserve1": "369641689395660036267460375",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x7039510F65c43cdb76b29D3451d0955731a1D787",
@@ -1910,7 +1985,8 @@
       "reserve1": "387359842157251682935438999",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x7C36577aEC1d99d9b872b7075bD86C8F1334EcF2",
@@ -1935,7 +2011,8 @@
       "reserve1": "207988899307228850044560",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x8E6A3D89fb87Af555E994E609D19D2BdBC555e5c",
@@ -1960,7 +2037,8 @@
       "reserve1": "171331849350076750666529181",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xdEBabD6Ea3C380d20052cD206F12cAc12EdF6E36",
@@ -1985,7 +2063,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "114352252932723278433689",
-      "reserve1": "54451494831296232616656037"
+      "reserve1": "54451494831296232616656037",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x909a388242305B67ad91e285A1681b70fa1Db3a0",
@@ -2010,7 +2089,8 @@
       "reserve1": "6298666704523778854582",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x71c43Ad8641edC57B59C2B06C76efACf7AD8a758",
@@ -2035,7 +2115,8 @@
       "reserve1": "118201441767733678854473443",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x437846Bee5e09A17d4fd944e97fD29a54c30Ed7f",
@@ -2060,7 +2141,8 @@
       "reserve1": "4675260411372122942338584",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x16f7e8199B46Ff86D33be983Ee6c642d9c14A5ae",
@@ -2085,7 +2167,8 @@
       "reserve1": "1256236616244461262917362",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x49B346e9b19320E91Cf67cd48b9abC3300cAB138",
@@ -2110,7 +2193,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "72164840747817139803246",
-      "reserve1": "158269275124276814814803490"
+      "reserve1": "158269275124276814814803490",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x3a9d68999992639A38A7b70B7B554a25e47BE306",
@@ -2135,7 +2219,8 @@
       "reserve1": "255326828659395286967132214",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xcb7f520d18141E36956fE0b3A6Bc3D4F11245521",
@@ -2160,7 +2245,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "3430939906590207045728796",
-      "reserve1": "178770422659"
+      "reserve1": "178770422659",
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xf255aACb43686CD9DEa8AE1E60fBA9D537616750",
@@ -2185,7 +2271,8 @@
       "reserve1": "3448220212",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Leetswap"
     },
     {
       "address": "0x9A0b05F3cF748A114A4f8351802b3BFfE07100D4",
@@ -2210,7 +2297,8 @@
       "reserve1": "1189290594",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "BaseSwap"
     },
     {
       "address": "0x6D5dF1d155d79279ABD65A98815F7853C2b3a005",
@@ -2235,7 +2323,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "148576847082103785341340",
-      "reserve1": "64540303735582743143007988"
+      "reserve1": "64540303735582743143007988",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x7b4bB1742B6F77f922e43f009139D52cB4F90FdD",
@@ -2260,7 +2349,8 @@
       "reserve1": "193884327457279604150776485615",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x4C1453376952F899365d295c716aaA1010B8FEaa",
@@ -2285,7 +2375,8 @@
       "reserve1": "8430327904846890854928059",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x7A082d9c2B2f2dD0C1EAeA62A984A2142965cCF4",
@@ -2310,7 +2401,8 @@
       "reserve1": "113198721494669649790667676414",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xDF74DA9615e0f7f38D14b64d945cd45d600781aa",
@@ -2335,7 +2427,8 @@
       "reserve1": "2462192022672141219",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x26456F7586f910F6C89EaafE53EF96AB237D4A09",
@@ -2360,7 +2453,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "203685353853860240438192",
-      "reserve1": "1158026866690944371"
+      "reserve1": "1158026866690944371",
+      "dexIdentifier": "Leetswap"
     },
     {
       "address": "0x7E5c0a14aA2Af95757D12bA1aa89b165B4304171",
@@ -2385,7 +2479,8 @@
       "reserve1": "155083732833894214952309534472",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xfdcbf4764aEAa9A576Ad975E8677270027bcd617",
@@ -2410,7 +2505,8 @@
       "reserve1": "20980130224566602559831188",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xC1C607e3a02336f8890DB47Ff5658C9B453A0da2",
@@ -2435,7 +2531,8 @@
       "reserve1": "327818006500092292",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0xeE43bBB976A4f28cac5610ee965850d30451538b",
@@ -2460,7 +2557,8 @@
       "reserve1": "514568039125377306190254180",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x9bE22deD19368f6959e954268b43e4fA74FA25d0",
@@ -2485,7 +2583,8 @@
       "reserve1": "75255842997733348763154865",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x5554419CCd0293d9383901F461C7C3E0c66E925F",
@@ -2510,7 +2609,8 @@
       "reserve1": "19629096373286184790414163318",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x15B15841DEE3DFf237bF1Db857F3c8c1f9D3B50B",
@@ -2535,7 +2635,8 @@
       "reserve1": "7581883184208629898312543",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xC0CEcFA3C686d6CE20EbCE91f8d35356eB6BAecD",
@@ -2560,7 +2661,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "37802605504",
-      "reserve1": "7055009697359688883566"
+      "reserve1": "7055009697359688883566",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x324975A77a84cf34d819D5B753281A13AC029109",
@@ -2585,7 +2687,8 @@
       "reserve1": "2229498292461563871690995",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x8948ec41c1dE8ff7b3370b65052cfDb21F3f75d0",
@@ -2610,7 +2713,8 @@
       "reserve1": "1463293634341430939467166793",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x0ef3c117D6369a382bC24C05C9F2bae598b0208D",
@@ -2635,7 +2739,8 @@
       "reserve1": "134708679178",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x6B33014e5f7ded23FdC60F2255352D40027842a5",
@@ -2660,7 +2765,8 @@
       "lastUpdated": 1769420746705,
       "isActive": true,
       "reserve0": "18527942132450919798",
-      "reserve1": "912721930127082147482120733"
+      "reserve1": "912721930127082147482120733",
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x1c2A29861a976D6Dc3f4312148B200cc5e5C37f4",
@@ -2685,7 +2791,8 @@
       "reserve1": "32845110774886216233062358324",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SushiSwapV3"
     },
     {
       "address": "0xDcEA286D38F5ff4953F30522cF90605fA8311567",
@@ -2710,7 +2817,8 @@
       "reserve1": "7262859916692812048",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x1c377683C82Bc0F335Bf1270F966C8240D8452B9",
@@ -2735,7 +2843,8 @@
       "reserve1": "418578659009814868991991885",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xD22586e6F068718Fb92B7EECfC0A2c918E7b9a70",
@@ -2760,7 +2869,8 @@
       "reserve1": "180855476638659",
       "blockNumber": 0,
       "lastUpdated": 1769417464119,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x870F9783501f79f66eecb19fa97F4BABf630b2A3",
@@ -2785,7 +2895,8 @@
       "reserve1": "29339179190680646563",
       "blockNumber": 0,
       "lastUpdated": 1769417464120,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xec8995B9f8A9f7B369C93733fa2667A2e09fA7De",
@@ -2810,7 +2921,8 @@
       "reserve1": "181650972041762232539207880",
       "blockNumber": 0,
       "lastUpdated": 1769417464120,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x16905890A1D02b6F824387419319Bf4188B961b0",
@@ -2835,7 +2947,8 @@
       "reserve1": "86878305470310738634203566",
       "blockNumber": 0,
       "lastUpdated": 1769417464120,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0x0f3027d68FE4E2A56860D7B18b3D80CAe8d716D1",
@@ -2860,7 +2973,8 @@
       "reserve1": "340298580613995461278753",
       "blockNumber": 0,
       "lastUpdated": 1769417464120,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "Aerodrome"
     },
     {
       "address": "0x08C03A6B5D51A8915bAe08A0F182Dab6fB2c059b",
@@ -2885,7 +2999,8 @@
       "reserve1": "8204464316293158971869960054606",
       "blockNumber": 0,
       "lastUpdated": 1769417464120,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "UniswapV2"
     },
     {
       "address": "0xeF24722d5daE32Dc155d961561cFFbc5f347EeE7",
@@ -2909,7 +3024,8 @@
       "reserve1": "2691283067",
       "blockNumber": 0,
       "lastUpdated": 1769436352765,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xAcBFF2Edbcf8089AdeC9706FF3cB6DF2502A30E1",
@@ -2933,7 +3049,8 @@
       "reserve1": "71203634",
       "blockNumber": 0,
       "lastUpdated": 1769436352876,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
@@ -2957,7 +3074,8 @@
       "reserve1": "171309507438134905011",
       "blockNumber": 0,
       "lastUpdated": 1769436352986,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x2c749Ea7DE86752730f2eD15b971e9Dc77e0C5e5",
@@ -2981,7 +3099,8 @@
       "reserve1": "7033045941118",
       "blockNumber": 0,
       "lastUpdated": 1769436353120,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xA6fAD5147DE3bde82618934BBDa72Be343F5C43B",
@@ -3005,7 +3124,8 @@
       "reserve1": "2630168850056860247662",
       "blockNumber": 0,
       "lastUpdated": 1769436353229,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xA5a22a91c63721197b827008CF8a6325026E7Ee3",
@@ -3029,7 +3149,8 @@
       "reserve1": "6324013728459244840481",
       "blockNumber": 0,
       "lastUpdated": 1769436353339,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x98eEc29CC78c79C834Ef0dB83459df7ce86feFE7",
@@ -3053,7 +3174,8 @@
       "reserve1": "274384077480694",
       "blockNumber": 0,
       "lastUpdated": 1769436353618,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x0AB6455C2a013F06908c60deE211EFb02978466d",
@@ -3077,7 +3199,8 @@
       "reserve1": "864723146501413721343",
       "blockNumber": 0,
       "lastUpdated": 1769436353730,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x7c1651c94718e15d1fc649853F33A3545081295E",
@@ -3101,7 +3224,8 @@
       "reserve1": "77040640951911946531",
       "blockNumber": 0,
       "lastUpdated": 1769436353843,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x553666081db0a8fdB337560009932852059d589A",
@@ -3125,7 +3249,8 @@
       "reserve1": "4701100187",
       "blockNumber": 0,
       "lastUpdated": 1769436353971,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xd97a40434627D5c897790DE9a3d2E577Cba5F2E0",
@@ -3149,7 +3274,8 @@
       "reserve1": "66913757",
       "blockNumber": 0,
       "lastUpdated": 1769436354116,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xca9E03f823b288d5d30Df4676daa9FB4D15D5e31",
@@ -3173,7 +3299,8 @@
       "reserve1": "3133925876078018137078",
       "blockNumber": 0,
       "lastUpdated": 1769436354236,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xf600046331948d015Ec32B54ba90b72e5C334B58",
@@ -3197,7 +3324,8 @@
       "reserve1": "17049603922787",
       "blockNumber": 0,
       "lastUpdated": 1769436354484,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xa666fc036939b5Fdf25cBAe0F3550bF3D8050c2D",
@@ -3221,7 +3349,8 @@
       "reserve1": "317193816462700848833383",
       "blockNumber": 0,
       "lastUpdated": 1769436354592,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xa8D5268F55C86451EaFdc2a66F6cd744b05CAA94",
@@ -3245,7 +3374,8 @@
       "reserve1": "62619699",
       "blockNumber": 0,
       "lastUpdated": 1769436354700,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x8a208534b1da66AD5c45B8CcfE061c221c17B705",
@@ -3269,7 +3399,8 @@
       "reserve1": "73006182680481",
       "blockNumber": 0,
       "lastUpdated": 1769436354821,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xCeD7A742b704e0F6A4691f92F57694b7B41350Eb",
@@ -3293,7 +3424,8 @@
       "reserve1": "55278657",
       "blockNumber": 0,
       "lastUpdated": 1769436354932,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x53eea1f41B75d3590530B1e11d3A8Ac197b8F5B1",
@@ -3317,7 +3449,8 @@
       "reserve1": "785111461",
       "blockNumber": 0,
       "lastUpdated": 1769436355038,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xe8387583C30EB38325ed7843f84EC0eeD4eB54cA",
@@ -3341,7 +3474,8 @@
       "reserve1": "2605697194852389",
       "blockNumber": 0,
       "lastUpdated": 1769436355152,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xB4A9960b23D056E8B42c6EDBEe7407cF92695223",
@@ -3365,7 +3499,8 @@
       "reserve1": "606168715",
       "blockNumber": 0,
       "lastUpdated": 1769436355266,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xd4284153A469535ad5Aa9C9dAbED6cBBDE18Dbe0",
@@ -3389,7 +3524,8 @@
       "reserve1": "443816012062552",
       "blockNumber": 0,
       "lastUpdated": 1769436355379,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x2aD38F88731B7e31819D0caC258D958f954ABA74",
@@ -3413,7 +3549,8 @@
       "reserve1": "49705013",
       "blockNumber": 0,
       "lastUpdated": 1769436355486,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x705758a881827A9466b8293723EB6AE92EfE8FA1",
@@ -3437,7 +3574,8 @@
       "reserve1": "77216253133898680803",
       "blockNumber": 0,
       "lastUpdated": 1769436355600,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xc565B73eef31A3048b09Fa16b7B624F2FABcEea4",
@@ -3461,7 +3599,8 @@
       "reserve1": "576425188711304306887",
       "blockNumber": 0,
       "lastUpdated": 1769436355712,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xc9d0708440e85Ee2a80Db500F02F34c2AD81104A",
@@ -3485,7 +3624,8 @@
       "reserve1": "0",
       "blockNumber": 0,
       "lastUpdated": 1769436355838,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x0112AFAacF69b12995f5995Fb95eA4a41a07CA41",
@@ -3509,7 +3649,8 @@
       "reserve1": "0",
       "blockNumber": 0,
       "lastUpdated": 1769436355953,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x97AD20B3E05756ADF3C6Ab23C0BB0Ca734ca585B",
@@ -3533,7 +3674,8 @@
       "reserve1": "2910367",
       "blockNumber": 0,
       "lastUpdated": 1769436356069,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x8Cf50D1581B801168a4F9Ff1AE087e78D03beD5b",
@@ -3557,7 +3699,8 @@
       "reserve1": "123875",
       "blockNumber": 0,
       "lastUpdated": 1769436356181,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xcD9FeD1EFaD96D2AEbe8f5D4f663c14e42A9D027",
@@ -3581,7 +3724,8 @@
       "reserve1": "0",
       "blockNumber": 0,
       "lastUpdated": 1769436356366,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xbC09b31F5d2Eb1DCFa5832F37D895DC00324FEC4",
@@ -3605,7 +3749,8 @@
       "reserve1": "0",
       "blockNumber": 0,
       "lastUpdated": 1769436356496,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xBe74bC255BfA6026b4465AC549ada8f1999f9e92",
@@ -3629,7 +3774,8 @@
       "reserve1": "856564",
       "blockNumber": 0,
       "lastUpdated": 1769436356680,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xcEFf031c70b90EFD5668a32A5CEeFa3486b0F390",
@@ -3653,7 +3799,8 @@
       "reserve1": "15661",
       "blockNumber": 0,
       "lastUpdated": 1769436356790,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x6C15F130217143Fd3f870D4451457C617ac9A632",
@@ -3677,7 +3824,8 @@
       "reserve1": "7732641",
       "blockNumber": 0,
       "lastUpdated": 1769436356903,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x29191267859e2BF43F272E9Fb7Cc4fB24753521e",
@@ -3701,7 +3849,8 @@
       "reserve1": "1021088915290310502019340",
       "blockNumber": 0,
       "lastUpdated": 1769436357011,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x269996376C5643F10cE1DeE87349A709f59Af311",
@@ -3725,7 +3874,8 @@
       "reserve1": "12244320892651019622931897",
       "blockNumber": 0,
       "lastUpdated": 1769436357128,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x8e2dFfC51E854167FEfD60bC8405D19aE0709700",
@@ -3749,7 +3899,8 @@
       "reserve1": "0",
       "blockNumber": 0,
       "lastUpdated": 1769436357273,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x7236dbdbCc5df3E115920Ed22A7C657614f5c552",
@@ -3773,7 +3924,8 @@
       "reserve1": "11461034712476229801",
       "blockNumber": 0,
       "lastUpdated": 1769436357390,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x6E310a62a9a56a6533a93004Be1Df3004Fcd4d74",
@@ -3797,7 +3949,8 @@
       "reserve1": "102746726297803925699652030349",
       "blockNumber": 0,
       "lastUpdated": 1769436357498,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x116d395F825Fa469165F3720f0d927de9A1471F2",
@@ -3821,7 +3974,8 @@
       "reserve1": "733800",
       "blockNumber": 0,
       "lastUpdated": 1769436357623,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xd887FB77310606FfBeD94Aaaa53d8F18508bd788",
@@ -3845,7 +3999,8 @@
       "reserve1": "0",
       "blockNumber": 0,
       "lastUpdated": 1769436357979,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x49321aB3d91b59aEb9781EA17B7C80b80805Faea",
@@ -3869,7 +4024,8 @@
       "reserve1": "49759285832034480",
       "blockNumber": 0,
       "lastUpdated": 1769436358091,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x270891EdCC2d700EAFe717352469cfc750dEe899",
@@ -3893,7 +4049,8 @@
       "reserve1": "95983732739542953270",
       "blockNumber": 0,
       "lastUpdated": 1769436358195,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xEEb3329b62DF6d201BEE01eb5204C2DddE49e81b",
@@ -3917,7 +4074,8 @@
       "reserve1": "29601364492854862680026",
       "blockNumber": 0,
       "lastUpdated": 1769436358300,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xe3BAAD52db6634bD3b983b79b3cA6B5c4f78a793",
@@ -3941,7 +4099,8 @@
       "reserve1": "767626580420457",
       "blockNumber": 0,
       "lastUpdated": 1769436358404,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xa177c647B4304d1B5F3dC6Ae68936A22e346aeF9",
@@ -3965,7 +4124,8 @@
       "reserve1": "240068505109376756",
       "blockNumber": 0,
       "lastUpdated": 1769436358517,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x6a589A8d83e0C528c8066878Fe2217A0E59d6123",
@@ -3989,7 +4149,8 @@
       "reserve1": "4",
       "blockNumber": 0,
       "lastUpdated": 1769436358625,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xf577e6A3FF6EDF48D8b2a7ed03669016b4F1EbbF",
@@ -4013,7 +4174,8 @@
       "reserve1": "113107336802973285",
       "blockNumber": 0,
       "lastUpdated": 1769436358746,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0xE4a09f92907eFaF9DA6B59809fe74EDe8EA35B49",
@@ -4037,7 +4199,8 @@
       "reserve1": "40",
       "blockNumber": 0,
       "lastUpdated": 1769436358868,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "AlienBase"
     },
     {
       "address": "0x341f1F578C20A520CA36066eF291a53a43c3e026",
@@ -4061,7 +4224,8 @@
       "reserve1": "4048391077238",
       "blockNumber": 0,
       "lastUpdated": 1769436366384,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xAca85874D52e3e6d991f9E0b273a96228EDfeE7B",
@@ -4085,7 +4249,8 @@
       "reserve1": "841547302",
       "blockNumber": 0,
       "lastUpdated": 1769436366611,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x185FA4f0D809D0F49aEA71b6E768C1832238967F",
@@ -4109,7 +4274,8 @@
       "reserve1": "628876607574214",
       "blockNumber": 0,
       "lastUpdated": 1769436366725,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xBB2a2D17685C3BC71562A87fA4f66F68999F59c7",
@@ -4133,7 +4299,8 @@
       "reserve1": "655417598216801",
       "blockNumber": 0,
       "lastUpdated": 1769436366837,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x153bA6ADa7143E621c6A85FA44F2EAc29a364D4A",
@@ -4157,7 +4324,8 @@
       "reserve1": "9735262",
       "blockNumber": 0,
       "lastUpdated": 1769436366951,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x0C9Da2717cfC1f901aD528227a5eBF5391CB95C5",
@@ -4181,7 +4349,8 @@
       "reserve1": "1832553981803957",
       "blockNumber": 0,
       "lastUpdated": 1769436367062,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x7De9A66582bDC0CeFE3C90dFcb21B8370648532A",
@@ -4205,7 +4374,8 @@
       "reserve1": "4220630116796413127337",
       "blockNumber": 0,
       "lastUpdated": 1769436367165,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x95cba35fdD0c2aE031165642ec60C8290838AF68",
@@ -4229,7 +4399,8 @@
       "reserve1": "85112394108861169741275",
       "blockNumber": 0,
       "lastUpdated": 1769436367273,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xDD410e381EAa63937cc9c2e633D623BaEFb5D45d",
@@ -4253,7 +4424,8 @@
       "reserve1": "2558276131165",
       "blockNumber": 0,
       "lastUpdated": 1769436367387,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x9dC64105f9F319dC973106521edC40FA012186e4",
@@ -4277,7 +4449,8 @@
       "reserve1": "479967057176",
       "blockNumber": 0,
       "lastUpdated": 1769436367492,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x9Ab499BDD89Bba6cC3349a1EC0dbB5F21c19E70a",
@@ -4301,7 +4474,8 @@
       "reserve1": "25150448639079426396761534",
       "blockNumber": 0,
       "lastUpdated": 1769436367903,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xF62B3360a301e8bd5013c079AF7321ea1343F573",
@@ -4325,7 +4499,8 @@
       "reserve1": "6388729924937270087",
       "blockNumber": 0,
       "lastUpdated": 1769436368087,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x35d9B207880Fd13c58C746313ee199c99620Cf30",
@@ -4349,7 +4524,8 @@
       "reserve1": "2237",
       "blockNumber": 0,
       "lastUpdated": 1769436368195,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x9F60F1027aAb2eDf59a188c2b922d662b668Fc6b",
@@ -4373,7 +4549,8 @@
       "reserve1": "1072777382507521",
       "blockNumber": 0,
       "lastUpdated": 1769436368300,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x8332D3D0aEaEC18E3749864C0748546f65ABd72B",
@@ -4397,7 +4574,8 @@
       "reserve1": "2717640",
       "blockNumber": 0,
       "lastUpdated": 1769436368419,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xbB575de2253524961D1877B3F8453BC55ea5E015",
@@ -4421,7 +4599,8 @@
       "reserve1": "16418643801910664",
       "blockNumber": 0,
       "lastUpdated": 1769436368529,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xf98AE7818C4ddD99fd28f5527ca843FFf8A56969",
@@ -4445,7 +4624,8 @@
       "reserve1": "557039704065019274871622",
       "blockNumber": 0,
       "lastUpdated": 1769436368643,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xE794419Cf047EA7F648A9E8c487c0790b2Dc2238",
@@ -4469,7 +4649,8 @@
       "reserve1": "294397399591",
       "blockNumber": 0,
       "lastUpdated": 1769436368748,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x7Fe24b9b12965B860178758Ac445242a727b259d",
@@ -4493,7 +4674,8 @@
       "reserve1": "178599318",
       "blockNumber": 0,
       "lastUpdated": 1769436368862,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x86cd030822547105Bd7952AF4ba48534640A3824",
@@ -4517,7 +4699,8 @@
       "reserve1": "8012532437",
       "blockNumber": 0,
       "lastUpdated": 1769436368968,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x511BfF63220C383795A94F6b401E5191A94bFd37",
@@ -4541,7 +4724,8 @@
       "reserve1": "417404575250",
       "blockNumber": 0,
       "lastUpdated": 1769436369083,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x34Dee78D885A987d7139b2d44CAcF1e7aE8c31eF",
@@ -4565,7 +4749,8 @@
       "reserve1": "367800670695647704348386",
       "blockNumber": 0,
       "lastUpdated": 1769436369193,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x18D7EEb9B63664c06251dd8141eC1D0c14f0C012",
@@ -4589,7 +4774,8 @@
       "reserve1": "104974924273496205909",
       "blockNumber": 0,
       "lastUpdated": 1769436369303,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x2C94bEE3DF554F40Bc804048DE618505e67Bb25c",
@@ -4613,7 +4799,8 @@
       "reserve1": "797097730272792624",
       "blockNumber": 0,
       "lastUpdated": 1769436369407,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x54317d9560074e7F59dB20d7ac5E555B84AF61bb",
@@ -4637,7 +4824,8 @@
       "reserve1": "447828970582",
       "blockNumber": 0,
       "lastUpdated": 1769436369526,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x33587D41F956AAEC739A79aB174B1e66C3B2371C",
@@ -4661,7 +4849,8 @@
       "reserve1": "25851208811",
       "blockNumber": 0,
       "lastUpdated": 1769436369642,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xE0Ef520F053da9Ca2956345207b0621674521936",
@@ -4685,7 +4874,8 @@
       "reserve1": "66862797539450",
       "blockNumber": 0,
       "lastUpdated": 1769436369765,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x5Aa3Df66c2bB999261BF1B4c22ce0BF9555bcde4",
@@ -4709,7 +4899,8 @@
       "reserve1": "1000000000000000000",
       "blockNumber": 0,
       "lastUpdated": 1769436369898,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x4E68847F69B50F307aABF47044d0E86a16f8DA81",
@@ -4733,7 +4924,8 @@
       "reserve1": "1006027105667644272",
       "blockNumber": 0,
       "lastUpdated": 1769436370008,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x23F5B51a3ef84E6edf081b56C6d6c08BCa27B4B1",
@@ -4757,7 +4949,8 @@
       "reserve1": "1000000000000000000",
       "blockNumber": 0,
       "lastUpdated": 1769436370114,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xe732Ca0f34703eaF823Ff63c30E25E5aEeb61533",
@@ -4781,7 +4974,8 @@
       "reserve1": "2834173733949459627689",
       "blockNumber": 0,
       "lastUpdated": 1769436370238,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x7b5fFdbe899482Da81EB1204c055152e80C8fe86",
@@ -4805,7 +4999,8 @@
       "reserve1": "5218743",
       "blockNumber": 0,
       "lastUpdated": 1769436370346,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x407c4133779Bc5787608B5fa15812e519bb97740",
@@ -4829,7 +5024,8 @@
       "reserve1": "280108139805862798102",
       "blockNumber": 0,
       "lastUpdated": 1769436370455,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x164Bc404c64FA426882D98dBcE9B10d5df656EeD",
@@ -4853,7 +5049,8 @@
       "reserve1": "8395033715",
       "blockNumber": 0,
       "lastUpdated": 1769436370569,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x282f9231E5294E7354744df36461c21e0E68061C",
@@ -4877,7 +5074,8 @@
       "reserve1": "425873888",
       "blockNumber": 0,
       "lastUpdated": 1769436370675,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xc22752abFB9E7388F08d094A7f57d1aFDEB6Bb86",
@@ -4901,7 +5099,8 @@
       "reserve1": "134374",
       "blockNumber": 0,
       "lastUpdated": 1769436370787,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xF16d5d2D1E78b69a9602F9b1852433a8701F5a8b",
@@ -4925,7 +5124,8 @@
       "reserve1": "1000000000000000000",
       "blockNumber": 0,
       "lastUpdated": 1769436370900,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x0d73D788428A58D1cd35A9f9d2529121BeC80CAC",
@@ -4949,7 +5149,8 @@
       "reserve1": "1006027105990557773",
       "blockNumber": 0,
       "lastUpdated": 1769436371006,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xc551aDb3F90d4409DDF6f6872caB7764d1a89834",
@@ -4973,7 +5174,8 @@
       "reserve1": "405377907677791881070",
       "blockNumber": 0,
       "lastUpdated": 1769436371123,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x56fb9d8C3c84Dd0C4Bb59a157E24a882ddAb519A",
@@ -4997,7 +5199,8 @@
       "reserve1": "1855436666803293191",
       "blockNumber": 0,
       "lastUpdated": 1769436371240,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x0491cc08528bB2E901CD48F12a0CAb833c7203f0",
@@ -5021,7 +5224,8 @@
       "reserve1": "200672809506838733",
       "blockNumber": 0,
       "lastUpdated": 1769436371366,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x3E1ee013C5A68f153Ef924d3ed51a2CFff2fb8CF",
@@ -5045,7 +5249,8 @@
       "reserve1": "334168252712736105",
       "blockNumber": 0,
       "lastUpdated": 1769436371479,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x2B1F57dab1944e5A6E36e6E0Ae3490A98d2f94b3",
@@ -5069,7 +5274,8 @@
       "reserve1": "95681819676846615",
       "blockNumber": 0,
       "lastUpdated": 1769436371597,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x1226F40E8F0E2b8570163D0ceCB787f7cF70DF7e",
@@ -5093,7 +5299,8 @@
       "reserve1": "2000000000000000000",
       "blockNumber": 0,
       "lastUpdated": 1769436371929,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xE99CE3272E68A4a723157781Bdb05389Da3d1e3c",
@@ -5117,7 +5324,8 @@
       "reserve1": "1000000000000000000",
       "blockNumber": 0,
       "lastUpdated": 1769436372042,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0x99516a9A42116f0c23E586E32d482031f87048Ec",
@@ -5141,7 +5349,8 @@
       "reserve1": "1000000000000000000",
       "blockNumber": 0,
       "lastUpdated": 1769436372155,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xA5AC19666c1E1766B6F80069A90D2A74246520FB",
@@ -5165,7 +5374,8 @@
       "reserve1": "126491107",
       "blockNumber": 0,
       "lastUpdated": 1769436372265,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xd5334Da78A2bFf9763323B864cC926E0f77cC518",
@@ -5189,7 +5399,8 @@
       "reserve1": "2872966849656822245160724",
       "blockNumber": 0,
       "lastUpdated": 1769436372379,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     },
     {
       "address": "0xB64157715a306Fd40746080675C4b0F67E88a822",
@@ -5213,7 +5424,8 @@
       "reserve1": "91577130847874369988",
       "blockNumber": 0,
       "lastUpdated": 1769436372485,
-      "isActive": true
+      "isActive": true,
+      "dexIdentifier": "SwapBased"
     }
   ]
 }

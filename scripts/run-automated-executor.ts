@@ -2,11 +2,12 @@ import { ethers } from 'ethers';
 import { config } from 'dotenv';
 import fs from 'fs';
 import { FlashLoanExecutor } from '../src/execution/FlashLoanExecutor.js';
+import { PRIVATE_RPC_NODES } from '../src/config/constants.js';
 
 config();
 
 // Configuration
-const RPC_URL = process.env.RPC_URL || 'https://base-rpc.publicnode.com';
+const RPC_URL = process.env.RPC_URL || PRIVATE_RPC_NODES[0];
 const PRIVATE_KEY = process.env.PRIVATE_KEY || '';
 const FLASH_LOAN_CONTRACT = process.env.FLASH_LOAN_CONTRACT || '';
 
@@ -44,10 +45,14 @@ class AutomatedExecutor {
       throw new Error('FLASH_LOAN_CONTRACT not set in environment variables!');
     }
 
+    // Use private RPC by default
+    const executionRPC = process.env.QUICKNODE_RPC || RPC_URL;
+    console.log(`🔗 Using RPC: ${executionRPC}`);
+
     this.executor = new FlashLoanExecutor(
       PRIVATE_KEY,
       FLASH_LOAN_CONTRACT,
-      RPC_URL
+      executionRPC
     );
 
     this.loadConfig();

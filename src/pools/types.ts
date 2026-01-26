@@ -7,6 +7,8 @@ export interface Pool {
   address: string;
   dex: string;
   dexVersion: string;
+  dexType?: string;
+  dexIdentifier?: string;
   token0: TokenInfo;
   token1: TokenInfo;
   fee?: number; // For V3 pools

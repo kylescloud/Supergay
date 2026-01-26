@@ -51,23 +51,29 @@ async function deployFlashLoanContract() {
 
   // Configure DEX routers
   console.log('Configuring DEX routers...');
-  const routers = {
-    uniswapV2Router: '0x4752ba5DBC23f44D87826276BF6Fd6b1C1252c36',
-    uniswapV3Router: '0x33128a8fC17869897dcE68Ed026d694621f6FDfD',
-    aerodromeRouter: '0xcfE90b3E7d4C8b2d11C5115D6240226F2F5fd937',
-    alienBaseRouter: '0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7',
-    swapBasedRouter: '0xaaa3b1F1bd7BCc97fD1917c18ADE665C5D31F066'
-  };
-
-  const tx = await contract.setRouters(
-    routers.uniswapV2Router,
-    routers.uniswapV3Router,
-    routers.aerodromeRouter,
-    routers.alienBaseRouter,
-    routers.swapBasedRouter
+  
+  // First, set original 5 routers
+  const tx1 = await contract.setRouters(
+    '0x4752ba5DBC23f44D87826276BF6Fd6b1C1252c36',  // Uniswap V2
+    '0x33128a8fC17869897dcE68Ed026d694621f6FDfD',  // Uniswap V3
+    '0xcfE90b3E7d4C8b2d11C5115D6240226F2F5fd937',  // Aerodrome
+    '0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7',  // AlienBase
+    '0xaaa3b1F1bd7BCc97fD1917c18ADE665C5D31F066'   // SwapBased
   );
-  await tx.wait();
-  console.log('✅ DEX routers configured!\n');
+  await tx1.wait();
+  console.log('✅ Original 5 DEX routers configured!');
+
+  // Now, set additional 6 routers
+  const tx2 = await contract.setAdditionalRouters(
+    '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',  // SushiSwap V3
+    '0x1b81D678ffb9C0263b24A97847620C99d213eB14',  // PancakeSwap V3
+    '0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24',  // BaseSwap
+    '0xBE6D8f0d05cC4be24d5167a3eF062215bE6D18a5',  // Aerodrome SlipStream
+    '0x51ca29d9828867C363572C37c424E3d6b380c61e',  // Aerodrome SlipStream 2
+    '0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7'   // Hydrex
+  );
+  await tx2.wait();
+  console.log('✅ Additional 6 DEX routers configured!\n');
 
   // Get contract owner
   const owner = await contract.owner();
