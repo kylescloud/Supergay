@@ -20,7 +20,12 @@
     "pools:load:all": "ts-node scripts/load-all-pools-to-registry.ts",
     "pools:discover:factory": "ts-node scripts/discover-all-pools-factory.ts",
     "pools:load:factory": "ts-node scripts/load-factory-pools-to-registry.ts",
-    "pools:test:registry": "ts-node scripts/test-pool-registry.ts"
+    "pools:test:registry": "ts-node scripts/test-pool-registry.ts",
+    "scanner:start": "ts-node scripts/continuous-opportunity-scanner.ts",
+    "executor:start": "ts-node scripts/run-automated-executor.ts",
+    "deploy:enhanced": "ts-node scripts/deploy-flash-loan-contract.ts",
+    "test:scanner": "ts-node scripts/continuous-opportunity-scanner.ts",
+    "test:executor": "ts-node scripts/run-automated-executor.ts"
   },
   "keywords": [
     "arbitrage",

@@ -1,0 +1,18 @@
+{
+  "success": false,
+  "poolsFound": 0,
+  "executionTime": 293,
+  "stats": {
+    "totalRequested": 0,
+    "successful": 0,
+    "failed": 0,
+    "executionTime": 284,
+    "batches": 0,
+    "rpcCalls": 1
+  },
+  "errors": [
+    "Fatal error: could not coalesce error (error={ \"code\": -32011, \"message\": \"no backend is currently healthy to serve traffic\" }, payload={ \"id\": 4, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"address\": \"0x498581ff718922c3f8e6a244956af099b2652b2b\", \"fromBlock\": \"0x0\", \"toBlock\": \"0x275929b\", \"topics\": [ \"0x9e2343761197ce8e9b364319385cec7c3aa93ce6c5b079fe0dc1a96d47e0b823\" ] } ] }, code=UNKNOWN_ERROR, version=6.16.0)"
+  ],
+  "pools": [],
+  "timestamp": "2026-01-25T02:38:19.178Z"
+}

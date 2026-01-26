@@ -41,6 +41,11 @@ export class AerodromeFetcher {
     this.provider = provider;
     this.multicall = new Multicall(provider);
     this.config = config;
+    
+    if (!config.factory) {
+      throw new Error(`Factory address is required for ${config.name}`);
+    }
+    
     this.factory = new ethers.Contract(config.factory, AERODROME_FACTORY_ABI, provider);
   }
 

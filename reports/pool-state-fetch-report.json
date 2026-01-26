@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-01-26T14:03:07.055Z",
+  "totalPools": 380,
+  "poolsMissingState": 265,
+  "stateRetrieval": {
+    "success": 0,
+    "failed": 265,
+    "successRate": "0.0%"
+  },
+  "errors": {
+    "could not decode result data": 75,
+    "execution reverted": 190
+  },
+  "recommendations": [
+    "Low success rate - investigate RPC or pool issues",
+    "Many pools may be inactive or have contract problems",
+    "Consider pruning registry to remove inactive pools"
+  ]
+}

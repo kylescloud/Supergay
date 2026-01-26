@@ -1,0 +1,50 @@
+{
+  "timestamp": "2026-01-26T11:41:42.323Z",
+  "totalDuration": 12952,
+  "poolCount": 115,
+  "summary": {
+    "totalScans": 6,
+    "successfulScans": 0,
+    "failedScans": 0,
+    "totalOpportunities": 0,
+    "avgScanTime": 154.5
+  },
+  "results": [
+    {
+      "token": "WETH",
+      "amount": 1,
+      "opportunities": [],
+      "scanDuration": 257
+    },
+    {
+      "token": "WETH",
+      "amount": 5,
+      "opportunities": [],
+      "scanDuration": 138
+    },
+    {
+      "token": "WETH",
+      "amount": 10,
+      "opportunities": [],
+      "scanDuration": 136
+    },
+    {
+      "token": "USDC",
+      "amount": 1,
+      "opportunities": [],
+      "scanDuration": 129
+    },
+    {
+      "token": "USDC",
+      "amount": 5,
+      "opportunities": [],
+      "scanDuration": 136
+    },
+    {
+      "token": "USDC",
+      "amount": 10,
+      "opportunities": [],
+      "scanDuration": 131
+    }
+  ]
+}

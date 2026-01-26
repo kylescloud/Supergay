@@ -1,0 +1,52 @@
+{
+  "aerodrome": {
+    "success": false,
+    "pools": [],
+    "errors": [
+      "Fatal error: execution reverted (no data present; likely require(false) occurred (action=\"call\", data=\"0x\", reason=\"require(false)\", transaction={ \"data\": \"0x574f2ba3\", \"to\": \"0x420DD381b31aEf6683db6B902084cB0FFECe40Da\" }, invocation=null, revert=null, code=CALL_EXCEPTION, version=6.16.0)"
+    ],
+    "stats": {
+      "totalRequested": 0,
+      "successful": 0,
+      "failed": 0,
+      "executionTime": 178,
+      "batches": 0,
+      "rpcCalls": 0
+    }
+  },
+  "slipstream": {
+    "success": false,
+    "pools": [],
+    "errors": [
+      "Fatal error: could not coalesce error (error={ \"code\": -32011, \"message\": \"no backend is currently healthy to serve traffic\" }, payload={ \"id\": 5, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"address\": \"0x420dd381b31aef6683db6b902084cb0ffece40da\", \"fromBlock\": \"0x0\", \"toBlock\": \"0x275a59f\", \"topics\": [ \"0x783cca1c0412dd0d695e784568c96da2e9c22ff989357a2e8b1d9b2b4e6b7118\" ] } ] }, code=UNKNOWN_ERROR, version=6.16.0)"
+    ],
+    "stats": {
+      "totalRequested": 0,
+      "successful": 0,
+      "failed": 0,
+      "executionTime": 224,
+      "batches": 0,
+      "rpcCalls": 0
+    }
+  },
+  "slipstream2": {
+    "success": false,
+    "pools": [],
+    "errors": [
+      "Fatal error: could not coalesce error (error={ \"code\": -32011, \"message\": \"no backend is currently healthy to serve traffic\" }, payload={ \"id\": 5, \"jsonrpc\": \"2.0\", \"method\": \"eth_getLogs\", \"params\": [ { \"address\": \"0x420dd381b31aef6683db6b902084cb0ffece40da\", \"fromBlock\": \"0x0\", \"toBlock\": \"0x275a59f\", \"topics\": [ \"0x783cca1c0412dd0d695e784568c96da2e9c22ff989357a2e8b1d9b2b4e6b7118\" ] } ] }, code=UNKNOWN_ERROR, version=6.16.0)"
+    ],
+    "stats": {
+      "totalRequested": 0,
+      "successful": 0,
+      "failed": 0,
+      "executionTime": 1,
+      "batches": 0,
+      "rpcCalls": 0
+    }
+  },
+  "summary": {
+    "totalPools": 0,
+    "totalErrors": 3,
+    "executionTime": 439
+  }
+}

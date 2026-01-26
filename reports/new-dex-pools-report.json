@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-01-26T14:06:20.442Z",
+  "summary": {
+    "previousPools": 115,
+    "newPoolsFetched": 100,
+    "newPoolsAdded": 97,
+    "totalPools": 212,
+    "duplicatesFiltered": 3
+  },
+  "byDEX": {
+    "AlienBase": 50,
+    "SwapBased V2": 50
+  },
+  "benefits": [
+    "Added 97 new pools from AlienBase and SwapBased",
+    "Expanded DEX coverage from 115 to 212 pools",
+    "More arbitrage opportunities with increased pool diversity",
+    "Access to additional token pairs across new DEXs"
+  ]
+}

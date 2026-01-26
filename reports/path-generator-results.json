@@ -1,0 +1,48 @@
+{
+  "timestamp": "2026-01-26T12:19:31.614Z",
+  "graphStats": {
+    "totalTokens": 100,
+    "testedTokens": 3
+  },
+  "summary": {
+    "totalPaths": 0,
+    "totalTriangular": 0,
+    "totalMultiHop": 0,
+    "totalCrossDEX": 0
+  },
+  "results": [
+    {
+      "token": "WETH",
+      "address": "0x4200000000000000000000000000000000000006",
+      "triangularCount": 0,
+      "multiHopCount": 0,
+      "crossDEXCount": 0,
+      "totalPaths": 0,
+      "bestTriangular": null,
+      "bestMultiHop": null,
+      "bestCrossDEX": null
+    },
+    {
+      "token": "USDC",
+      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "triangularCount": 0,
+      "multiHopCount": 0,
+      "crossDEXCount": 0,
+      "totalPaths": 0,
+      "bestTriangular": null,
+      "bestMultiHop": null,
+      "bestCrossDEX": null
+    },
+    {
+      "token": "USDbC",
+      "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "triangularCount": 0,
+      "multiHopCount": 0,
+      "crossDEXCount": 0,
+      "totalPaths": 0,
+      "bestTriangular": null,
+      "bestMultiHop": null,
+      "bestCrossDEX": null
+    }
+  ]
+}

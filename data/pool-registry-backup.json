@@ -1,0 +1,14 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": 0,
+  "blockNumber": 0,
+  "network": "base",
+  "chainId": 8453,
+  "pools": [],
+  "stats": {
+    "totalPools": 0,
+    "poolsByDEX": {},
+    "poolsByToken": {},
+    "activePools": 0
+  }
+}

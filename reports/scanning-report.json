@@ -1,0 +1,199 @@
+{
+  "timestamp": "2026-01-26T14:19:55.093Z",
+  "summary": {
+    "totalScans": 32,
+    "runningTime": "64.58 seconds",
+    "scansPerSecond": "0.50",
+    "opportunitiesFound": 38,
+    "opportunitiesPerScan": "1.19",
+    "avgProfit": "1.032%"
+  },
+  "byStrategy": {
+    "Multi-Hop Cyclic": 11,
+    "Stable-Volatile": 5,
+    "Liquidity Fragmentation": 12,
+    "Fee-Tier Mispricing": 10
+  },
+  "recentOpportunities": [
+    {
+      "id": "opp-1769437181214-qq0ibc86g",
+      "timestamp": 1769437181214,
+      "strategy": "Fee-Tier Mispricing",
+      "profitPercent": 0.8374100082483334,
+      "path": [
+        "USDC",
+        "DAI",
+        "USDC"
+      ],
+      "pools": [
+        "0xA3c528201B493c212f5671B5bc4f3DC4f6fe4248",
+        "0x0B1E820Eb65289896CbB6B152Ee1fa12ec3D2B18"
+      ],
+      "estimatedGas": 120000,
+      "profitAfterGas": 0.7974100082483334,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437183219-otuqr0krr",
+      "timestamp": 1769437183219,
+      "strategy": "Stable-Volatile",
+      "profitPercent": 0.26004884593143496,
+      "path": [
+        "WETH",
+        "USDC",
+        "WETH"
+      ],
+      "pools": [
+        "0xAa567b4bd5AdE0D049D9A795CbaC436894cbbDE4",
+        "0x3B3B3DCFF8669297bEf410cDDCeA4c362074135A"
+      ],
+      "estimatedGas": 150000,
+      "profitAfterGas": 0.21004884593143497,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437183219-k2nrnfrti",
+      "timestamp": 1769437183219,
+      "strategy": "Liquidity Fragmentation",
+      "profitPercent": 1.0195705875222218,
+      "path": [
+        "USDC",
+        "DAI",
+        "USDC"
+      ],
+      "pools": [
+        "0xA3c528201B493c212f5671B5bc4f3DC4f6fe4248",
+        "0x0B1E820Eb65289896CbB6B152Ee1fa12ec3D2B18"
+      ],
+      "estimatedGas": 120000,
+      "profitAfterGas": 0.9795705875222218,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437185224-403lh9zfi",
+      "timestamp": 1769437185224,
+      "strategy": "Multi-Hop Cyclic",
+      "profitPercent": 1.1564084694845014,
+      "path": [
+        "WETH",
+        "USDC",
+        "WETH"
+      ],
+      "pools": [
+        "0xAa567b4bd5AdE0D049D9A795CbaC436894cbbDE4",
+        "0x3B3B3DCFF8669297bEf410cDDCeA4c362074135A"
+      ],
+      "estimatedGas": 150000,
+      "profitAfterGas": 1.1064084694845013,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437187229-l9iten72f",
+      "timestamp": 1769437187229,
+      "strategy": "Liquidity Fragmentation",
+      "profitPercent": 1.9529596872605737,
+      "path": [
+        "WETH",
+        "USDC",
+        "WETH"
+      ],
+      "pools": [
+        "0xAa567b4bd5AdE0D049D9A795CbaC436894cbbDE4",
+        "0x3B3B3DCFF8669297bEf410cDDCeA4c362074135A"
+      ],
+      "estimatedGas": 150000,
+      "profitAfterGas": 1.9029596872605736,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437187229-t3qpfg0iy",
+      "timestamp": 1769437187229,
+      "strategy": "Multi-Hop Cyclic",
+      "profitPercent": 0.868070619950199,
+      "path": [
+        "USDC",
+        "DAI",
+        "USDC"
+      ],
+      "pools": [
+        "0xA3c528201B493c212f5671B5bc4f3DC4f6fe4248",
+        "0x0B1E820Eb65289896CbB6B152Ee1fa12ec3D2B18"
+      ],
+      "estimatedGas": 120000,
+      "profitAfterGas": 0.8280706199501989,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437189233-57vahwele",
+      "timestamp": 1769437189233,
+      "strategy": "Liquidity Fragmentation",
+      "profitPercent": 0.9215885412273015,
+      "path": [
+        "WETH",
+        "USDC",
+        "WETH"
+      ],
+      "pools": [
+        "0xAa567b4bd5AdE0D049D9A795CbaC436894cbbDE4",
+        "0x3B3B3DCFF8669297bEf410cDDCeA4c362074135A"
+      ],
+      "estimatedGas": 150000,
+      "profitAfterGas": 0.8715885412273014,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437191239-3tm5qt9ms",
+      "timestamp": 1769437191239,
+      "strategy": "Fee-Tier Mispricing",
+      "profitPercent": 1.1692097866042022,
+      "path": [
+        "WETH",
+        "USDC",
+        "WETH"
+      ],
+      "pools": [
+        "0xAa567b4bd5AdE0D049D9A795CbaC436894cbbDE4",
+        "0x3B3B3DCFF8669297bEf410cDDCeA4c362074135A"
+      ],
+      "estimatedGas": 150000,
+      "profitAfterGas": 1.1192097866042021,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437193243-u1y0wonaq",
+      "timestamp": 1769437193243,
+      "strategy": "Liquidity Fragmentation",
+      "profitPercent": 1.3020034768191455,
+      "path": [
+        "WETH",
+        "USDC",
+        "WETH"
+      ],
+      "pools": [
+        "0xAa567b4bd5AdE0D049D9A795CbaC436894cbbDE4",
+        "0x3B3B3DCFF8669297bEf410cDDCeA4c362074135A"
+      ],
+      "estimatedGas": 150000,
+      "profitAfterGas": 1.2520034768191455,
+      "status": "detected"
+    },
+    {
+      "id": "opp-1769437193243-a9m7mai6m",
+      "timestamp": 1769437193243,
+      "strategy": "Multi-Hop Cyclic",
+      "profitPercent": 0.16722455277926862,
+      "path": [
+        "USDC",
+        "DAI",
+        "USDC"
+      ],
+      "pools": [
+        "0xA3c528201B493c212f5671B5bc4f3DC4f6fe4248",
+        "0x0B1E820Eb65289896CbB6B152Ee1fa12ec3D2B18"
+      ],
+      "estimatedGas": 120000,
+      "profitAfterGas": 0.1272245527792686,
+      "status": "detected"
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "success": false,
+  "poolsFound": 0,
+  "executionTime": 231,
+  "stats": {
+    "totalRequested": 0,
+    "successful": 0,
+    "failed": 0,
+    "executionTime": 222,
+    "batches": 0,
+    "rpcCalls": 1
+  },
+  "errors": [
+    "Fatal error: server response 400 Bad Request (request={  }, response={  }, error=null, info={ \"requestUrl\": \"https://site1.moralis-nodes.com/base/60f0cf30acc14837bbb9405cbdcff357\", \"responseBody\": \"{\\\"code\\\":400,\\\"message\\\":\\\"'eth_getLogs' Exceeded maximum block range: 100\\\"}\", \"responseStatus\": \"400 Bad Request\" }, code=SERVER_ERROR, version=6.16.0)"
+  ],
+  "pools": [],
+  "rpcStats": [
+    {
+      "url": "https://site1.moralis-nodes.com/base/60f0cf30acc14837bbb9405cbdcff357",
+      "isPrivate": false,
+      "isHealthy": true,
+      "requestCount": 0,
+      "failureCount": 0,
+      "averageResponseTime": 0
+    },
+    {
+      "url": "https://site2.moralis-nodes.com/base/60f0cf30acc14837bbb9405cbdcff357",
+      "isPrivate": false,
+      "isHealthy": true,
+      "requestCount": 0,
+      "failureCount": 0,
+      "averageResponseTime": 0
+    }
+  ],
+  "timestamp": "2026-01-25T02:55:31.338Z"
+}

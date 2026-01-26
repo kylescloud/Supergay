@@ -1,0 +1,52 @@
+{
+  "minProfitPercent": 0.1,
+  "feeThreshold": 3000,
+  "maxGasPrice": 50000000000,
+  "gasPriceThreshold": 50000000000,
+  "dynamicThresholds": {
+    "enabled": true,
+    "minProfit": 0.1,
+    "maxProfit": 5,
+    "adjustmentFactor": 0.5,
+    "volatilityThreshold": 0.02,
+    "gasPriceImpact": 0.3
+  },
+  "flashLoan": {
+    "enabled": true,
+    "provider": "aave",
+    "minProfitAfterFlashLoan": 0.1,
+    "maxFlashLoanAmount": 1000000
+  },
+  "strategies": {
+    "multiHop": {
+      "minProfit": 0.1,
+      "maxHops": 4,
+      "entropyThreshold": 0.3
+    },
+    "feeTier": {
+      "minProfit": 0.15,
+      "minPriceDifference": 0.01
+    },
+    "liquidityFragmentation": {
+      "minProfit": 0.2,
+      "minLiquidityDifference": 0.1
+    },
+    "stableVolatile": {
+      "minProfit": 0.05,
+      "minSlopeDifference": 0.01
+    }
+  },
+  "scanning": {
+    "enabled": true,
+    "interval": 2000,
+    "maxConcurrentScans": 5,
+    "poolUpdateInterval": 10000
+  },
+  "riskManagement": {
+    "maxPositionSize": 100000,
+    "maxDailyProfit": 10000,
+    "maxGasCost": 100,
+    "slippageTolerance": 0.005
+  },
+  "lastUpdated": 1769436442091
+}

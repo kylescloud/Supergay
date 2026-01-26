@@ -26,6 +26,7 @@ export class OpportunityFinder {
   private provider: ethers.JsonRpcProvider;
   private stateSnapshotManager: StateSnapshotManager;
   private poolDiscovery: PoolDiscovery;
+  private skipPoolDiscovery: boolean;
   
   // Strategies
   private multiHopStrategy: MultiHopArbitrageStrategy;
@@ -40,10 +41,18 @@ export class OpportunityFinder {
 
   private isInitialized: boolean = false;
 
-  constructor(provider: ethers.JsonRpcProvider, baseToken?: string) {
+  constructor(
+    provider: ethers.JsonRpcProvider, 
+    baseToken?: string,
+    options?: {
+      skipPoolDiscovery?: boolean;
+      dataDir?: string;
+    }
+  ) {
     this.provider = provider;
     this.stateSnapshotManager = new StateSnapshotManager(provider);
-    this.poolDiscovery = new PoolDiscovery(provider, baseToken);
+    this.poolDiscovery = new PoolDiscovery(provider, baseToken, options?.dataDir);
+    this.skipPoolDiscovery = options?.skipPoolDiscovery || false;
 
     // Initialize strategies
     this.multiHopStrategy = new MultiHopArbitrageStrategy(provider, 4, 0.01);
@@ -65,8 +74,23 @@ export class OpportunityFinder {
       return;
     }
 
-    console.log('Initializing OpportunityFinder with pool discovery...\n');
+    console.log('Initializing OpportunityFinder...\n');
     await this.poolDiscovery.initialize();
+    
+    // Skip pool discovery if flag is set
+    if (this.skipPoolDiscovery) {
+      console.log('Skipping automatic pool discovery (using existing registry)\n');
+    } else {
+      // Check if registry has pools, if not discover them
+      const registry = this.poolDiscovery.getRegistry();
+      if (registry.getAllPools().length === 0) {
+        console.log('Registry is empty, discovering pools from all DEXs...\n');
+        await this.poolDiscovery.discoverAllPools();
+      } else {
+        console.log(`Using existing registry with ${registry.getAllPools().length} pools\n`);
+      }
+    }
+    
     this.isInitialized = true;
     console.log('OpportunityFinder initialized successfully!\n');
   }
@@ -95,7 +119,7 @@ export class OpportunityFinder {
     // Refresh pools if requested
     if (refreshPools) {
       console.log('\nRefreshing pool states...');
-      await this.poolDiscovery.discoverAllPools();
+      await this.poolDiscovery.discoverAllPools(true); // Pass true for merge mode
     }
 
     // Build block snapshot using pool discovery

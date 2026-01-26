@@ -1,0 +1,480 @@
+/**
+ * Uniswap V4 Pool Fetcher - Production Implementation
+ * Fetches all V4-style pools from Uniswap V4 Pool Manager with full pool key decoding
+ * 
+ * Architecture Overview:
+ * - NO Factory contract (unlike V2/V3)
+ * - Uses Pool Manager contract (singleton design)
+ * - Pools are identified by PoolKey (currency0, currency1, fee, tickSpacing, hooks)
+ * - Pool state is queried via StateView contract
+ * - Pool IDs are computed as keccak256(abi.encode(PoolKey))
+ * 
+ * PoolKey Structure:
+ * struct PoolKey {
+ *   Currency currency0;      // ERC20 address or native (0x0)
+ *   Currency currency1;      // ERC20 address or native (0x0)
+ *   uint24 fee;              // Fee tier (100 = 0.01%, 3000 = 0.3%, etc.)
+ *   int24 tickSpacing;       // Tick spacing (derived from fee)
+ *   IHooks hooks;            // Hooks contract address (can be 0x0 for no hooks)
+ * }
+ */
+
+import { ethers } from 'ethers';
+import type { Pool, DEXConfig, PoolFetchResult, FetchStats } from '../types';
+import type { Token } from '../../types';
+
+// Uniswap V4 Pool Manager ABI
+const UNISWAP_V4_POOL_MANAGER_ABI = [
+  'event Initialize(bytes32 indexed id, (address,address,uint24,int24,address) key, uint160 sqrtPriceX96, int24 tick)',
+  'event ModifyLiquidity(bytes32 indexed id, address indexed sender, int24 tickLower, int24 tickUpper, int128 liquidityDelta, bytes24 salt)',
+];
+
+// Uniswap V4 StateView ABI - for querying pool state
+const UNISWAP_V4_STATE_VIEW_ABI = [
+  'function getSlot0(bytes32 poolId) external view returns (uint160 sqrtPriceX96, int24 tick, uint24 protocolFee, uint24 lpFee)',
+  'function getLiquidity(bytes32 poolId) external view returns (uint128 liquidity)',
+  'function getFeeGrowthGlobals(bytes32 poolId) external view returns (uint256 feeGrowthGlobal0X128, uint256 feeGrowthGlobal1X128)',
+];
+
+// ERC20 ABI for token info
+const ERC20_ABI = [
+  'function symbol() external view returns (string)',
+  'function name() external view returns (string)',
+  'function decimals() external view returns (uint8)',
+];
+
+// Types
+type PoolId = string;
+type Currency = string; // Address or '0x0' for native
+
+/**
+ * PoolKey structure matching Uniswap V4 spec
+ */
+interface PoolKey {
+  currency0: Currency;
+  currency1: Currency;
+  fee: number;
+  tickSpacing: number;
+  hooks: string;
+}
+
+/**
+ * Mapping from fee to tick spacing (from Uniswap V4 v4-core implementation)
+ */
+const FEE_TO_TICK_SPACING: Record<number, number> = {
+  100: 1,      // 0.01%
+  500: 10,     // 0.05%
+  2500: 50,    // 0.25%
+  3000: 60,    // 0.3%
+  10000: 200,  // 1%
+  // Add more fee tiers as needed
+};
+
+export class UniswapV4Fetcher {
+  private provider: ethers.Provider;
+  private poolManager: ethers.Contract;
+  private stateView: ethers.Contract;
+  private config: DEXConfig;
+  private tokenCache: Map<string, Token> = new Map();
+
+  constructor(provider: ethers.Provider, config: DEXConfig) {
+    this.provider = provider;
+    this.config = config;
+    
+    if (!config.poolManager) {
+      throw new Error(`Uniswap V4 poolManager address is required for ${config.name}`);
+    }
+    
+    if (!config.stateView) {
+      throw new Error(`Uniswap V4 stateView address is required for ${config.name}`);
+    }
+    
+    this.poolManager = new ethers.Contract(config.poolManager, UNISWAP_V4_POOL_MANAGER_ABI, provider);
+    this.stateView = new ethers.Contract(config.stateView, UNISWAP_V4_STATE_VIEW_ABI, provider);
+  }
+
+  /**
+   * Fetch all pools by querying Initialize events from Pool Manager
+   * 
+   * This implementation:
+   * 1. Fetches all Initialize events from Pool Manager
+   * 2. Decodes pool keys to extract token addresses and fee tier
+   * 3. Queries StateView for pool state (sqrtPriceX96, tick, liquidity)
+   * 4. Filters by liquidity to only include active pools
+   * 5. Returns pools with full state information
+   */
+  async fetchAllPools(baseToken?: string): Promise<PoolFetchResult> {
+    const startTime = Date.now();
+    const stats: FetchStats = {
+      totalRequested: 0,
+      successful: 0,
+      failed: 0,
+      executionTime: 0,
+      batches: 0,
+      rpcCalls: 0
+    };
+
+    const pools: Pool[] = [];
+    const errors: string[] = [];
+
+    try {
+      console.log(`\n${'='.repeat(80)}`);
+      console.log(`Uniswap V4 Pool Discovery`);
+      console.log(`${'='.repeat(80)}`);
+      console.log(`Pool Manager: ${this.config.poolManager}`);
+      console.log(`State View: ${this.config.stateView}`);
+      console.log(`${'='.repeat(80)}\n`);
+
+      // Get current block number
+      const currentBlock = await this.provider.getBlockNumber();
+      console.log(`Current block: ${currentBlock}`);
+      stats.rpcCalls++;
+
+      // Fetch Initialize events from Pool Manager
+      console.log('Fetching Initialize events from Pool Manager...');
+      const initializeFilter = this.poolManager.filters.Initialize();
+      const events = await this.poolManager.queryFilter(initializeFilter, 0, currentBlock);
+      stats.rpcCalls++;
+
+      console.log(`Found ${events.length} Initialize events\n`);
+      stats.totalRequested = events.length;
+
+      if (events.length === 0) {
+        errors.push('No Initialize events found - Uniswap V4 may not have active pools on this chain yet');
+        stats.executionTime = Date.now() - startTime;
+        return {
+          success: true,
+          pools: [],
+          errors,
+          stats
+        };
+      }
+
+      // Process events in batches to avoid RPC rate limits
+      const batchSize = 50;
+      const batches = Math.ceil(events.length / batchSize);
+      stats.batches = batches;
+
+      console.log(`Processing ${events.length} pool keys in ${batches} batches of ${batchSize}...\n`);
+
+      for (let i = 0; i < events.length; i += batchSize) {
+        const batch = events.slice(i, i + batchSize);
+        const batchNum = Math.floor(i / batchSize) + 1;
+        
+        console.log(`[Batch ${batchNum}/${batches}] Processing ${batch.length} pools...`);
+
+        for (const event of batch) {
+          try {
+            const pool = await this.processInitializeEvent(event);
+            if (pool) {
+              pools.push(pool);
+              stats.successful++;
+            } else {
+              stats.failed++;
+            }
+          } catch (error) {
+            stats.failed++;
+            const errMsg = error instanceof Error ? error.message : 'Unknown error';
+            console.error(`Error processing event: ${errMsg}`);
+            errors.push(`Event ${i}: ${errMsg}`);
+          }
+        }
+
+        // Small delay between batches to avoid rate limiting
+        if (batchNum < batches) {
+          await this.sleep(100);
+        }
+      }
+
+      stats.executionTime = Date.now() - startTime;
+
+      console.log(`\n${'='.repeat(80)}`);
+      console.log(`Uniswap V4 Pool Discovery Complete`);
+      console.log(`${'='.repeat(80)}`);
+      console.log(`Total Events: ${stats.totalRequested}`);
+      console.log(`Successful: ${stats.successful}`);
+      console.log(`Failed: ${stats.failed}`);
+      console.log(`RPC Calls: ${stats.rpcCalls}`);
+      console.log(`Execution Time: ${stats.executionTime}ms`);
+      console.log(`${'='.repeat(80)}\n`);
+
+      return {
+        success: true,
+        pools,
+        errors,
+        stats
+      };
+
+    } catch (error) {
+      const errMsg = error instanceof Error ? error.message : 'Unknown error';
+      errors.push(`Fatal error: ${errMsg}`);
+      stats.executionTime = Date.now() - startTime;
+
+      console.error('Fatal error in UniswapV4Fetcher:', error);
+
+      return {
+        success: false,
+        pools,
+        errors,
+        stats
+      };
+    }
+  }
+
+  /**
+   * Process a single Initialize event and return a Pool object
+   */
+  private async processInitializeEvent(event: any): Promise<Pool | null> {
+    try {
+      const args = 'args' in event ? event.args : null;
+      if (!args) {
+        console.warn('Event has no args');
+        return null;
+      }
+
+      // Extract pool ID and key from event
+      const poolId = args.id as string;
+      const key = args.key;
+
+      if (!poolId || !key) {
+        console.warn('Event missing poolId or key');
+        return null;
+      }
+
+      // Decode pool key
+      const poolKey = this.decodePoolKeyFromEvent(key);
+      if (!poolKey) {
+        console.warn('Failed to decode pool key');
+        return null;
+      }
+
+      console.log(`  Pool ID: ${poolId}`);
+      console.log(`  Tokens: ${poolKey.currency0} / ${poolKey.currency1}`);
+      console.log(`  Fee: ${poolKey.fee / 10000}% (tick spacing: ${poolKey.tickSpacing})`);
+
+      // Skip if not base token pair (optional filtering)
+      if (this.shouldSkipPool(poolKey)) {
+        console.log(`  Skipping: Not a relevant token pair`);
+        return null;
+      }
+
+      // Fetch token metadata
+      const token0 = await this.fetchTokenMetadata(poolKey.currency0);
+      const token1 = await this.fetchTokenMetadata(poolKey.currency1);
+
+      if (!token0 || !token1) {
+        console.warn(`  Failed to fetch token metadata`);
+        return null;
+      }
+
+      // Fetch pool state from StateView
+      console.log(`  Fetching pool state...`);
+      const poolState = await this.getPoolState(poolId);
+
+      if (!poolState) {
+        console.warn(`  Failed to fetch pool state`);
+        return null;
+      }
+
+      console.log(`  Liquidity: ${poolState.liquidity.toString()}`);
+      console.log(`  sqrtPriceX96: ${poolState.sqrtPriceX96.toString()}`);
+      console.log(`  Tick: ${poolState.tick}`);
+
+      // Skip pools with no liquidity
+      if (poolState.liquidity === 0n) {
+        console.log(`  Skipping: Zero liquidity`);
+        return null;
+      }
+
+      // Create pool object
+      const pool: Pool = {
+        address: poolId, // In V4, pool ID is used as "address"
+        dex: this.config.name,
+        dexVersion: 'v4',
+        token0: {
+          address: token0.address,
+          symbol: token0.symbol,
+          name: token0.name,
+          decimals: token0.decimals,
+        },
+        token1: {
+          address: token1.address,
+          symbol: token1.symbol,
+          name: token1.name,
+          decimals: token1.decimals,
+        },
+        fee: poolKey.fee,
+        liquidity: poolState.liquidity,
+        sqrtPriceX96: poolState.sqrtPriceX96,
+        tick: poolState.tick,
+        lastUpdated: Date.now(),
+        isActive: true,
+      };
+
+      console.log(`  ✓ Pool added\n`);
+      return pool;
+
+    } catch (error) {
+      console.error(`Error processing Initialize event:`, error);
+      return null;
+    }
+  }
+
+  /**
+   * Decode pool key from Initialize event args
+   * 
+   * The event args contain the PoolKey tuple as:
+   * (address currency0, address currency1, uint24 fee, int24 tickSpacing, address hooks)
+   */
+  private decodePoolKeyFromEvent(key: any): PoolKey | null {
+    try {
+      // In ethers v6, event args are a Result object
+      const currency0 = key.currency0 as string;
+      const currency1 = key.currency1 as string;
+      const fee = Number(key.fee);
+      const tickSpacing = Number(key.tickSpacing);
+      const hooks = key.hooks as string;
+
+      return {
+        currency0: currency0.toLowerCase(),
+        currency1: currency1.toLowerCase(),
+        fee,
+        tickSpacing,
+        hooks: hooks.toLowerCase()
+      };
+    } catch (error) {
+      console.error('Error decoding pool key:', error);
+      return null;
+    }
+  }
+
+  /**
+   * Encode pool key to bytes32
+   * Used for computing pool IDs and for swap operations
+   */
+  private encodePoolKey(key: PoolKey): string {
+    // This is a simplified encoding
+    // The actual V4 encoding is more complex and packs the data into 2 bytes32 values
+    // For now, we'll use ethers.keccak256 to compute a deterministic hash
+    const abiCoder = ethers.AbiCoder.defaultAbiCoder();
+    const encoded = abiCoder.encode(
+      ['address', 'address', 'uint24', 'int24', 'address'],
+      [key.currency0, key.currency1, key.fee, key.tickSpacing, key.hooks]
+    );
+    return ethers.keccak256(encoded);
+  }
+
+  /**
+   * Fetch pool state from StateView contract
+   */
+  async getPoolState(poolId: string): Promise<{
+    sqrtPriceX96: bigint;
+    tick: number;
+    protocolFee: number;
+    lpFee: number;
+    liquidity: bigint;
+  } | null> {
+    try {
+      // Fetch slot0 from StateView
+      const slot0 = await this.stateView.getSlot0(poolId);
+      
+      // Fetch liquidity from StateView
+      const liquidity = await this.stateView.getLiquidity(poolId);
+
+      return {
+        sqrtPriceX96: slot0.sqrtPriceX96,
+        tick: Number(slot0.tick),
+        protocolFee: Number(slot0.protocolFee),
+        lpFee: Number(slot0.lpFee),
+        liquidity: liquidity
+      };
+    } catch (error) {
+      console.error(`Error fetching pool state for ${poolId}:`, error);
+      return null;
+    }
+  }
+
+  /**
+   * Fetch token metadata (symbol, name, decimals)
+   */
+  private async fetchTokenMetadata(address: string): Promise<Token | null> {
+    // Check cache first
+    if (this.tokenCache.has(address)) {
+      return this.tokenCache.get(address)!;
+    }
+
+    try {
+      // Skip native token (0x0)
+      if (address === '0x0000000000000000000000000000000000000000' || 
+          address === ethers.ZeroAddress) {
+        return {
+          address: '0x0000000000000000000000000000000000000000',
+          symbol: 'ETH',
+          name: 'Ethereum',
+          decimals: 18
+        };
+      }
+
+      const tokenContract = new ethers.Contract(address, ERC20_ABI, this.provider);
+      
+      const [symbol, name, decimals] = await Promise.all([
+        tokenContract.symbol(),
+        tokenContract.name(),
+        tokenContract.decimals()
+      ]);
+
+      const token: Token = {
+        address: address.toLowerCase(),
+        symbol,
+        name,
+        decimals
+      };
+
+      // Cache the result
+      this.tokenCache.set(address, token);
+
+      return token;
+
+    } catch (error) {
+      console.error(`Error fetching token metadata for ${address}:`, error);
+      return null;
+    }
+  }
+
+  /**
+   * Check if pool should be skipped based on token addresses
+   */
+  private shouldSkipPool(key: PoolKey): boolean {
+    // Skip if currency0 or currency1 is native (simplification)
+    if (key.currency0 === ethers.ZeroAddress || key.currency1 === ethers.ZeroAddress) {
+      return true;
+    }
+
+    // Skip if fee tier is not in our supported list
+    if (!FEE_TO_TICK_SPACING[key.fee]) {
+      return true;
+    }
+
+    return false;
+  }
+
+  /**
+   * Utility function to sleep for a specified duration
+   */
+  private sleep(ms: number): Promise<void> {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+
+  /**
+   * Compute pool ID from pool key
+   * Pool ID = keccak256(abi.encode(poolKey))
+   */
+  static computePoolId(key: PoolKey): string {
+    const abiCoder = ethers.AbiCoder.defaultAbiCoder();
+    const encoded = abiCoder.encode(
+      ['address', 'address', 'uint24', 'int24', 'address'],
+      [key.currency0, key.currency1, key.fee, key.tickSpacing, key.hooks]
+    );
+    return ethers.keccak256(encoded);
+  }
+}

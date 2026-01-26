@@ -30,10 +30,14 @@ export interface TokenInfo {
 export interface DEXConfig {
   name: string;
   version: string;
-  factory: string;
+  factory?: string; // Optional for V4 (uses poolManager instead)
+  poolManager?: string; // For Uniswap V4 architecture
   multicall?: string;
   router?: string;
   quoter?: string;
+  stateView?: string; // For Uniswap V4 state queries
+  feeTiers?: number[]; // For V3 DEXs
+  dexId?: string; // Standardized kebab-case identifier
 }
 
 export interface PoolFetchRequest {

@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-01-26T14:04:36.534Z",
+  "summary": {
+    "originalPools": 380,
+    "activePools": 115,
+    "inactivePoolsRemoved": 265,
+    "removalRate": "69.7%",
+    "uniqueTokens": 103
+  },
+  "byDEX": {
+    "Aerodrome": 35,
+    "Uniswap": 65,
+    "Hydrex": 1,
+    "Quickswap": 1,
+    "BaseSwap": 2,
+    "Alien-base": 6,
+    "SushiSwap": 2,
+    "Leetswap": 2,
+    "Swapbased": 1
+  },
+  "byType": {
+    "v2": 115
+  },
+  "benefits": [
+    "Reduced registry size by 69.7%",
+    "All pools have valid state data for arbitrage calculations",
+    "Faster pool loading and processing",
+    "Eliminated RPC call failures for inactive pools",
+    "103 unique tokens available for trading"
+  ]
+}

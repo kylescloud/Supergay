@@ -1,0 +1,29 @@
+{
+  "version": "1.0",
+  "lastUpdated": "2026-01-26T08:30:12.727Z",
+  "chainId": 8453,
+  "network": "base",
+  "totalPools": 1,
+  "poolsByDex": {
+    "Uniswap V2": 1
+  },
+  "pools": [
+    {
+      "address": "0x88A43bbDF9D098eEC7bCEda4e2494615dfD9bB9C",
+      "dex": "Uniswap V2",
+      "dexVersion": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 6
+      }
+    }
+  ]
+}

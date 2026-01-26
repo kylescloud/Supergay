@@ -7,24 +7,22 @@ export const AAVE_V3_POOL = '0xA238Dd80C259a72e81d7e4664a9801593F98d1c5';
 // WETH Address on Base
 export const WETH_ADDRESS = '0x4200000000000000000000000000000000000006';
 
-// Public RPC Nodes for Scanning (8 nodes for load balancing and failover)
+// Public RPC Nodes for Scanning (6 nodes for load balancing and failover)
 export const PUBLIC_RPC_NODES = [
   'https://mainnet.base.org',
   'https://base.publicnode.com',
   'https://base.meowrpc.com',
   'https://base.gateway.tenderly.co',
-  'https://rpc.1inch.io/base',
-  'https://rpc.quicknode.com/base/v1/p7b9d33c8c5849e2b7a6b9d8e0f6c5b9d8e0f6c5b',
   'https://base.drpc.org',
   'https://base-rpc.publicnode.com',
 ] as const;
 
 // Private RPC Nodes for Execution Only (2 nodes for high-priority transactions)
 export const PRIVATE_RPC_NODES = [
-  // Primary private RPC (user-configured)
-  process.env.PRIVATE_RPC_1 || '',
-  // Secondary private RPC (user-configured)
-  process.env.PRIVATE_RPC_2 || '',
+  // Primary private RPC (Moralis)
+  'https://site1.moralis-nodes.com/base/60f0cf30acc14837bbb9405cbdcff357',
+  // Secondary private RPC (Moralis)
+  'https://site2.moralis-nodes.com/base/60f0cf30acc14837bbb9405cbdcff357',
 ] as const;
 
 // RPC Load Balancing Configuration
@@ -108,9 +106,11 @@ export const DEX_CONFIG = {
   },
   // Curve Finance
   curve: {
-    registry: '0x0000000000000000000000000000000000000000', // To be updated
-    factory: '0xF017d5909378e67Baf1682738D8514D494b5e44f',
-    router: '0x99a583981d3d968c3D71425676B72C720f02b734',
+    addressProvider: '0x5ffe7FB82894076ECB99A30D6A32e969e6e35E98',
+    exchangeRouter: '0x4f37A9d177470499A2dD084621020b023fcffc1F',
+    stableswapMetapoolFactory: '0x3093f9B57A428F3EB6285a589cb35bEA6e78c336',
+    twocryptoFactory: '0x5EF72230578b3e399E6C6F4F6360edF95e83BBfd',
+    feeDistributor: '0xe8269B33E47761f552E1a3070119560d5fa8bBD6',
     version: 'curve',
     pools: [] as string[],
   },

@@ -49,6 +49,19 @@ A production-ready arbitrage bot built for the Base blockchain that utilizes Aav
 - **On-Chain Safety Check**: Reverts if profit < expected
 - **Gas Optimization**: Convex gas cost modeling
 
+### Top 200 Base Tokens Support
+
+- **200 Token Coverage**: Supports arbitrage across top 200 Base tokens by market cap
+- **14 Flash Loan Assets**: Aave V3-compatible tokens for flash loans
+- **186 Quote Tokens**: Additional high-liquidity tokens for trading pairs
+- **10 DEX Integration**: Pool discovery across Uniswap V2/V3/V4, Curve, SushiSwap, PancakeSwap, Aerodrome, BaseSwap
+- **2,604 Trading Pairs**: 14 base × 186 quote token combinations
+- **~26,000 Potential Pools**: Maximum possible pool count across all DEXs
+- **Intelligent Batching**: Rate-limited batch processing for efficient discovery
+- **Pool Registry**: JSON-based storage with CSV export for analysis
+
+**See [docs/TOP_200_TOKENS_GUIDE.md](docs/TOP_200_TOKENS_GUIDE.md) for detailed documentation.**
+
 ### Block Replay & Backtesting
 
 - **Historical State Fetching**: Exact block replay

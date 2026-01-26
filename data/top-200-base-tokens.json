@@ -1,0 +1,29 @@
+[
+  {
+    "id": "usd-coin",
+    "symbol": "USDC",
+    "name": "USDC",
+    "address": "0x833589fcd6edb6e08f4c7c32d4f71b54bda02913",
+    "decimals": 18,
+    "market_cap": 72495132263,
+    "market_cap_rank": 6
+  },
+  {
+    "id": "wrapped-bitcoin",
+    "symbol": "WBTC",
+    "name": "Wrapped Bitcoin",
+    "address": "0x1cea84203673764244e05693e42e6ace62be9ba5",
+    "decimals": 18,
+    "market_cap": 11060895497,
+    "market_cap_rank": 16
+  },
+  {
+    "id": "chainlink",
+    "symbol": "LINK",
+    "name": "Chainlink",
+    "address": "0x88fb150bdc53a65fe94dea0c9ba0a6daf8c6e196",
+    "decimals": 18,
+    "market_cap": 8558280853,
+    "market_cap_rank": 22
+  }
+]

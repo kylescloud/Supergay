@@ -37,20 +37,31 @@ export class PoolRegistryManager {
 
   async load(): Promise<void> {
     try {
+      console.log(`[PoolRegistryManager] Loading registry from ${this.filePath}`);
       const fileData = await fs.readFile(this.filePath, 'utf-8');
       this.data = JSON.parse(fileData);
       
-      // Convert string values back to BigInt for pool data
-      this.data.pools = this.data.pools.map((pool: any) => ({
-        ...pool,
-        reserve0: pool.reserve0 ? BigInt(pool.reserve0) : undefined,
-        reserve1: pool.reserve1 ? BigInt(pool.reserve1) : undefined,
-        liquidity: pool.liquidity ? BigInt(pool.liquidity) : undefined,
-        sqrtPriceX96: pool.sqrtPriceX96 ? BigInt(pool.sqrtPriceX96) : undefined,
-      }));
+      console.log(`[PoolRegistryManager] Parsed JSON, converting ${this.data.pools.length} pools`);
       
-      console.log(`Loaded registry with ${this.data.pools.length} pools`);
+      // Convert string values back to BigInt for pool data
+      this.data.pools = this.data.pools.map((pool: any) => {
+        try {
+          return {
+            ...pool,
+            reserve0: pool.reserve0 ? BigInt(pool.reserve0) : undefined,
+            reserve1: pool.reserve1 ? BigInt(pool.reserve1) : undefined,
+            liquidity: pool.liquidity ? (typeof pool.liquidity === 'string' ? BigInt(pool.liquidity) : pool.liquidity) : undefined,
+            sqrtPriceX96: pool.sqrtPriceX96 ? BigInt(pool.sqrtPriceX96) : undefined,
+          };
+        } catch (error) {
+          console.log(`[PoolRegistryManager] Warning: Failed to convert pool ${pool.address}, keeping original values`);
+          return pool;
+        }
+      });
+      
+      console.log(`[PoolRegistryManager] Successfully loaded registry with ${this.data.pools.length} pools`);
     } catch (error) {
+      console.log(`[PoolRegistryManager] Error loading registry: ${error}`);
       console.log('No existing registry found, starting fresh');
       this.data = this.initializeRegistry();
     }
@@ -107,13 +118,41 @@ export class PoolRegistryManager {
   async addPools(pools: Pool[]): Promise<void> {
     const existingAddresses = new Set(this.data.pools.map(p => p.address.toLowerCase()));
     let addedCount = 0;
+    let updatedCount = 0;
     
     for (const pool of pools) {
       const address = pool.address.toLowerCase();
       const index = this.data.pools.findIndex(p => p.address.toLowerCase() === address);
       
       if (index !== -1) {
-        this.data.pools[index] = pool;
+        // Merge existing pool with new data, preserving existing state data if new pool doesn't have it
+        const existingPool = this.data.pools[index];
+        
+        // Only update fields that have values in the new pool
+        if (pool.liquidity !== undefined && pool.liquidity !== 0n) {
+          existingPool.liquidity = pool.liquidity;
+        }
+        if (pool.sqrtPriceX96 !== undefined && pool.sqrtPriceX96 !== 0n) {
+          existingPool.sqrtPriceX96 = pool.sqrtPriceX96;
+        }
+        if (pool.reserve0 !== undefined && pool.reserve0 !== 0n) {
+          existingPool.reserve0 = pool.reserve0;
+        }
+        if (pool.reserve1 !== undefined && pool.reserve1 !== 0n) {
+          existingPool.reserve1 = pool.reserve1;
+        }
+        if (pool.tick !== undefined && pool.tick !== 0) {
+          existingPool.tick = pool.tick;
+        }
+        if (pool.fee !== undefined && pool.fee !== 0) {
+          existingPool.fee = pool.fee;
+        }
+        if (pool.isActive !== undefined) {
+          existingPool.isActive = pool.isActive;
+        }
+        
+        existingPool.lastUpdated = Date.now();
+        updatedCount++;
       } else {
         this.data.pools.push(pool);
         existingAddresses.add(address);
@@ -121,7 +160,7 @@ export class PoolRegistryManager {
       }
     }
 
-    console.log(`Added ${addedCount} new pools, updated ${pools.length - addedCount} existing pools`);
+    console.log(`Added ${addedCount} new pools, updated ${updatedCount} existing pools`);
     this.updateStats();
     this.data.lastUpdated = Date.now();
   }
