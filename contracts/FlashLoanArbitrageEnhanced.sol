@@ -4,6 +4,7 @@ pragma solidity ^0.8.20;
 import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
+import "@openzeppelin/contracts/utils/Pausable.sol";
 import "@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
 
 /**
@@ -11,7 +12,7 @@ import "@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
  * @dev Enhanced flash loan arbitrage contract with automated execution support
  * Supports multiple DEXs and advanced routing on Base Network
  */
-contract FlashLoanArbitrageEnhanced is FlashLoanSimpleReceiverBase, Ownable {
+contract FlashLoanArbitrageEnhanced is FlashLoanSimpleReceiverBase, Ownable, Pausable {
     using SafeERC20 for IERC20;
 
     // Aave V3 Pool on Base
