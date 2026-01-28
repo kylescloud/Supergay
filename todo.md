@@ -129,8 +129,9 @@ All components are fully implemented, tested, and documented. The bot is ready f
 1. **Test on Base Sepolia**: Verify all functionality before mainnet
 2. **Set up PM2**: For process management and auto-restart
 3. **Configure monitoring**: Set up health checks and alerts
-4. **Start small**: Begin with $1,000-$5,000 capital
-5. **Scale gradually**: Increase capital based on performance
+4. **Start with 0.001-0.01 ETH**: For gas fees only (~$3-30 USD)
+5. **Flash loans provide capital**: No upfront investment needed
+6. **Top up ETH when needed**: Replenish gas fee balance
 
 ---
 
@@ -203,14 +204,14 @@ Before going to production:
 - [ ] Testnet deployment verified (optional)
 
 ### Readiness
-- [ ] Wallet funded with sufficient ETH (>0.5 ETH)
+- [ ] Wallet funded with sufficient ETH (>=0.001 ETH minimum, 0.01 ETH recommended)
 - [ ] Execution enabled in `config.json`
 - [ ] Logging configured
 - [ ] Monitoring set up (PM2 optional)
 - [ ] Health checks configured
 - [ ] Emergency procedures understood
 - [ ] All risks acknowledged
-- [ ] Only investing what you can afford to lose
+- [ ] Only investing what you can afford to lose in gas fees
 
 ---
 

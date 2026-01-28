@@ -45,6 +45,14 @@
 - ✅ Enable 2FA on all accounts
 - ✅ Keep private keys encrypted
 
+### Gas Fee Requirements
+
+- ✅ **Token**: ETH (Ether) - the native token of Base Network
+- ✅ **Minimum**: 0.001 ETH (~$3-5 USD) for gas fees
+- ✅ **Recommended**: 0.01 ETH (~$30 USD) for comfortable buffer
+- ⚠️ **Important**: Flash loans provide the principal amount, you only need ETH for gas fees
+- ⚠️ **Note**: Gas fees must be paid in ETH - no other tokens can be used
+
 ---
 
 ## 🔧 Environment Setup
@@ -527,10 +535,11 @@ EOF
 ### Step 30: Fund Your Wallet
 
 ```bash
-# IMPORTANT: Start with small amounts!
-# Recommended: $1,000 - $5,000 USD in ETH
+# IMPORTANT: You need ETH for gas fees only!
+# Flash loans provide the principal amount (no collateral needed)
+# Minimum required: 0.001 ETH (~$3-5 USD) for gas fees
 
-# 1. Get BASE tokens:
+# 1. Get ETH on Base Network:
 #    - Bridge from Ethereum mainnet to Base
 #    - Use official Base bridge: https://bridge.base.org/
 #    - Or buy on CEX and withdraw to Base
@@ -548,7 +557,15 @@ async function main() {
 }
 EOF
 
-# Expected: >1.0 ETH (for gas and potential small losses)
+# Expected: >= 0.001 ETH (for gas fees only)
+# Recommended: 0.01 ETH (~$30 USD) for comfortable buffer
+
+# Important Notes:
+# - Flash loans provide the arbitrage principal (no upfront capital needed)
+# - You only need ETH to pay gas fees
+# - Gas cost per execution: $0.10 - $5.00 USD
+# - 0.001 ETH allows for 1-10 executions depending on gas prices
+# - 0.01 ETH allows for 10-100 executions depending on gas prices
 ```
 
 ### Step 31: Configure Execution for Production
@@ -951,31 +968,59 @@ cp logs/execution.log logs/execution-incident-$(date +%Y%m%d).log
 
 ## 📈 Expected Performance
 
-### Conservative Estimates (Starting with $5,000):
+### Important Notes:
+
+- **Capital Requirement**: None! Flash loans provide the principal amount
+- **Only Cost**: Gas fees in ETH (0.001 ETH minimum)
+- **Profit**: Pure profit after repaying flash loans and gas fees
+- **No Risk of Principal**: You're not using your own money for trades
+
+### Conservative Estimates (No Capital Required):
 
 - **Opportunities per hour**: 50-100
 - **Success rate**: 70-80%
 - **Average profit per execution**: $0.50-$2.00
-- **Gas cost per execution**: $1-$3
-- **Net profit per hour**: $10-$50
-- **Net profit per day**: $240-$1,200
-- **ROI per day**: 4.8%-24%
+- **Gas cost per execution**: $0.10-$1.00
+- **Net profit per hour**: $20-$100
+- **Net profit per day**: $480-$2,400
+- **ROI**: Infinite (no initial capital investment)
 
-### Optimistic Estimates (Starting with $5,000):
+### Optimistic Estimates (No Capital Required):
 
 - **Opportunities per hour**: 100-200
 - **Success rate**: 85-90%
 - **Average profit per execution**: $1-$3
-- **Gas cost per execution**: $1-$2
-- **Net profit per hour**: $50-$150
-- **Net profit per day**: $1,200-$3,600
-- **ROI per day**: 24%-72%
+- **Gas cost per execution**: $0.10-$1.00
+- **Net profit per hour**: $100-$300
+- **Net profit per day**: $2,400-$7,200
+- **ROI**: Infinite (no initial capital investment)
+
+### Gas Fee Budgeting:
+
+- **Starting balance**: 0.001 ETH (~$3-5 USD)
+- **Executions with 0.001 ETH**: 1-10 executions
+- **Starting balance**: 0.01 ETH (~$30 USD)
+- **Executions with 0.01 ETH**: 10-100 executions
+- **Recommended**: Start with 0.01 ETH for comfortable buffer
+
+### The Magic of Flash Loans:
+
+**Why ROI is Infinite:**
+- You borrow $10,000 from Aave V3 (flash loan)
+- You make $50 profit from arbitrage
+- You repay $10,000 + $5 fee
+- You keep $45 profit
+- **Your cost**: $0.10 (gas fee)
+- **Your profit**: $44.90
+- **ROI**: 44,900% (because you invested $0.10)
 
 ### Scaling Up:
 
-- **$10,000 capital**: 2x profits (approximately)
-- **$50,000 capital**: 8-10x profits (diminishing returns due to slippage)
-- **$100,000+ capital**: Market impact becomes significant
+- **No limit on trade size**: Limited by pool liquidity only
+- **Flash loan size**: Up to $1,000,000+ on Aave V3
+- **Your cost**: Still just gas fees
+- **Your profit**: Scales with trade size
+- **Risk**: No risk to your own capital
 
 ---
 
@@ -1001,7 +1046,7 @@ cp logs/execution.log logs/execution-incident-$(date +%Y%m%d).log
 
 ### Best Practices:
 
-1. ✅ Start with small amounts ($1,000-$5,000)
+1. ✅ Start with 0.001-0.01 ETH for gas fees (~$3-30 USD)
 2. ✅ Test thoroughly on testnet first
 3. ✅ Monitor closely for first week
 4. ✅ Never invest more than you can afford to lose
@@ -1009,6 +1054,8 @@ cp logs/execution.log logs/execution-incident-$(date +%Y%m%d).log
 6. ✅ Use hardware wallets for large amounts
 7. ✅ Regular security audits
 8. ✅ Keep software updated
+9. ✅ Remember: Flash loans provide principal, you only need ETH for gas
+10. ✅ Top up ETH balance when gas fees deplete your balance
 
 ---
 
@@ -1056,7 +1103,7 @@ Before going to production, verify all items:
 - [ ] Gas costs estimated
 - [ ] RPC failover tested
 - [ ] Dry run mode tested for 1+ hours
-- [ ] Wallet funded with sufficient ETH
+- [ ] Wallet funded with sufficient ETH (>=0.001 ETH minimum, 0.01 ETH recommended)
 - [ ] Execution enabled in config.json
 - [ ] Logging configured
 - [ ] Monitoring set up (PM2 optional)

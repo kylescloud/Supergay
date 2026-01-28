@@ -471,11 +471,12 @@ async function main() {
   const balance = await ethers.provider.getBalance(signer.address);
   const ethBalance = ethers.formatEther(balance);
   console.log("Wallet balance:", ethBalance, "ETH");
-  if (parseFloat(ethBalance) < 0.5) {
-    console.error("ERROR: Insufficient balance! Need at least 0.5 ETH");
+  if (parseFloat(ethBalance) < 0.001) {
+    console.error("ERROR: Insufficient balance! Need at least 0.001 ETH for gas fees");
     process.exit(1);
   }
-  console.log("✅ Sufficient balance");
+  console.log("✅ Sufficient balance (minimum 0.001 ETH)");
+  console.log("💡 Recommended: 0.01 ETH for comfortable buffer");
 }
 EOFS
 ```
@@ -514,6 +515,12 @@ EOFS
   }
 }
 ```
+
+**Important Notes:**
+- Flash loans provide the principal amount (no upfront capital needed)
+- You only need ETH for gas fees (minimum 0.001 ETH ~$3-5 USD)
+- Recommended: 0.01 ETH (~$30 USD) for comfortable buffer
+- Gas token must be ETH - no other tokens accepted
 
 ### config.json (Dry Run / Testing)
 ```json
@@ -593,11 +600,13 @@ async function main() {
   const balance = await ethers.provider.getBalance(signer.address);
   const ethBalance = ethers.formatEther(balance);
   console.log("Wallet balance:", ethBalance, "ETH");
-  if (parseFloat(ethBalance) < 0.5) {
-    console.error("ERROR: Insufficient balance! Need at least 0.5 ETH");
+  if (parseFloat(ethBalance) < 0.001) {
+    console.error("ERROR: Insufficient balance! Need at least 0.001 ETH for gas fees");
     process.exit(1);
   }
-  console.log("✅ Sufficient balance");
+  console.log("✅ Sufficient balance (minimum 0.001 ETH)");
+  console.log("💡 Recommended: 0.01 ETH for comfortable buffer");
+  console.log("💡 Flash loans provide principal - you only need ETH for gas fees");
 }
 EOFS
 
