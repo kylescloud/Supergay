@@ -20,6 +20,16 @@ import { calculateEffectiveRate } from '../math/effectiveRate';
  * This persists until dP/dt_p1 = dP/dt_p2, which empirically takes multiple blocks.
  */
 export class FeeTierArbitrageStrategy extends BaseStrategy {
+  // CRITICAL FIX #2: All V3 DEXs that have fee tiers
+  private readonly V3_DEXS = new Set([
+    'uniswap-v3',
+    'sushiswap-v3',
+    'pancakeswap-v3',
+    'aerodrome-slipstream',
+    'aerodrome-slipstream-2',
+    'uniswap-v4' // Also has fee tiers
+  ]);
+
   constructor(
     provider: ethers.JsonRpcProvider,
     minProfitThreshold: number = 0.01
@@ -69,12 +79,17 @@ export class FeeTierArbitrageStrategy extends BaseStrategy {
 
   /**
    * Group pools by token pair
+   * CRITICAL FIX #2: Now includes all V3 DEXs, not just Uniswap V3
    */
   private groupPoolsByPair(pools: Map<string, PoolState>): Map<string, PoolState[]> {
     const grouped = new Map<string, PoolState[]>();
 
     for (const pool of pools.values()) {
-      if (pool.dex !== 'uniswap-v3') continue; // Only V3 has fee tiers
+      // Check if DEX has fee tiers (all V3 DEXs)
+      if (!this.V3_DEXS.has(pool.dex.toLowerCase())) continue;
+
+      // Validate pool has fee tier data
+      if (!pool.fee || pool.fee === 0) continue;
 
       const token0 = pool.token0.address.toLowerCase();
       const token1 = pool.token1.address.toLowerCase();

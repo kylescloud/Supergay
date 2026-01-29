@@ -80,6 +80,7 @@ export function calculateEffectiveRate(
 
 /**
  * Uniswap V3 effective rate calculation using sqrtPriceX96 and liquidity
+ * CRITICAL FIX #3: Improved accuracy with better slippage calculation and validation
  * 
  * The formula: amountOut = liquidity * (sqrtPriceCurrent - sqrtPriceNext) / (sqrtPriceCurrent * sqrtPriceNext)
  * This accounts for concentrated liquidity and tick-based pricing.
@@ -94,9 +95,13 @@ function calculateV3EffectiveRate(
     throw new Error('V3 pool missing sqrtPriceX96 or liquidity');
   }
 
-  // Validate inputs
+  // CRITICAL FIX #3: Validate inputs
   if (pool.liquidity === 0n) {
     throw new Error('V3 pool has zero liquidity');
+  }
+
+  if (pool.sqrtPriceX96 === 0n) {
+    throw new Error('V3 pool has invalid price (sqrtPriceX96 is zero)');
   }
 
   const sqrtPriceX96 = new BigNumber(pool.sqrtPriceX96.toString());
@@ -119,10 +124,14 @@ function calculateV3EffectiveRate(
   // Calculate zero-impact amount out (at current price)
   const amountOutZeroImpact = amountIn.times(price).times(1 - fee);
   
-  // Calculate slippage based on trade size vs liquidity
-  // Larger trades have more impact due to tick movement
+  // CRITICAL FIX #3: Improved slippage calculation using square root model
+  // This is more accurate for V3's concentrated liquidity
   const liquidityRatio = amountIn.div(liquidity);
-  const slippage = Math.min(liquidityRatio.times(0.5).toNumber(), 0.1); // Cap at 10%
+  
+  // Use square root model for better accuracy
+  // Larger trades cause more price impact in V3 due to tick boundaries
+  const priceImpact = Math.sqrt(liquidityRatio.toNumber()) * fee;
+  const slippage = Math.min(Math.max(priceImpact, 0), 0.3); // Cap at 30%, min 0%
   
   // Apply slippage to amount out
   const amountOut = amountOutZeroImpact.times(1 - slippage);
@@ -130,6 +139,11 @@ function calculateV3EffectiveRate(
   // Validate output is reasonable
   if (amountOut.isNegative() || !amountOut.isFinite()) {
     throw new Error('Invalid amount out calculation');
+  }
+  
+  // Ensure amountOut is positive
+  if (amountOut.lte(0)) {
+    throw new Error('Amount out must be positive');
   }
   
   // Gas estimate for V3 swap
@@ -302,6 +316,7 @@ export function transformToLogSpace(rate: number): number {
 
 /**
  * Calculate marginal rate (derivative of amountOut with respect to amountIn)
+ * CRITICAL FIX #3: Improved delta calculation for better precision
  * 
  * This is crucial for liquidity fragmentation arbitrage, where the slope
  * matters more than the spot price.
@@ -318,11 +333,17 @@ export function calculateMarginalRate(
   tokenOut: Token,
   amountIn: bigint
 ): number {
-  const delta = BigInt(1); // Small delta for numerical differentiation
-  const rate1 = calculateEffectiveRate(pool, tokenIn, tokenOut, amountIn);
-  const rate2 = calculateEffectiveRate(pool, tokenIn, tokenOut, amountIn + delta);
+  // CRITICAL FIX #3: Use relative delta instead of fixed BigInt(1)
+  // Delta is now 0.01% of the loan amount for better precision with large amounts
+  const delta = amountIn / 10000n; // 0.01% of loan amount
   
-  return Number(rate2.amountOut - rate1.amountOut) / Number(delta);
+  // Ensure delta is at least 1 for very small amounts
+  const actualDelta = delta > 0n ? delta : 1n;
+  
+  const rate1 = calculateEffectiveRate(pool, tokenIn, tokenOut, amountIn);
+  const rate2 = calculateEffectiveRate(pool, tokenIn, tokenOut, amountIn + actualDelta);
+  
+  return Number(rate2.amountOut - rate1.amountOut) / Number(actualDelta);
 }
 
 /**

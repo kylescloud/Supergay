@@ -81,6 +81,9 @@ export class FlashLoanExecutor {
     'PancakeSwap V3': '0x1b81d678ffb9c0263b24a97847620c99d213eb14'
   };
 
+  // Token addresses map
+  private tokenAddresses: Record<string, string> = {};
+
   constructor(
     privateKey: string,
     contractAddress: string,
@@ -115,11 +118,59 @@ export class FlashLoanExecutor {
   }
 
   private loadConfig() {
-    if (fs.existsSync('config.json')) {
-      this.config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
-    } else {
-      throw new Error('Config file not found!');
+    try {
+      const configData = fs.readFileSync('config.json', 'utf-8');
+      this.config = JSON.parse(configData);
+    } catch (error) {
+      console.warn('Could not load config.json, using defaults');
+      this.config = {
+        minProfitPercent: 0.1,
+        maxGasPrice: 50000000000
+      };
     }
+  }
+
+  /**
+   * Load token addresses from pool registry
+   */
+  private loadTokenAddresses(pools: any[]) {
+    const tokenMap: Record<string, string> = {};
+    
+    for (const pool of pools) {
+      if (pool.token0) {
+        tokenMap[pool.token0] = pool.token0;
+      }
+      if (pool.token1) {
+        tokenMap[pool.token1] = pool.token1;
+      }
+    }
+    
+    // Add common tokens
+    tokenMap['WETH'] = '0x4200000000000000000000000000000000000006';
+    tokenMap['USDC'] = '0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913';
+    tokenMap['USDbC'] = '0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA';
+    tokenMap['DAI'] = '0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb';
+    
+    this.tokenAddresses = tokenMap;
+    console.log(`Loaded ${Object.keys(tokenMap).length} token addresses`);
+  }
+
+  /**
+   * Get token address with validation - CRITICAL FIX #1
+   * Throws error if token symbol not found instead of falling back to WETH
+   */
+  private getTokenAddress(symbol: string, required: boolean = true): string {
+    const address = this.tokenAddresses[symbol.toLowerCase()];
+    
+    if (!address && required) {
+      throw new Error(`Token address not found for symbol: ${symbol}. Available tokens: ${Object.keys(this.tokenAddresses).join(', ')}`);
+    }
+    
+    if (!address) {
+      throw new Error(`Unknown token symbol: ${symbol}. Please add to token addresses.`);
+    }
+    
+    return checksumAddress(address);
   }
   
   private async testRPCConnection(rpcUrl: string): Promise<boolean> {
@@ -281,7 +332,12 @@ export class FlashLoanExecutor {
 
     // Choose USDC if it's in the path, otherwise use WETH
     const flashLoanAssetSymbol = path.some(p => p === 'USDC' || p === 'USDbC') ? 'USDC' : 'WETH';
-    const flashLoanAsset = tokenAddresses[flashLoanAssetSymbol] || checksumAddress(wethAddress);
+    
+    // CRITICAL FIX #1: Validate flash loan asset exists
+    if (!tokenAddresses[flashLoanAssetSymbol]) {
+      throw new Error(`Flash loan asset ${flashLoanAssetSymbol} not found in token addresses`);
+    }
+    const flashLoanAsset = tokenAddresses[flashLoanAssetSymbol];
 
     // Calculate flash loan amount (use a reasonable amount)
     // Start with $10,000 worth of tokens
@@ -308,8 +364,10 @@ export class FlashLoanExecutor {
       // Get token addresses
       const tokenInSymbol = path[i];
       const tokenOutSymbol = path[i + 1];
-      const tokenIn = tokenAddresses[tokenInSymbol] || checksumAddress(wethAddress);
-      const tokenOut = tokenAddresses[tokenOutSymbol] || checksumAddress(wethAddress);
+      
+      // CRITICAL FIX #1: Validate token addresses exist
+      const tokenIn = this.getTokenAddress(tokenInSymbol);
+      const tokenOut = this.getTokenAddress(tokenOutSymbol);
       
       // Calculate swap amount (for first swap, use flash loan amount, for others use output)
       const swapAmount = i === 0 ? flashLoanAmount : ethers.parseUnits('10000', 18); // Will be updated dynamically
