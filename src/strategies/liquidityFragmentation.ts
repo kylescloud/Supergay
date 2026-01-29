@@ -191,6 +191,8 @@ export class LiquidityFragmentationStrategy extends BaseStrategy {
       blockNumber,
       score: profitUSD / totalGas,
       entropy: 0.7, // Higher uniqueness due to cross-DEX
+      dexTypes: [lowestSlopePool.pool.dex.toLowerCase(), highestSlopePool.pool.dex.toLowerCase()],
+      dexIdentifiers: [lowestSlopePool.pool.dex, highestSlopePool.pool.dex],
     };
   }
 

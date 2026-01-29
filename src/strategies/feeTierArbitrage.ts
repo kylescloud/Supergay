@@ -206,6 +206,8 @@ export class FeeTierArbitrageStrategy extends BaseStrategy {
       blockNumber,
       score: profitUSD / totalGas,
       entropy: 0.5, // Medium uniqueness for fee-tier arb
+      dexTypes: [bestBuyPool.dex.toLowerCase(), bestSellPoolForReturn!.dex.toLowerCase()],
+      dexIdentifiers: [bestBuyPool.dex, bestSellPoolForReturn!.dex],
     };
   }
 

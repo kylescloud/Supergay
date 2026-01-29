@@ -197,6 +197,8 @@ export class StableVolatileArbitrageStrategy extends BaseStrategy {
       blockNumber,
       score: profitUSD / totalGas,
       entropy: 0.6, // Medium uniqueness
+      dexTypes: [stablePool.dex.toLowerCase(), volatilePool.dex.toLowerCase()],
+      dexIdentifiers: [stablePool.dex, volatilePool.dex],
     };
   }
 
@@ -302,6 +304,8 @@ export class StableVolatileArbitrageStrategy extends BaseStrategy {
               blockNumber,
               score: profitUSD / totalGas,
               entropy: 0.8, // High uniqueness for complex paths
+              dexTypes: dexes.map(d => d.toLowerCase()),
+              dexIdentifiers: dexes,
             });
           }
         }

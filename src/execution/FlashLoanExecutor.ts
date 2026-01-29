@@ -170,7 +170,7 @@ export class FlashLoanExecutor {
       throw new Error(`Unknown token symbol: ${symbol}. Please add to token addresses.`);
     }
     
-    return checksumAddress(address);
+    return ethers.getAddress(address);
   }
   
   private async testRPCConnection(rpcUrl: string): Promise<boolean> {

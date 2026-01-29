@@ -158,6 +158,8 @@ export class MultiHopArbitrageStrategy extends BaseStrategy {
         blockNumber,
         score,
         entropy,
+        dexTypes: dexes.map(d => d.toLowerCase()),
+        dexIdentifiers: dexes,
       };
     } catch (error) {
       console.error('Error building opportunity from cycle:', error);

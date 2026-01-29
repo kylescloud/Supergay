@@ -7,7 +7,6 @@ import "@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
 import "@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol";
 import "./interfaces/IDEXRouter.sol";
 import "./interfaces/IMultiDEX.sol";
-import "./interfaces/ICurvePool.sol";
 
 /**
  * @title FlashLoanArbitrage - FIXED VERSION
