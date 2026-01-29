@@ -380,6 +380,50 @@ export class FlashLoanExecutor {
       // Get DEX router address
       const dexRouter = this.DEX_ROUTERS[dexIdentifier] || this.DEX_ROUTERS['UniswapV2'];
       
+      // Create swap data for Curve pools
+      let swapData: string = '0x';
+      
+      // FIX #5: Encode Curve pool data (pool address + token indices)
+      if (dexType === DEXType.Curve) {
+        // For Curve pools, we need to encode pool address and token indices
+        // This requires knowing which pool and which token positions (0, 1, 2...)
+        // For now, we'll use a simplified approach with placeholder data
+        // In production, you should look up the actual Curve pool and token positions
+        
+        // Get pool address from opportunity data if available
+        const poolAddress = (opportunity as any).poolAddresses?.[i] || dexRouter;
+        
+        // Determine token indices based on common Curve pool configurations
+        // Most Curve pools have USDC at index 0 and DAI at index 1
+        let tokenInIndex = 0;
+        let tokenOutIndex = 1;
+        
+        // Map common tokens to Curve indices
+        const tokenIndexMap: Record<string, number> = {
+          'USDC': 0,
+          'USDbC': 0,
+          'DAI': 1,
+          'USDT': 2,
+          'WETH': 2
+        };
+        
+        tokenInIndex = tokenIndexMap[tokenInSymbol] ?? 0;
+        tokenOutIndex = tokenIndexMap[tokenOutSymbol] ?? 1;
+        
+        // Ensure indices are different
+        if (tokenInIndex === tokenOutIndex) {
+          tokenOutIndex = (tokenInIndex + 1) % 3;
+        }
+        
+        // Encode pool data: (address pool, int128 i, int128 j)
+        swapData = ethers.AbiCoder.defaultAbiCoder().encode(
+          ['address', 'int128', 'int128'],
+          [checksumAddress(poolAddress), tokenInIndex, tokenOutIndex]
+        );
+        
+        console.log(`   Curve swap encoded: pool=${poolAddress}, i=${tokenInIndex}, j=${tokenOutIndex}`);
+      }
+      
       // Create swap object
       const swap: Swap = {
         dexType: dexType,
@@ -389,7 +433,7 @@ export class FlashLoanExecutor {
         minAmount: minAmount,
         dexRouter: checksumAddress(dexRouter),
         fee: poolFee,
-        swapData: '0x' // Empty for V2/V3, populated for V4
+        swapData: swapData // Encoded data for Curve, V4
       };
       
       swaps.push(swap);

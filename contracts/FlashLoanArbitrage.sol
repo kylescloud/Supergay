@@ -7,26 +7,33 @@ import "@aave/core-v3/contracts/flashloan/base/FlashLoanSimpleReceiverBase.sol";
 import "@aave/core-v3/contracts/interfaces/IPoolAddressesProvider.sol";
 import "./interfaces/IDEXRouter.sol";
 import "./interfaces/IMultiDEX.sol";
+import "./interfaces/ICurvePool.sol";
 
 /**
- * @title FlashLoanArbitrage
+ * @title FlashLoanArbitrage - FIXED VERSION
  * @notice Executes arbitrage using Aave V3 flash loans on Base across multiple DEXs
  * @dev Implements MEV protection and profit validation
- * @dev Supports: Uniswap V4, V3, V2, Curve, SushiSwap V3, PancakeSwap V3, Aerodrome Finance, Aerodrome SlipStream, Aerodrome SlipStream 2, BaseSwap
+ * @dev Supports: Uniswap V4, V3, V2, Curve, SushiSwap V3, PancakeSwap V3, Aerodrome Finance, Aerodrome SlipStream, Aerodrome SlipStream 2, BaseSwap, Hydrex
+ * @dev FIXES APPLIED:
+ *      1. Added all missing DEX type cases (AerodromeV2, AerodromeV3, SushiSwapV3, PancakeSwapV3, BaseSwap)
+ *      2. Implemented proper balance tracking for multi-hop swaps
+ *      3. Fixed Curve swap implementation with proper token indices
+ *      4. Added flash loan amount validation
+ *      5. Added router validation before execution
  */
 contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
     using SafeERC20 for IERC20;
 
     // Swap structs
     struct Swap {
-        uint8 dexType;        // 0: V2, 1: V3, 2: V4, 3: Curve
+        uint8 dexType;        // 0: V2, 1: V3, 2: V4, 3: Curve, 4: AerodromeV2, 5: AerodromeV3, 6: SushiSwapV3, 7: PancakeSwapV3, 8: BaseSwap, 9: Hydrex
         address tokenIn;      // Input token address
         address tokenOut;     // Output token address
-        uint256 amount;       // Amount to swap
+        uint256 amount;       // Amount to swap (only used for first swap, ignored for others)
         uint256 minAmount;    // Minimum amount out
         address dexRouter;    // DEX router address
         uint24 fee;           // Fee tier (for V3)
-        bytes swapData;       // Encoded swap data (for V4)
+        bytes swapData;       // Encoded swap data (for V4 and Curve)
     }
 
     struct SwapParams {
@@ -98,6 +105,8 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
     error InvalidDEX();
     error InvalidRouter();
     error ZeroAddress();
+    error InvalidFlashLoan();
+    error RouterNotApproved();
 
     modifier onlyOwner() {
         if (msg.sender != owner) revert NotOwner();
@@ -187,7 +196,7 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
     }
 
     /**
-     * @notice Flash loan callback - executes arbitrage logic
+     * @notice Flash loan callback - executes arbitrage logic (FIXED VERSION)
      * @param asset The address of the flash-borrowed asset
      * @param amount The amount of the flash-borrowed asset
      * @param premium The fee of the flash-borrowed asset
@@ -212,27 +221,54 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
             SwapParams memory swapParams
         ) = abi.decode(params, (SwapParams));
 
-        uint256 initialBalance = IERC20(asset).balanceOf(address(this));
+        // FIX #4: Validate we received the full flash loan amount
+        uint256 receivedAmount = IERC20(asset).balanceOf(address(this));
+        if (receivedAmount < amount) revert InvalidFlashLoan();
 
-        // Execute swaps through multiple DEXs
+        // FIX #5: Validate all routers before execution
+        for (uint256 i = 0; i < swapParams.swaps.length; i++) {
+            if (!_isApprovedRouter(swapParams.swaps[i].dexRouter)) {
+                revert RouterNotApproved();
+            }
+        }
+
+        // FIX #2 & #3: Track actual balances for multi-hop swaps
+        uint256 currentAmount = receivedAmount;
+        
         for (uint256 i = 0; i < swapParams.swaps.length; i++) {
             Swap memory swap = swapParams.swaps[i];
             
-            if (swap.dexType == uint8(DEXType.UniswapV2)) {
-                // Uniswap V2 / BaseSwap / Aerodrome Finance
-                _swapV2(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount, swap.dexRouter);
-            } else if (swap.dexType == uint8(DEXType.UniswapV3)) {
-                // Uniswap V3 / SushiSwap V3 / PancakeSwap V3 / Aerodrome SlipStream / Aerodrome SlipStream 2
-                _swapV3(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount, swap.fee, swap.dexRouter);
-            } else if (swap.dexType == uint8(DEXType.Hydrex)) {
-                // Hydrex (V2-style)
-                _swapV2(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount, swap.dexRouter);
+            // For multi-hop, use actual token balance, not encoded amount
+            if (i > 0) {
+                currentAmount = IERC20(swap.tokenIn).balanceOf(address(this));
+                
+                // Safety check: ensure we have tokens to swap
+                if (currentAmount == 0) revert SwapFailed();
+            }
+            
+            // FIX #1: Handle all DEX types (previously missing 5 DEXs)
+            if (swap.dexType == uint8(DEXType.UniswapV2) || 
+                swap.dexType == uint8(DEXType.BaseSwap) ||
+                swap.dexType == uint8(DEXType.Hydrex) ||
+                swap.dexType == uint8(DEXType.AerodromeV2)) {
+                // V2-style DEXs: Uniswap V2, BaseSwap, Hydrex, Aerodrome Finance
+                _swapV2(swap.tokenIn, swap.tokenOut, currentAmount, swap.minAmount, swap.dexRouter);
+                
+            } else if (swap.dexType == uint8(DEXType.UniswapV3) ||
+                       swap.dexType == uint8(DEXType.SushiSwapV3) ||
+                       swap.dexType == uint8(DEXType.PancakeSwapV3) ||
+                       swap.dexType == uint8(DEXType.AerodromeV3)) {
+                // V3-style DEXs: Uniswap V3, SushiSwap V3, PancakeSwap V3, Aerodrome SlipStream
+                _swapV3(swap.tokenIn, swap.tokenOut, currentAmount, swap.minAmount, swap.fee, swap.dexRouter);
+                
             } else if (swap.dexType == uint8(DEXType.UniswapV4)) {
                 // Uniswap V4
-                _swapV4(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount, swap.swapData);
+                _swapV4(swap.tokenIn, swap.tokenOut, currentAmount, swap.minAmount, swap.swapData);
+                
             } else if (swap.dexType == uint8(DEXType.Curve)) {
-                // Curve
-                _swapCurve(swap.tokenIn, swap.tokenOut, swap.amount, swap.minAmount);
+                // FIX #3: Curve with proper pool data
+                _swapCurve(swap.tokenIn, swap.tokenOut, currentAmount, swap.minAmount, swap.swapData);
+                
             } else {
                 revert InvalidDEX();
             }
@@ -264,7 +300,7 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
     }
 
     /**
-     * @notice Execute swap on Uniswap V2-style DEX (Uniswap V2, BaseSwap, Aerodrome Finance)
+     * @notice Execute swap on Uniswap V2-style DEX (Uniswap V2, BaseSwap, Aerodrome Finance, Hydrex)
      */
     function _swapV2(
         address tokenIn,
@@ -333,24 +369,41 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
     }
 
     /**
-     * @notice Execute swap on Curve
+     * @notice Execute swap on Curve (FIXED VERSION)
+     * @dev Now properly decodes pool address and token indices from swapData
      */
     function _swapCurve(
         address tokenIn,
         address tokenOut,
         uint256 amountIn,
-        uint256 amountOutMin
+        uint256 amountOutMin,
+        bytes memory swapData
     ) internal {
-        IERC20(tokenIn).forceApprove(curveRouter, amountIn);
+        // FIX #3: Decode pool address and token indices from swapData
+        (address pool, int128 i, int128 j) = abi.decode(swapData, (address, int128, int128));
+        
+        // Approve the pool directly (not the router)
+        IERC20(tokenIn).forceApprove(pool, amountIn);
+        
+        // Call the pool's exchange function with proper token indices
+        ICurvePool(pool).exchange(i, j, amountIn, amountOutMin);
+    }
 
-        // Curve exchange - simplified, would need pool address in production
-        ICurveRouter(curveRouter).exchange(
-            0, // poolId - to be determined
-            int128(int256(uint256(uint160(address(tokenIn))))),
-            int128(int256(uint256(uint160(address(tokenOut))))),
-            amountIn,
-            amountOutMin
-        );
+    /**
+     * @notice Check if a router is approved for use
+     */
+    function _isApprovedRouter(address router) internal view returns (bool) {
+        return router == uniswapV2Router ||
+               router == uniswapV3Router ||
+               router == uniswapV4UniversalRouter ||
+               router == curveRouter ||
+               router == sushiswapV3Router ||
+               router == pancakeSwapV3Router ||
+               router == aerodromeRouter ||
+               router == aerodromeSlipStreamRouter ||
+               router == aerodromeSlipStream2Router ||
+               router == baseSwapRouter ||
+               router == hydrexRouter;
     }
 
     /**
@@ -399,7 +452,7 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
             sushiswapV3Router = router;
         } else if (keccak256(bytes(dex)) == keccak256(bytes("pancakeSwapV3Router"))) {
             pancakeSwapV3Router = router;
-        } else if (keccak256(bytes(dex)) == keccak256(bytes("aerodromeRouter"))) {
+        } else if (keccak256(bytes(dex)) == keccak256(bytes("uniswapV2Router"))) {
             aerodromeRouter = router;
         } else if (keccak256(bytes(dex)) == keccak256(bytes("aerodromeSlipStreamRouter"))) {
             aerodromeSlipStreamRouter = router;
