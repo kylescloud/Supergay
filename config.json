@@ -1,5 +1,7 @@
 {
   "minProfitPercent": 0.1,
+  "minProfitAfterGas": 0.3,
+  "executionEnabled": true,
   "feeThreshold": 3000,
   "maxGasPrice": 50000000000,
   "gasPriceThreshold": 50000000000,

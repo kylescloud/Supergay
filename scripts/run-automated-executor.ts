@@ -1,6 +1,6 @@
 import { ethers } from 'ethers';
 import { config } from 'dotenv';
-import fs from 'fs';
+import * as fs from 'fs';
 import { FlashLoanExecutor } from '../src/execution/FlashLoanExecutor.js';
 import { PRIVATE_RPC_NODES } from '../src/config/constants.js';
 
@@ -28,7 +28,7 @@ class AutomatedExecutor {
   private isRunning: boolean = false;
   private scanCount: number = 0;
   private executionsPerformed: number = 0;
-  let successfulExecutions: number = 0;
+  private successfulExecutions: number = 0;
   private failedExecutions: number = 0;
   private skippedExecutions: number = 0;
   private startTime: number = 0;
@@ -228,7 +228,13 @@ class AutomatedExecutor {
     }
 
     // Mark opportunity as processed
-    bestOpportunity.status = bestOpportunity.status;
+    if (success) {
+      bestOpportunity.status = 'executed';
+    } else if (bestOpportunity.status === 'skipped') {
+      bestOpportunity.status = 'skipped';
+    } else {
+      bestOpportunity.status = 'failed';
+    }
   }
 
   private printStats(executionsPerSecond: number) {

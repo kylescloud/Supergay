@@ -206,7 +206,7 @@ export const MAX_PROFIT_PERCENTAGE = 0.10; // 10% maximum profit per trade
 
 // Validate that profit doesn't exceed this percentage of loan amount
 export function isProfitReasonable(loanAmount: bigint, netProfit: bigint): boolean {
-  const maxProfit = (loanAmount * BigInt(Math.floor(MAX_PROFIT_PERCENTAGE * 10000))) / 10000n;
+  const maxProfit = (loanAmount * BigInt(Math.floor(MAX_PROFIT_PERCENTAGE * 10000))) / BigInt(10000);
   return netProfit > 0n && netProfit <= maxProfit;
 }
 

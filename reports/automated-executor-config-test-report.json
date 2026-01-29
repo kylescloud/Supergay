@@ -1,0 +1,211 @@
+{
+  "timestamp": "2026-01-29T02:51:09.710Z",
+  "summary": {
+    "totalTests": 33,
+    "passed": 33,
+    "failed": 0,
+    "criticalFailures": 0,
+    "status": "PASS"
+  },
+  "tests": [
+    {
+      "name": "PRIVATE_KEY exists",
+      "passed": true,
+      "message": "Set",
+      "critical": true
+    },
+    {
+      "name": "PRIVATE_KEY format",
+      "passed": true,
+      "message": "Valid format",
+      "critical": true
+    },
+    {
+      "name": "BASE_RPC_URL exists",
+      "passed": true,
+      "message": "Set",
+      "critical": true
+    },
+    {
+      "name": "QUICKNODE_RPC exists",
+      "passed": true,
+      "message": "Set",
+      "critical": true
+    },
+    {
+      "name": "ALCHEMY_RPC exists",
+      "passed": true,
+      "message": "Set",
+      "critical": true
+    },
+    {
+      "name": "FLASH_LOAN_CONTRACT exists",
+      "passed": true,
+      "message": "Set",
+      "critical": true
+    },
+    {
+      "name": "config.json exists",
+      "passed": true,
+      "message": "Found",
+      "critical": true
+    },
+    {
+      "name": "config.json is valid JSON",
+      "passed": true,
+      "message": "Valid JSON",
+      "critical": true
+    },
+    {
+      "name": "minProfitPercent exists",
+      "passed": true,
+      "message": "0.1%",
+      "critical": true
+    },
+    {
+      "name": "maxGasPrice exists",
+      "passed": true,
+      "message": "50.0 gwei",
+      "critical": true
+    },
+    {
+      "name": "minProfitAfterGas exists",
+      "passed": true,
+      "message": "0.3%",
+      "critical": true
+    },
+    {
+      "name": "executionEnabled exists",
+      "passed": true,
+      "message": "true",
+      "critical": true
+    },
+    {
+      "name": "scanning interval exists",
+      "passed": true,
+      "message": "2000ms",
+      "critical": true
+    },
+    {
+      "name": "flashLoan configuration exists",
+      "passed": true,
+      "message": "Configured",
+      "critical": true
+    },
+    {
+      "name": "strategies configuration exists",
+      "passed": true,
+      "message": "4 strategies",
+      "critical": true
+    },
+    {
+      "name": "pool-registry.json exists",
+      "passed": true,
+      "message": "Found",
+      "critical": true
+    },
+    {
+      "name": "Registry has pools",
+      "passed": true,
+      "message": "212 pools found",
+      "critical": true
+    },
+    {
+      "name": "Active pools",
+      "passed": true,
+      "message": "212 active pools",
+      "critical": true
+    },
+    {
+      "name": "Pools with dexIdentifier",
+      "passed": true,
+      "message": "212/212 pools have dexIdentifier",
+      "critical": true
+    },
+    {
+      "name": "FlashLoanExecutor.ts exists",
+      "passed": true,
+      "message": "Found",
+      "critical": true
+    },
+    {
+      "name": "FlashLoanExecutor.ts can be imported",
+      "passed": true,
+      "message": "Imported successfully",
+      "critical": true
+    },
+    {
+      "name": "run-automated-executor.ts exists",
+      "passed": true,
+      "message": "Found",
+      "critical": true
+    },
+    {
+      "name": "Line 21: successfulExecutions declaration",
+      "passed": true,
+      "message": "Correct: private",
+      "critical": true
+    },
+    {
+      "name": "Status update logic",
+      "passed": true,
+      "message": "Does not have redundant status assignment",
+      "critical": true
+    },
+    {
+      "name": "Config.json loading",
+      "passed": true,
+      "message": "Loads config.json",
+      "critical": true
+    },
+    {
+      "name": "RPC URL configuration",
+      "passed": true,
+      "message": "Uses private RPC for execution",
+      "critical": true
+    },
+    {
+      "name": "Gas price validation",
+      "passed": true,
+      "message": "Validates gas price",
+      "critical": true
+    },
+    {
+      "name": "Profit threshold checking",
+      "passed": true,
+      "message": "Checks minProfitAfterGas threshold",
+      "critical": true
+    },
+    {
+      "name": "ethers package installed",
+      "passed": true,
+      "message": "Installed",
+      "critical": true
+    },
+    {
+      "name": "dotenv package installed",
+      "passed": true,
+      "message": "Installed",
+      "critical": true
+    },
+    {
+      "name": "Alchemy RPC connection",
+      "passed": true,
+      "message": "Connected - Block 41432861",
+      "critical": true
+    },
+    {
+      "name": "Base RPC RPC connection",
+      "passed": true,
+      "message": "Connected - Block 41432861",
+      "critical": true
+    },
+    {
+      "name": "QuickNode RPC connection",
+      "passed": true,
+      "message": "Connected - Block 41432861",
+      "critical": true
+    }
+  ],
+  "recommendations": []
+}
