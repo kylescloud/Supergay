@@ -1,17 +1,18 @@
 import { ethers } from 'ethers';
 import { config } from 'dotenv';
 import * as fs from 'fs';
-import { FlashLoanArbitrageEnhanced__factory } from '../artifacts/contracts/FlashLoanArbitrageEnhanced.sol/FlashLoanArbitrageEnhanced.js';
+import { FlashLoanArbitrage__factory } from '../typechain/contracts/FlashLoanArbitrage.js';
 
 config();
 
 async function deployFlashLoanContract() {
-  console.log('=== Deploying Flash Loan Arbitrage Enhanced Contract ===\n');
+  console.log('=== Deploying Flash Loan Arbitrage Contract ===\n');
 
   // Get configuration
-  const RPC_URL = process.env.RPC_URL || 'https://base-rpc.publicnode.com';
+  const RPC_URL = process.env.BASE_RPC_URL || process.env.RPC_URL || 'https://mainnet.base.org';
   const PRIVATE_KEY = process.env.PRIVATE_KEY || '';
   const AAVE_POOL_ADDRESS = '0xA238Dd80C259a72e81d7e4b422E3588869B8325B';
+  const ADDRESSES_PROVIDER = '0xA238Dd80C259a72e81d7e4b422E3588869B8325B';
 
   if (!PRIVATE_KEY) {
     throw new Error('PRIVATE_KEY not set in environment variables!');
@@ -35,10 +36,11 @@ async function deployFlashLoanContract() {
   }
 
   // Deploy contract
-  console.log('Deploying FlashLoanArbitrageEnhanced contract...');
-  const factory = new FlashLoanArbitrageEnhanced__factory(wallet);
+  console.log('Deploying FlashLoanArbitrage contract...');
+  const factory = new FlashLoanArbitrage__factory(wallet);
   
-  const contract = await factory.deploy();
+  // Deploy with Aave addresses provider
+  const contract = await factory.deploy(ADDRESSES_PROVIDER);
   await contract.waitForDeployment();
   
   const contractAddress = await contract.getAddress();
@@ -49,35 +51,45 @@ async function deployFlashLoanContract() {
   await contract.deploymentTransaction()?.wait(5);
   console.log('✅ Contract confirmed!\n');
 
-  // Configure DEX routers
-  console.log('Configuring DEX routers...');
+  // Verify router addresses
+  console.log('Verifying configured DEX routers...\n');
   
-  // First, set original 5 routers
-  const tx1 = await contract.setRouters(
-    '0x4752ba5DBC23f44D87826276BF6Fd6b1C1252c36',  // Uniswap V2
-    '0x33128a8fC17869897dcE68Ed026d694621f6FDfD',  // Uniswap V3
-    '0xcfE90b3E7d4C8b2d11C5115D6240226F2F5fd937',  // Aerodrome
-    '0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7',  // AlienBase
-    '0xaaa3b1F1bd7BCc97fD1917c18ADE665C5D31F066'   // SwapBased
-  );
-  await tx1.wait();
-  console.log('✅ Original 5 DEX routers configured!');
+  const routers = {
+    uniswapV2Router: await contract.uniswapV2Router(),
+    uniswapV3Router: await contract.uniswapV3Router(),
+    uniswapV4UniversalRouter: await contract.uniswapV4UniversalRouter(),
+    curveRouter: await contract.curveRouter(),
+    aerodromeRouter: await contract.aerodromeRouter(),
+    aerodromeSlipStreamRouter: await contract.aerodromeSlipStreamRouter(),
+    aerodromeSlipStream2Router: await contract.aerodromeSlipStream2Router(),
+    sushiswapV3Router: await contract.sushiswapV3Router(),
+    pancakeswapV3Router: await contract.pancakeswapV3Router(),
+    baseSwapRouter: await contract.baseSwapRouter(),
+    hydrexRouter: await contract.hydrexRouter()
+  };
 
-  // Now, set additional 6 routers
-  const tx2 = await contract.setAdditionalRouters(
-    '0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506',  // SushiSwap V3
-    '0x1b81D678ffb9C0263b24A97847620C99d213eB14',  // PancakeSwap V3
-    '0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24',  // BaseSwap
-    '0xBE6D8f0d05cC4be24d5167a3eF062215bE6D18a5',  // Aerodrome SlipStream
-    '0x51ca29d9828867C363572C37c424E3d6b380c61e',  // Aerodrome SlipStream 2
-    '0x8c1A3cF8f83074169FE5D7aD50B978e1cD6b37c7'   // Hydrex
-  );
-  await tx2.wait();
-  console.log('✅ Additional 6 DEX routers configured!\n');
+  console.log('Configured DEX Routers:');
+  console.log(`  Uniswap V2: ${routers.uniswapV2Router}`);
+  console.log(`  Uniswap V3: ${routers.uniswapV3Router}`);
+  console.log(`  Uniswap V4: ${routers.uniswapV4UniversalRouter}`);
+  console.log(`  Curve: ${routers.curveRouter}`);
+  console.log(`  Aerodrome V2: ${routers.aerodromeRouter}`);
+  console.log(`  Aerodrome SlipStream: ${routers.aerodromeSlipStreamRouter}`);
+  console.log(`  Aerodrome SlipStream 2: ${routers.aerodromeSlipStream2Router}`);
+  console.log(`  SushiSwap V3: ${routers.sushiswapV3Router}`);
+  console.log(`  PancakeSwap V3: ${routers.pancakeswapV3Router}`);
+  console.log(`  BaseSwap: ${routers.baseSwapRouter}`);
+  console.log(`  Hydrex: ${routers.hydrexRouter}\n`);
+
+  console.log('✅ All 11 DEX routers verified!\n');
 
   // Get contract owner
   const owner = await contract.owner();
   console.log(`Contract Owner: ${owner}`);
+
+  // Check if paused
+  const paused = await contract.paused();
+  console.log(`Contract Paused: ${paused}\n`);
 
   // Save deployment information
   const deploymentInfo = {
@@ -86,7 +98,20 @@ async function deployFlashLoanContract() {
     deployer: wallet.address,
     contractAddress: contractAddress,
     aavePoolAddress: AAVE_POOL_ADDRESS,
-    routers: routers,
+    addressesProvider: ADDRESSES_PROVIDER,
+    routers: {
+      uniswapV2Router: routers.uniswapV2Router,
+      uniswapV3Router: routers.uniswapV3Router,
+      uniswapV4UniversalRouter: routers.uniswapV4UniversalRouter,
+      curveRouter: routers.curveRouter,
+      aerodromeRouter: routers.aerodromeRouter,
+      aerodromeSlipStreamRouter: routers.aerodromeSlipStreamRouter,
+      aerodromeSlipStream2Router: routers.aerodromeSlipStream2Router,
+      sushiswapV3Router: routers.sushiswapV3Router,
+      pancakeswapV3Router: routers.pancakeswapV3Router,
+      baseSwapRouter: routers.baseSwapRouter,
+      hydrexRouter: routers.hydrexRouter
+    },
     transactionHash: contract.deploymentTransaction()?.hash,
     blockNumber: await provider.getBlockNumber()
   };
@@ -105,13 +130,20 @@ FLASH_LOAN_CONTRACT=${contractAddress}
 
 # Aave V3 Pool on Base
 AAVE_POOL=${AAVE_POOL_ADDRESS}
+AAVE_POOL_ADDRESS=${AAVE_POOL_ADDRESS}
 
-# DEX Routers
+# DEX Routers (configured in contract constructor)
 UNISWAP_V2_ROUTER=${routers.uniswapV2Router}
 UNISWAP_V3_ROUTER=${routers.uniswapV3Router}
+UNISWAP_V4_ROUTER=${routers.uniswapV4UniversalRouter}
+CURVE_ROUTER=${routers.curveRouter}
 AERODROME_ROUTER=${routers.aerodromeRouter}
-ALIENBASE_ROUTER=${routers.alienBaseRouter}
-SWAPBASED_ROUTER=${routers.swapBasedRouter}
+AERODROME_SLIPSTREAM_ROUTER=${routers.aerodromeSlipStreamRouter}
+AERODROME_SLIPSTREAM_2_ROUTER=${routers.aerodromeSlipStream2Router}
+SUSHISWAP_V3_ROUTER=${routers.sushiswapV3Router}
+PANCAKESWAP_V3_ROUTER=${routers.pancakeswapV3Router}
+BASESWAP_ROUTER=${routers.baseSwapRouter}
+HYDREX_ROUTER=${routers.hydrexRouter}
 `;
 
   fs.appendFileSync('.env', envContent);
@@ -129,18 +161,37 @@ SWAPBASED_ROUTER=${routers.swapBasedRouter}
     },
     configuration: {
       aavePool: AAVE_POOL_ADDRESS,
-      routers: routers,
+      addressesProvider: ADDRESSES_PROVIDER,
+      routers: {
+        uniswapV2Router: routers.uniswapV2Router,
+        uniswapV3Router: routers.uniswapV3Router,
+        uniswapV4UniversalRouter: routers.uniswapV4UniversalRouter,
+        curveRouter: routers.curveRouter,
+        aerodromeRouter: routers.aerodromeRouter,
+        aerodromeSlipStreamRouter: routers.aerodromeSlipStreamRouter,
+        aerodromeSlipStream2Router: routers.aerodromeSlipStream2Router,
+        sushiswapV3Router: routers.sushiswapV3Router,
+        pancakeswapV3Router: routers.pancakeswapV3Router,
+        baseSwapRouter: routers.baseSwapRouter,
+        hydrexRouter: routers.hydrexRouter
+      },
       supportedDEXs: [
         'Uniswap V2',
         'Uniswap V3',
-        'Aerodrome',
-        'AlienBase',
-        'SwapBased'
+        'Uniswap V4',
+        'Curve',
+        'Aerodrome V2',
+        'Aerodrome SlipStream',
+        'Aerodrome SlipStream 2',
+        'SushiSwap V3',
+        'PancakeSwap V3',
+        'BaseSwap',
+        'Hydrex'
       ]
     },
     nextSteps: [
-      'Fund the contract with ETH for gas (optional, wallet pays gas)',
-      'Test with a small flash loan',
+      'Test with a small flash loan on testnet first',
+      'Verify all DEX integrations work',
       'Set up automated execution using run-automated-executor.ts',
       'Monitor execution history',
       'Collect profits'
@@ -150,7 +201,10 @@ SWAPBASED_ROUTER=${routers.swapBasedRouter}
       'Only owner can execute arbitrage',
       'Aave flash loans require approval',
       'Flash loan premium is 0.05% on Base',
-      'Minimum profit should account for gas costs'
+      'Minimum profit should account for gas costs',
+      'All 11 DEXs are configured and ready',
+      'Router addresses are set in constructor and cannot be changed',
+      'If you need different router addresses, you must deploy a new contract'
     ]
   };
 
@@ -165,8 +219,8 @@ SWAPBASED_ROUTER=${routers.swapBasedRouter}
   console.log(`Owner: ${owner}`);
   console.log(`Supported DEXs: ${report.configuration.supportedDEXs.length}`);
   console.log('\nNext Steps:');
-  console.log('1. Test the contract with a small flash loan');
-  console.log('2. Run automated executor: npm run execute-arbitrage');
+  console.log('1. Test the contract with a small flash loan on testnet');
+  console.log('2. Run automated executor: npm run executor:start');
   console.log('3. Monitor execution history in data/execution-history.json');
   console.log('4. Collect profits from successful arbitrage executions\n');
 

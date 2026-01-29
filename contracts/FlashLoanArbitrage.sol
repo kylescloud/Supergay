@@ -130,33 +130,33 @@ contract FlashLoanArbitrage is FlashLoanSimpleReceiverBase {
         maxGasPrice = 20 gwei;
 
         // Set default DEX router addresses on Base
-        // Uniswap V4
-        uniswapV4PoolManager = 0x498581fF718922c3f8e6A244956aF099B2652b2b;
-        uniswapV4UniversalRouter = 0x6fF5693b99212Da76ad316178A184AB56D299b43;
+        // Uniswap V2
+        uniswapV2Router = 0x4752Ba5DBC23F44D87826276bf6fd6B1c1252c36;
         
         // Uniswap V3
-        uniswapV3Router = 0xE592427A0AEce92De3Edee1F18E0157C05861564;
+        uniswapV3Router = 0x33128a8fC17869897dcE68Ed026d694621f6FDfD;
         
-        // Uniswap V2
-        uniswapV2Router = 0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24;
+        // Uniswap V4 (Universal Router)
+        uniswapV4UniversalRouter = 0x33128a8fC17869897dcE68Ed026d694621f6FDfD;
+        uniswapV4PoolManager = 0x33128a8fC17869897dcE68Ed026d694621f6FDfD;
         
         // Curve
-        curveRouter = 0x99A583981D3D968c3D71425676B72C720f02b734;
-        
-        // SushiSwap V3
-        sushiswapV3Router = 0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506;
-        
-        // PancakeSwap V3
-        pancakeSwapV3Router = 0x1b81D678ffb9C0263b24A97847620C99d213eB14;
+        curveRouter = 0x445FE580eF8d70FF569aB36e80c647af338db351;
         
         // Aerodrome Finance (V2-style)
-        aerodromeRouter = 0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43;
+        aerodromeRouter = 0xCFE90b3e7d4c8b2D11C5115D6240226F2f5FD937;
         
         // Aerodrome SlipStream (V3-style)
         aerodromeSlipStreamRouter = 0xBE6D8f0d05cC4be24d5167a3eF062215bE6D18a5;
         
         // Aerodrome SlipStream 2 (V3-style)
         aerodromeSlipStream2Router = 0x51ca29d9828867C363572C37c424E3d6b380c61e;
+        
+        // SushiSwap V3
+        sushiswapV3Router = 0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506;
+        
+        // PancakeSwap V3
+        pancakeSwapV3Router = 0x1b81D678ffb9C0263b24A97847620C99d213eB14;
         
         // BaseSwap (V2-style)
         baseSwapRouter = 0x4752ba5DBc23f44D87826276BF6Fd6b1C372aD24;
