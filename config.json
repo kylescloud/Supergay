@@ -1,54 +1,190 @@
 {
-  "minProfitPercent": 0.1,
-  "minProfitAfterGas": 0.3,
+  "network": "base",
+  "chainId": 8453,
+  
+  "_comment_profitability": "LOWERED THRESHOLDS TO FIND MORE OPPORTUNITIES",
+  "minProfitBasisPoints": 10,
+  "minNetProfitUSD": 0.50,
+  "maxSlippageBasisPoints": 50,
+  
+  "_comment_gas": "Gas settings for Base network",
+  "maxGasPriceGwei": 50,
+  "gasLimitMultiplier": 1.2,
+  "priorityFeeGwei": 1,
+  
+  "_comment_execution": "Execution parameters",
   "executionEnabled": true,
-  "feeThreshold": 3000,
-  "maxGasPrice": 50000000000,
-  "gasPriceThreshold": 50000000000,
-  "dynamicThresholds": {
-    "enabled": true,
-    "minProfit": 0.1,
-    "maxProfit": 5,
-    "adjustmentFactor": 0.5,
-    "volatilityThreshold": 0.02,
-    "gasPriceImpact": 0.3
-  },
-  "flashLoan": {
-    "enabled": true,
-    "provider": "aave",
-    "minProfitAfterFlashLoan": 0.1,
-    "maxFlashLoanAmount": 1000000
-  },
-  "strategies": {
-    "multiHop": {
-      "minProfit": 0.1,
-      "maxHops": 4,
-      "entropyThreshold": 0.3
+  "dryRun": false,
+  "maxConcurrentTrades": 3,
+  "minTimeBetweenTradesMs": 1000,
+  
+  "_comment_scanning": "Pool scanning configuration",
+  "scanIntervalMs": 2000,
+  "poolRefreshIntervalMs": 300000,
+  "enabledStrategies": [
+    "cross-dex",
+    "triangular",
+    "multi-hop",
+    "flash-swap"
+  ],
+  
+  "_comment_dexes": "Supported DEXs on Base",
+  "dexes": [
+    {
+      "name": "Uniswap V3",
+      "type": "v3",
+      "router": "0x2626664c2603336E57B271c5C0b26F421741e481",
+      "factory": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+      "quoter": "0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a",
+      "enabled": true
     },
-    "feeTier": {
-      "minProfit": 0.15,
-      "minPriceDifference": 0.01
+    {
+      "name": "Uniswap V2",
+      "type": "v2",
+      "router": "0x4752ba5dbc23f44d87826276bf6fd6b1c372ad24",
+      "factory": "0x8909dc15e40173ff4699343b6eb8132c65e18ec6",
+      "enabled": true
     },
-    "liquidityFragmentation": {
-      "minProfit": 0.2,
-      "minLiquidityDifference": 0.1
+    {
+      "name": "BaseSwap",
+      "type": "v2",
+      "router": "0x327Df1E6de05895d2ab08513aaDD9313Fe505d86",
+      "factory": "0xFDa619b6d20975be80A10332cD39b9a4b0FAa8BB",
+      "enabled": true
     },
-    "stableVolatile": {
-      "minProfit": 0.05,
-      "minSlopeDifference": 0.01
+    {
+      "name": "Aerodrome",
+      "type": "solidly",
+      "router": "0xcF77a3Ba9A5CA399B7c97c74d54e5b1Beb874E43",
+      "factory": "0x420DD381b31aEf6683db6B902084cB0FFECe40Da",
+      "enabled": true
+    },
+    {
+      "name": "SwapBased",
+      "type": "v2",
+      "router": "0xaaa3b1F1bd7BCc97fD1917c18ADE665C5D31F066",
+      "factory": "0x04C9f118d21e8B767D2e50C946f0cC9F6C367300",
+      "enabled": true
+    },
+    {
+      "name": "RocketSwap",
+      "type": "v2",
+      "router": "0xC4a30C8F5bE7bD27F215B08EEa2CCf74d3D67848",
+      "factory": "0xBe6c6A389b82306e88d74d1692B67285A9db9A47",
+      "enabled": true
+    },
+    {
+      "name": "Sushi V3",
+      "type": "v3",
+      "router": "0xFB7eF66a7e61224DD6FcD0D7d9C3be5C8B049b9f",
+      "factory": "0xc35DADB65012eC5796536bD9864eD8773aBc74C4",
+      "enabled": true
+    },
+    {
+      "name": "Balancer",
+      "type": "balancer",
+      "vault": "0xBA12222222228d8Ba445958a75a0704d566BF2C8",
+      "enabled": true
+    },
+    {
+      "name": "Curve",
+      "type": "curve",
+      "registry": "0x0000000022D53366457F9d5E68Ec105046FC4383",
+      "enabled": true
+    },
+    {
+      "name": "Maverick",
+      "type": "v3",
+      "router": "0x6b00CCCb6d75F7BEAF03770B0D9b86a6C2e92c2F",
+      "factory": "0x0A7e848Aca42d879EF06507Fca0E7b33A0a63c1e",
+      "enabled": true
+    },
+    {
+      "name": "PancakeSwap V3",
+      "type": "v3",
+      "router": "0x678Aa4bF4E210cf2166753e054d5b7c31cc7fa86",
+      "factory": "0x0BFbCF9fa4f9C56B0F40a671Ad40E0805A091865",
+      "enabled": true
     }
+  ],
+  
+  "_comment_tokens": "Priority tokens for scanning",
+  "priorityTokens": [
+    {
+      "symbol": "WETH",
+      "address": "0x4200000000000000000000000000000000000006",
+      "decimals": 18,
+      "priority": 1
+    },
+    {
+      "symbol": "USDC",
+      "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+      "decimals": 6,
+      "priority": 1
+    },
+    {
+      "symbol": "USDbC",
+      "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+      "decimals": 6,
+      "priority": 2
+    },
+    {
+      "symbol": "DAI",
+      "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+      "decimals": 18,
+      "priority": 2
+    },
+    {
+      "symbol": "cbETH",
+      "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+      "decimals": 18,
+      "priority": 2
+    }
+  ],
+  
+  "_comment_aave": "Aave V3 flash loan configuration",
+  "aave": {
+    "poolAddressProvider": "0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D",
+    "pool": "0xA238Dd80C259a72e81d7e4b422E3588869B8325B",
+    "flashLoanFee": 9
   },
-  "scanning": {
-    "enabled": true,
-    "interval": 2000,
-    "maxConcurrentScans": 5,
-    "poolUpdateInterval": 10000
+  
+  "_comment_security": "Security and safety settings",
+  "security": {
+    "maxTradeAmountETH": 1.0,
+    "maxDailyLossETH": 0.1,
+    "emergencyStopLossPercent": 5.0,
+    "enableEmergencyStop": true,
+    "requireProfitConfirmation": true,
+    "minConfirmationBlocks": 1
   },
-  "riskManagement": {
-    "maxPositionSize": 100000,
-    "maxDailyProfit": 10000,
-    "maxGasCost": 100,
-    "slippageTolerance": 0.005
+  
+  "_comment_monitoring": "Monitoring and logging",
+  "monitoring": {
+    "logLevel": "info",
+    "enableTelegramAlerts": false,
+    "enableDiscordAlerts": false,
+    "logSuccessfulTrades": true,
+    "logFailedTrades": true,
+    "saveOpportunityHistory": true
   },
-  "lastUpdated": 1769436442091
+  
+  "_comment_optimization": "Performance optimization",
+  "optimization": {
+    "usePriceCache": true,
+    "priceCacheTTLMs": 2000,
+    "batchRPCCalls": true,
+    "maxRPCBatchSize": 10,
+    "useMulticall": true,
+    "parallelScanThreads": 3
+  },
+  
+  "_comment_advanced": "Advanced settings - modify with caution",
+  "advanced": {
+    "allowSandwichProtection": true,
+    "usePrivateMempool": false,
+    "mevProtectionEnabled": true,
+    "dynamicGasAdjustment": true,
+    "adaptiveProfitThreshold": false
+  }
 }
