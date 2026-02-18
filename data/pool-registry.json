@@ -1,16 +1,6 @@
 {
-  "version": "2.1",
-  "lastUpdated": 1769436380441,
-  "metadata": {
-    "totalPools": 212,
-    "previousPools": 115,
-    "newPoolsAdded": 97,
-    "sources": [
-      "Cleaned from original registry",
-      "AlienBase",
-      "SwapBased"
-    ]
-  },
+  "lastUpdated": "2026-02-18T20:50:44.883Z",
+  "totalPools": 405,
   "pools": [
     {
       "address": "0xAa567b4bd5AdE0D049D9A795CbaC436894cbbDE4",
@@ -379,38 +369,33 @@
     {
       "address": "0x6cDcb1C4A4D1C3C6d054b27AC5B77e89eAFb971d",
       "dex": "Aerodrome",
-      "dexType": "v2",
-      "dexVersion": "v2",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
       "token0": {
         "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
         "symbol": "AERO",
-        "name": "Aerodrome Finance",
+        "name": "Aerodrome",
         "decimals": 18
       },
       "token1": {
         "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
         "symbol": "USDC",
         "name": "USD Coin",
-        "decimals": 6
+        "decimals": 18
       },
-      "fee": 300,
-      "liquidity": "31627297.34",
-      "reserve0": "15811254334112",
-      "reserve1": "35042496442429062294024307",
-      "blockNumber": 0,
-      "lastUpdated": 1769417464119,
       "isActive": true,
-      "dexIdentifier": "Aerodrome"
+      "liquidityUSD": 18599729.54,
+      "volume24h": 1424376.49
     },
     {
       "address": "0x7f670f78B17dEC44d5Ef68a48740b6f8849cc2e6",
       "dex": "Aerodrome",
-      "dexType": "v2",
-      "dexVersion": "v2",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
       "token0": {
         "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
         "symbol": "AERO",
-        "name": "Aerodrome Finance",
+        "name": "Aerodrome",
         "decimals": 18
       },
       "token1": {
@@ -419,66 +404,51 @@
         "name": "Wrapped Ether",
         "decimals": 18
       },
-      "fee": 300,
-      "liquidity": "3599148.33",
-      "reserve0": "626658135379669726504",
-      "reserve1": "3986056638580163477584358",
-      "blockNumber": 0,
-      "lastUpdated": 1769417464119,
       "isActive": true,
-      "dexIdentifier": "Aerodrome"
+      "liquidityUSD": 2439264.83,
+      "volume24h": 24608.08
     },
     {
       "address": "0x2223F9FE624F69Da4D8256A7bCc9104FBA7F8f75",
       "dex": "Aerodrome",
-      "dexType": "v2",
-      "dexVersion": "v2",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
       "token0": {
         "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
         "symbol": "AERO",
-        "name": "Aerodrome Finance",
+        "name": "Aerodrome",
         "decimals": 18
       },
       "token1": {
         "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
         "symbol": "USDbC",
         "name": "USD Base Coin",
-        "decimals": 6
+        "decimals": 18
       },
-      "fee": 300,
-      "liquidity": "254115.39",
-      "blockNumber": 0,
-      "lastUpdated": 1769420746705,
       "isActive": true,
-      "reserve0": "281964379650262698800205",
-      "reserve1": "127279770941",
-      "dexIdentifier": "Aerodrome"
+      "liquidityUSD": 209481.81,
+      "volume24h": 7193.27
     },
     {
       "address": "0x861Ee8B9F7e42eDCF4f1B5614c6595F71A879f3f",
       "dex": "Aerodrome",
-      "dexType": "v2",
-      "dexVersion": "v2",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
       "token0": {
         "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
         "symbol": "AERO",
-        "name": "Aerodrome Finance",
+        "name": "Aerodrome",
         "decimals": 18
       },
       "token1": {
         "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
         "symbol": "USDC",
         "name": "USD Coin",
-        "decimals": 6
+        "decimals": 18
       },
-      "fee": 300,
-      "liquidity": "13111.75",
-      "reserve0": "3441527641",
-      "reserve1": "21513104197498241529090",
-      "blockNumber": 0,
-      "lastUpdated": 1769417464119,
       "isActive": true,
-      "dexIdentifier": "Aerodrome"
+      "liquidityUSD": 9348.32,
+      "volume24h": 154.74
     },
     {
       "address": "0x081eC5d6b68A28C9e3a73eC97E351161dBB5e8ef",
@@ -509,12 +479,12 @@
     {
       "address": "0x80aBe24A3ef1fc593aC5Da960F232ca23B2069d0",
       "dex": "Aerodrome",
-      "dexType": "v2",
-      "dexVersion": "v2",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
       "token0": {
         "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
         "symbol": "AERO",
-        "name": "Aerodrome Finance",
+        "name": "Aerodrome",
         "decimals": 18
       },
       "token1": {
@@ -523,14 +493,9 @@
         "name": "Wrapped Ether",
         "decimals": 18
       },
-      "fee": 300,
-      "liquidity": "1867.5",
-      "blockNumber": 0,
-      "lastUpdated": 1769420746705,
       "isActive": true,
-      "reserve0": "167998252336752834",
-      "reserve1": "3205370626840630379210",
-      "dexIdentifier": "Aerodrome"
+      "liquidityUSD": 1307.96,
+      "volume24h": 17.15
     },
     {
       "address": "0xB304b47e039E20AFAd75FA2ada6CD8D95a9eea41",
@@ -1470,29 +1435,24 @@
     },
     {
       "address": "0xe9B0A6bc01B9b4eE44C7B012EC7d5A5EEAcc40df",
-      "dex": "Alien-base",
-      "dexType": "v2",
-      "dexVersion": "v2",
+      "dex": "alien-base",
+      "dexIdentifier": "alien-base",
+      "version": "v2",
       "token0": {
         "address": "0x1dd2d631c92b1aCdFCDd51A0F7145A50130050C4",
         "symbol": "ALB",
-        "name": "Alien Base",
+        "name": "AlienBase Token",
         "decimals": 18
       },
       "token1": {
         "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
         "symbol": "USDbC",
         "name": "USD Base Coin",
-        "decimals": 6
+        "decimals": 18
       },
-      "fee": 300,
-      "liquidity": "18432.26",
-      "blockNumber": 0,
-      "lastUpdated": 1769420746705,
       "isActive": true,
-      "reserve0": "707435891502487555430317",
-      "reserve1": "9043305569",
-      "dexIdentifier": "AlienBase"
+      "liquidityUSD": 13513.03,
+      "volume24h": 1627.78
     },
     {
       "address": "0x79E83b8419c8f6af03829C344ab71ba9f8823327",
@@ -3054,13 +3014,13 @@
     },
     {
       "address": "0x9BB646BF0F4Da44bfaF3d899e774DE065731EDFe",
-      "dex": "AlienBase",
-      "dexType": "v2style",
-      "dexVersion": "v2",
+      "dex": "alien-base",
+      "dexIdentifier": "alien-base",
+      "version": "v2",
       "token0": {
-        "address": "0x2ae3f1ec7f1f5012cfeab0185bfc7aa3cf0dec22",
-        "symbol": "UNKNOWN",
-        "name": "Unknown Token",
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
         "decimals": 18
       },
       "token1": {
@@ -3069,13 +3029,9 @@
         "name": "Wrapped Ether",
         "decimals": 18
       },
-      "fee": 300,
-      "reserve0": "152759865455812355446",
-      "reserve1": "171309507438134905011",
-      "blockNumber": 0,
-      "lastUpdated": 1769436352986,
       "isActive": true,
-      "dexIdentifier": "AlienBase"
+      "liquidityUSD": 505816.45,
+      "volume24h": 14.05
     },
     {
       "address": "0x2c749Ea7DE86752730f2eD15b971e9Dc77e0C5e5",
@@ -5426,6 +5382,4059 @@
       "lastUpdated": 1769436372485,
       "isActive": true,
       "dexIdentifier": "SwapBased"
+    },
+    {
+      "address": "0x72AB388E2E2F6FaceF59E3C3FA2C4E29011c2D38",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 4095312.02,
+      "volume24h": 50580089.88
+    },
+    {
+      "address": "0xdbc6998296caA1652A810dc8D3BaF4A8294330f1",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 984777.73,
+      "volume24h": 28316687.35
+    },
+    {
+      "address": "0xb4CB800910B228ED3d0834cF79D697127BBB00e5",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 325342.96,
+      "volume24h": 5077439.37
+    },
+    {
+      "address": "0xb2cc224c1c9feE385f8ad6a55b4d94E92359DC59",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 14725513.88,
+      "volume24h": 59456500.28
+    },
+    {
+      "address": "0xd0b53D9277642d899DF5C87A3966A349A798F224",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 13389891.97,
+      "volume24h": 26919684.14
+    },
+    {
+      "address": "0x6c561B446416E1A00E8E93E221854d6eA4171372",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 59777286.4,
+      "volume24h": 49210046.39
+    },
+    {
+      "address": "0x82dbe18346a8656dBB5E76F74bf3AE279cC16B29",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1343762.71,
+      "volume24h": 2442267.11
+    },
+    {
+      "address": "0x88A43bbDF9D098eEC7bCEda4e2494615dfD9bB9C",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 3220499.2,
+      "volume24h": 563460.89
+    },
+    {
+      "address": "0x47cA96Ea59C13F72745928887f84C9F52C3D7348",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 23821437.33,
+      "volume24h": 1646914.06
+    },
+    {
+      "address": "0x257FCbAE4Ac6B26A02E4FC5e1a11e4174B5ce395",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 675089.61,
+      "volume24h": 121663.77
+    },
+    {
+      "address": "0x74A4bF2cad1b172cDc82a5Da7130C7A59EB5460b",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 254896.66,
+      "volume24h": 28073.88
+    },
+    {
+      "address": "0x44Ecc644449fC3a9858d2007CaA8CFAa4C561f91",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 99776.52,
+      "volume24h": 19.29
+    },
+    {
+      "address": "0x10648BA41B8565907Cfa1496765fA4D95390aa0d",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 68902.13,
+      "volume24h": 201.75
+    },
+    {
+      "address": "0x74AD64bac8df96Af2B63eA50c3d8840B79aA7A3B",
+      "dex": "solidlycom",
+      "dexIdentifier": "solidlycom",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 42905.73,
+      "volume24h": 263676.38
+    },
+    {
+      "address": "0x686A4Cdd3F9059e56603840E320e5945E2190216",
+      "dex": "alien-base",
+      "dexIdentifier": "alien-base",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 66377.71,
+      "volume24h": 89.42
+    },
+    {
+      "address": "0x076a29b387dda06ce850805147fb1817df8680a7985de8a06ba191a643adde36",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "symbol": "ETH",
+        "name": "Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 54640.81,
+      "volume24h": 5.36
+    },
+    {
+      "address": "0xA9DaFa443a02FBc907Cb0093276B3E6F4ef02A46",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 19069.85,
+      "volume24h": 22471.57
+    },
+    {
+      "address": "0x9E8bfEB5c73F3f897BebdB49CC4161FecE0B0c55",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 11553.24,
+      "volume24h": 15.18
+    },
+    {
+      "address": "0x07CFA5Df24fB17486AF0CBf6C910F24253a674D3",
+      "dex": "BaseSwap",
+      "dexIdentifier": "baseswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 6661.12,
+      "volume24h": 79.74
+    },
+    {
+      "address": "0xa8E4C55D6dAf4D768aeBa2378c1AD94c112Ef48a",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2018.24,
+      "volume24h": 886.96
+    },
+    {
+      "address": "0x24Be4F7A32E5d131B30370BC53E93661e09E7dAB",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 4006.06,
+      "volume24h": 2.96
+    },
+    {
+      "address": "0x07011011f6a7c0c6d2882b1c6d67a685490e163f95453160bc08241dcf7d6305",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1584.77,
+      "volume24h": 499.4
+    },
+    {
+      "address": "0x2A5757b60987FF10385De1D4D923792f6fdCfFf1-0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22-0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+      "dex": "balancer",
+      "dexIdentifier": "balancer",
+      "version": "v2",
+      "token0": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2475.52,
+      "volume24h": 3.03
+    },
+    {
+      "address": "0x861A2922bE165a5Bd41b1E482B49216b465e1B5F",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1081311.17,
+      "volume24h": 532673.47
+    },
+    {
+      "address": "0xBd59a718E60bd868123C6E949c9fd97185EFbDB7",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 157508.81,
+      "volume24h": 16397.83
+    },
+    {
+      "address": "0x82a0c1a0d4EF0c0cA3cFDA3AD1AA78309Cc6139b",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 123204.21,
+      "volume24h": 1271.62
+    },
+    {
+      "address": "0x20E068D76f9E90b90604500B84c7e19dCB923e7e",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 202988.57,
+      "volume24h": 14809.57
+    },
+    {
+      "address": "0x03122FC0c902d6fe9cf019E16A406EAC8eFA7FdD",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 153978.13,
+      "volume24h": 7983.61
+    },
+    {
+      "address": "0xA6385c73961dd9C58db2EF0c4EB98cE4B60651e8",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 672361.14,
+      "volume24h": 98.62
+    },
+    {
+      "address": "0x19398851F424e03eED4b09A47f3bf5b0Dd85805b",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 61600.13,
+      "volume24h": 2004.3
+    },
+    {
+      "address": "0x565aecF84b5d30a6E79a5CEf3f0dA0Fc4280dEBC",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 42616.39,
+      "volume24h": 3365.42
+    },
+    {
+      "address": "0xE52f0c96b2265D0e471FBD84290a944C43D7Ba4c",
+      "dex": "solidlycom",
+      "dexIdentifier": "solidlycom",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 5358.77,
+      "volume24h": 39297.63
+    },
+    {
+      "address": "0x7c92c51b962263dE6449E11B59415C058980F455",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 8894.29,
+      "volume24h": 23.56
+    },
+    {
+      "address": "0x91229d634d2ccbee7c0c53e343be256e4c9ebd3af568356cef91ee0042abdc44",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "symbol": "ETH",
+        "name": "Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 7016.06,
+      "volume24h": 0
+    },
+    {
+      "address": "0xf3dFaB70CBb7F1ca33685463F7F4E79Bc6842933",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 4105.16,
+      "volume24h": 242.8
+    },
+    {
+      "address": "0x31AfD670cF750F33b5145612130198594E5dd6BE",
+      "dex": "SwapBased",
+      "dexIdentifier": "swapbased",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1055.83,
+      "volume24h": 992.88
+    },
+    {
+      "address": "0x6f4482cBF7b43599078fcb012732e20480015644",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2063.07,
+      "volume24h": 499.15
+    },
+    {
+      "address": "0xa910c7eb4b19a1995ae5a229fa1ecefc87a4f8d338e3c5fe5b50bd6539e434ba",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1199.34,
+      "volume24h": 65.16
+    },
+    {
+      "address": "0xBd1F3d188de7eE07B1b323C0D26D6720CAfB8780",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x74ccbe53F77b08632ce0CB91D3A545bF6B8E0979",
+        "symbol": "fBOMB",
+        "name": "Fantom Bomb",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 186141.93,
+      "volume24h": 49.33
+    },
+    {
+      "address": "0x1524a14C55f097bb54F0b24383f3ae3e3743804A",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x9EaF8C1E34F05a589EDa6BAfdF391Cf6Ad3CB239",
+        "symbol": "YFI",
+        "name": "yearn.finance",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1249478.06,
+      "volume24h": 17005.5
+    },
+    {
+      "address": "0x14dcCDd311Ab827c42CCA448ba87B1ac1039e2A4",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xEDfa23602D0EC14714057867A78d01e94176BEA0",
+        "symbol": "wrsETH",
+        "name": "rsETHWrapper",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 719637.48,
+      "volume24h": 0.21
+    },
+    {
+      "address": "0x587aC2d1F465099811FdD0C2072B4Fd819092Ad5",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c",
+        "symbol": "rETH",
+        "name": "Rocket Pool ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 49254.46,
+      "volume24h": 22076.13
+    },
+    {
+      "address": "0xf2ac25a530b3e56b8bf8cec5fa8702c79efe5b889616dd0479d1a05b22e28991",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xB6fe221Fe9EeF5aBa221c348bA20A1Bf5e73624c",
+        "symbol": "rETH",
+        "name": "Rocket Pool ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xc1CBa3fCea344f92D9239c08C0568f6F2F0ee452",
+        "symbol": "wstETH",
+        "name": "Wrapped liquid staked Ether 2.0",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 21941.32,
+      "volume24h": 0.49
+    },
+    {
+      "address": "0xbD3cd0D9d429b41F0a2e1C026552Bd598294d5E0",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 293677.6,
+      "volume24h": 296606.13
+    },
+    {
+      "address": "0x91F0f34916Ca4E2cCe120116774b0e4fA0cdcaA8",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 931456.22,
+      "volume24h": 61.39
+    },
+    {
+      "address": "0x288976Ed5C798937cc58954deeE471dfbcd3F23B",
+      "dex": "deltaswap",
+      "dexIdentifier": "deltaswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 64664.74,
+      "volume24h": 2659.57
+    },
+    {
+      "address": "0x829ea8feF9F8777f1C8b88512e0066fF518C310C",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 40890.72,
+      "volume24h": 521.52
+    },
+    {
+      "address": "0xB1419a7f9e8c6e434B1D05377e0Dbc4154E3DE78",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 30995.33,
+      "volume24h": 7147.27
+    },
+    {
+      "address": "0x1c419ac8FBaf8082Eb7276fC2f243A74daf1c927",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 15268.08,
+      "volume24h": 2917.21
+    },
+    {
+      "address": "0x87491d5d118b3182130be72de3c1caab6bc2069948ebf31b9597d713f497a9db",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "symbol": "ETH",
+        "name": "Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 6572.91,
+      "volume24h": 11.12
+    },
+    {
+      "address": "0x302976A386fbb375033bE3Ac1E4112F76cf42ef7",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x04C0599Ae5A44757c0af6F9eC3b93da8976c150A",
+        "symbol": "weETH",
+        "name": "Wrapped eETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2773.9,
+      "volume24h": 11.67
+    },
+    {
+      "address": "0xDC7EAd706795eDa3FEDa08Ad519d9452BAdF2C0d",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "name": "Renzo Restaked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 101474.51,
+      "volume24h": 7971.44
+    },
+    {
+      "address": "0x497139e8435E01555AC1e3740fccab7AFf149e02",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "name": "Renzo Restaked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 26079.05,
+      "volume24h": 18.53
+    },
+    {
+      "address": "0x0C8bF3cb3E1f951B284EF14aa95444be86a33E2f",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "name": "Renzo Restaked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 9704.29,
+      "volume24h": 0
+    },
+    {
+      "address": "0x58603091b4Da10685e114d85E330Cab36e655627",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+        "symbol": "ezETH",
+        "name": "Renzo Restaked ETH",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 5202.5,
+      "volume24h": 242.9
+    },
+    {
+      "address": "0xfa1b23ae5e236e66ac40f7b2cea3ce4ecf81d2a8826b6bcb1092e81349a96dfb",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xEDfa23602D0EC14714057867A78d01e94176BEA0",
+        "symbol": "wrsETH",
+        "name": "rsETHWrapper",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "symbol": "ETH",
+        "name": "Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1029263.51,
+      "volume24h": 21.37
+    },
+    {
+      "address": "0x5D0bC342178C8Fe2c2f9A9fcC9D52555C99936db",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 120364.82,
+      "volume24h": 176792.01
+    },
+    {
+      "address": "0x98c7A2338336d2d354663246F64676009c7bDa97",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 531551.81,
+      "volume24h": 360782.09
+    },
+    {
+      "address": "0x0E635F8EeED4F7279d56692D552F034ECE136019",
+      "dex": "alien-base",
+      "dexIdentifier": "alien-base",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 139880.98,
+      "volume24h": 172819.57
+    },
+    {
+      "address": "0xF6062550e8711dd6A38Ca87299b14dCD6D45d783",
+      "dex": "SwapBased",
+      "dexIdentifier": "swapbased",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 122640.65,
+      "volume24h": 353.19
+    },
+    {
+      "address": "0xa0ab20a64f46b5676fe1542cb87b454e5104007689e0eef4212aa0cbe34933a1",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 907121.61,
+      "volume24h": 27.6
+    },
+    {
+      "address": "0x06959273E9A65433De71F5A452D529544E07dDD0",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 78267.42,
+      "volume24h": 23685.49
+    },
+    {
+      "address": "0x867dbb1b6417abcb3696d5a5d9cc38cbf9f0f6d17355515fe1c8303e791832c4",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 23377.29,
+      "volume24h": 132916.34
+    },
+    {
+      "address": "0x8F360BAf899845441Eccdc46525E26BB8860752A",
+      "dex": "balancer",
+      "dexIdentifier": "balancer",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 33842.05,
+      "volume24h": 114804.02
+    },
+    {
+      "address": "0x27a8Afa3Bd49406e48a074350fB7b2020c43B2bD",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 46193.26,
+      "volume24h": 294.87
+    },
+    {
+      "address": "0x29Ed55B18Af0Add137952CB3E29FB77B32fCE426",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 27099.77,
+      "volume24h": 8860.86
+    },
+    {
+      "address": "0xAfe040fF1E4e1E24ED95D408e00e0839940ABE2F",
+      "dex": "balancer",
+      "dexIdentifier": "balancer",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2021.43,
+      "volume24h": 3099.57
+    },
+    {
+      "address": "0xb53D89F9FF727e9C73eF54FF4081f5103aa60CC1",
+      "dex": "iziswap",
+      "dexIdentifier": "iziswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 4437.44,
+      "volume24h": 38.06
+    },
+    {
+      "address": "0x92722287D2819012dD8EC07b4e426AC00Dd11103",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 4485.88,
+      "volume24h": 2919.36
+    },
+    {
+      "address": "0xdac0f353d884f6e0db833036558a9f225eda392f4d1ff1a61f13c8f7875186bf",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 4343.53,
+      "volume24h": 432.44
+    },
+    {
+      "address": "0x0484AE96984BCAdf6476811974Eeb6C7975B483F",
+      "dex": "infusion",
+      "dexIdentifier": "infusion",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 3942.08,
+      "volume24h": 51.28
+    },
+    {
+      "address": "0x88492051E18a65FE00241A93699A6082aE95c828",
+      "dex": "BaseSwap",
+      "dexIdentifier": "baseswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1532.63,
+      "volume24h": 1133.17
+    },
+    {
+      "address": "0x96508AE8037c6bD16162620187691F1c1e3e07C1",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+        "symbol": "USDT",
+        "name": "Tether USD",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2483.14,
+      "volume24h": 1.9
+    },
+    {
+      "address": "0xa45b43f690974df2ff5d1f9807786fab3adec320d26c76570ea2e483c80d08e1",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1654.22,
+      "volume24h": 38.79
+    },
+    {
+      "address": "0x0C659734f1eEF9C63B7Ebdf78a164CDd745586Db-0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913-0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+      "dex": "balancer",
+      "dexIdentifier": "balancer",
+      "version": "v2",
+      "token0": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215",
+        "symbol": "axlUSDC",
+        "name": "Axelar Wrapped USDC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1285.61,
+      "volume24h": 215.66
+    },
+    {
+      "address": "0xb1d14613b2feb81b8812a98e9f98dbdd8ec5bcd5c1855278cc5141e75c97dba7",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x587Cd533F418825521f3A1daa7CCd1E7339A1B07",
+        "symbol": "STARKBOT",
+        "name": "StarkBot",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 67505.26,
+      "volume24h": 0.12
+    },
+    {
+      "address": "0x3Fc28BFac25fC8e93B5b2fc15EfBBD5a8aA44eFe",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x9483ab65847A447e36d21af1CaB8C87e9712ff93",
+        "symbol": "wUSDR",
+        "name": "Wrapped USDR",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 109122.88,
+      "volume24h": 608.01
+    },
+    {
+      "address": "0x0B25c51637c43decd6CC1C1e3da4518D54ddb528",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x4621b7A9c75199271F773Ebd9A499dbd165c3191",
+        "symbol": "DOLA",
+        "name": "Dola USD Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 99024.26,
+      "volume24h": 16.36
+    },
+    {
+      "address": "0x42e8dC1b1891C103291Ec01D903451E729DaAACc",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x1C7a460413dD4e964f96D8dFC56E7223cE88CD85",
+        "symbol": "SEAM",
+        "name": "Seamless",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 19414.08,
+      "volume24h": 63.09
+    },
+    {
+      "address": "0x15D8efc10Fe04f7E40773ab7e3adCca4Fd6A6fA9",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xdCf5130274753c8050aB061B1a1DCbf583f5bFd0",
+        "symbol": "VCNT",
+        "name": "ViciCoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 60703.44,
+      "volume24h": 14772.91
+    },
+    {
+      "address": "0x723AEf6543aecE026a15662Be4D3fb3424D502A9",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 60039.59,
+      "volume24h": 1530.42
+    },
+    {
+      "address": "0x5F43555b02507133eCd5b78218283ed849b07Eac",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xf34e0cff046e154CAfCae502C7541b9E5FD8C249",
+        "symbol": "THALES",
+        "name": "Thales DAO Token",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1198.07,
+      "volume24h": 2
+    },
+    {
+      "address": "0x4C36388bE6F416A29C8d8Eee81C771cE6bE14B18",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 87292.72,
+      "volume24h": 107559.79
+    },
+    {
+      "address": "0xB4885Bc63399BF5518b994c1d0C153334Ee579D0",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 255716.99,
+      "volume24h": 12096.94
+    },
+    {
+      "address": "0x4A20660eC636C69AF94Cb4B251f6055f4bFf40ec",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 126941.62,
+      "volume24h": 27896.55
+    },
+    {
+      "address": "0x345825A980BD94e1480bC4f20FE4e3DAE2F23Dd3",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 163939.58,
+      "volume24h": 6961.88
+    },
+    {
+      "address": "0xd604cf300A4aE4345426dF42FFb296aa35b4bef2",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 124345.03,
+      "volume24h": 13577.96
+    },
+    {
+      "address": "0x87EbeF77D1d7a29A8Ea32492d0AA88D8c757A1Eb",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xdCf5130274753c8050aB061B1a1DCbf583f5bFd0",
+        "symbol": "VCNT",
+        "name": "ViciCoin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 56517.5,
+      "volume24h": 15193.27
+    },
+    {
+      "address": "0xaE45F7Eb428Eb6403F2567C3A3eC47E9230Bc823",
+      "dex": "shark-swap",
+      "dexIdentifier": "shark-swap",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 54506.62,
+      "volume24h": 2233.98
+    },
+    {
+      "address": "0x93e8542E6CA0eFFfb9D57a270b76712b968A38f5",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 3885.26,
+      "volume24h": 1488.33
+    },
+    {
+      "address": "0xC18F50d6A832f12F6DcAaeEe8D0c87A65B96787E",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 17464.38,
+      "volume24h": 5610.58
+    },
+    {
+      "address": "0x22F9623817F152148B4E080E98Af66FBE9C5AdF8",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 17556.78,
+      "volume24h": 13285.81
+    },
+    {
+      "address": "0xd64e7bF24eE5CC10B5Ab92525D256300Ad3FB81E",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xfde4C96c8593536E31F229EA8f37b2ADa2699bb2",
+        "symbol": "USDT",
+        "name": "Tether USD",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 11934.85,
+      "volume24h": 375.32
+    },
+    {
+      "address": "0x9BFa331679b307Cf358438F45f6413a205FD3EBf",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 13416.11,
+      "volume24h": 93.59
+    },
+    {
+      "address": "0xe4eFf19c7AcE186ba39fD3eD639B2D34171f7efF",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 11424.56,
+      "volume24h": 4859.13
+    },
+    {
+      "address": "0xfe1498a739904e731992eb24913d54d8b61896acfb1ee8dcb016db11b1726431",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 10200.34,
+      "volume24h": 719.21
+    },
+    {
+      "address": "0x67b00B46FA4f4F24c03855c5C8013C0B938B3eEc",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 9261.83,
+      "volume24h": 11.68
+    },
+    {
+      "address": "0x019efF8E9B225D8Cbc6127748f5F47eA3e2F28E5",
+      "dex": "SushiSwap V3",
+      "dexIdentifier": "sushiswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 8532.46,
+      "volume24h": 6647.55
+    },
+    {
+      "address": "0x6D3c5a4a7aC4B1428368310E4EC3bB1350d01455",
+      "dex": "BaseSwap",
+      "dexIdentifier": "baseswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 8093.78,
+      "volume24h": 0.95
+    },
+    {
+      "address": "0xe000cf0bb619e837a8efcfa287bb09f71f996c75ca76c3d19307fcfc9cd0716a",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 5911.61,
+      "volume24h": 3.38
+    },
+    {
+      "address": "0x3BD740dc10864f35001AAB7771C56a85C48c901B",
+      "dex": "SushiSwap V3",
+      "dexIdentifier": "sushiswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 5244.43,
+      "volume24h": 17.79
+    },
+    {
+      "address": "0x0FeB1490f80B6978002c3E501753562f2F2853B2",
+      "dex": "BaseSwap",
+      "dexIdentifier": "baseswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1281.72,
+      "volume24h": 81.68
+    },
+    {
+      "address": "0x35575bda468c32b7d0134e4383fcd61428f09b904391b684327473cef076dcf1",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2628.9,
+      "volume24h": 1.16
+    },
+    {
+      "address": "0x9287C921f5d920cEeE0d07d7c58d476E46aCC640",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1321.84,
+      "volume24h": 58.7
+    },
+    {
+      "address": "0x6FbFcf88DB1aADA31F34215b2a1Df7fafb4883e9",
+      "dex": "balancer",
+      "dexIdentifier": "balancer",
+      "version": "v2",
+      "token0": {
+        "address": "0x50c5725949A6F0c72E6C4a641F24049A917DB0Cb",
+        "symbol": "DAI",
+        "name": "Dai Stablecoin",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xd9aAEc86B65D86f6A7B5B1b0c42FFA531710b6CA",
+        "symbol": "USDbC",
+        "name": "USD Base Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2336.82,
+      "volume24h": 135.49
+    },
+    {
+      "address": "0xC211e1f853A898Bd1302385CCdE55f33a8C4B3f3",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 6583992.22,
+      "volume24h": 53149068.48
+    },
+    {
+      "address": "0xb94b22332ABf5f89877A14Cc88f2aBC48c34B3Df",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2409874.71,
+      "volume24h": 21920501.06
+    },
+    {
+      "address": "0x4e962BB3889Bf030368F56810A9c96B83CB3E778",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 9903624.68,
+      "volume24h": 38242871.8
+    },
+    {
+      "address": "0x70aCDF2Ad0bf2402C957154f944c19Ef4e1cbAE1",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 18509309.56,
+      "volume24h": 34680927
+    },
+    {
+      "address": "0x22AEe3699b6A0fEd71490C103Bd4E5f3309891D5",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 447019.98,
+      "volume24h": 9462556.22
+    },
+    {
+      "address": "0xfBB6Eed8e7aa03B138556eeDaF5D271A5E1e43ef",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 6032081.81,
+      "volume24h": 10391781.44
+    },
+    {
+      "address": "0x0BA69825c4C033e72309F6AC0Bde0023b15Cc97c",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1428516.71,
+      "volume24h": 1444047.2
+    },
+    {
+      "address": "0x3f9b863EF4B295d6Ba370215bcCa3785FCC44f44",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2531384.69,
+      "volume24h": 2474730.91
+    },
+    {
+      "address": "0x3e66e55e97ce60096f74b7C475e8249f2D31a9fb",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 3044462.3,
+      "volume24h": 6275748.38
+    },
+    {
+      "address": "0x7AeA2E8A3843516afa07293a10Ac8E49906dabD1",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2842603.95,
+      "volume24h": 5241088.83
+    },
+    {
+      "address": "0xFCda5ab6BBC1fe5B8e1a185e86bb5f24b12e2278",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 896066.88,
+      "volume24h": 1210700.78
+    },
+    {
+      "address": "0x1D6CfEe6eeC4688DAD33E6FBB2304a9eFe8BE3C8",
+      "dex": "alien-base",
+      "dexIdentifier": "alien-base",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 109618.6,
+      "volume24h": 61227.57
+    },
+    {
+      "address": "0x26e263efdc91f0d3279E2Ec2Bd58A7Ca5C2fCE62",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 288854.36,
+      "volume24h": 623503.74
+    },
+    {
+      "address": "0xd974D59e30054cf1aBedeD0C9947B0D8Baf90029",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 776236.01,
+      "volume24h": 1203237.48
+    },
+    {
+      "address": "0xb909F567c5c2Bb1A4271349708CC4637D7318b4A",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0b3e328455c4059EEb9e3f84b5543F74E24e7E1b",
+        "symbol": "VIRTUAL",
+        "name": "Virtual Protocol",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 655887.79,
+      "volume24h": 102707.13
+    },
+    {
+      "address": "0x12d76c5c8ec8edffd3c143995b0aa43fe44a6d71eb9113796272909e54b8e078",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 527607.02,
+      "volume24h": 707180.23
+    },
+    {
+      "address": "0xE9e25E35aa99A2A60155010802b81A25C45bA185",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 16068.81,
+      "volume24h": 797053.59
+    },
+    {
+      "address": "0x8c7080564B5A792A33Ef2FD473fbA6364d5495e5",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 9118736.01,
+      "volume24h": 2058479.26
+    },
+    {
+      "address": "0xeC558e484cC9f2210714E345298fdc53B253c27D",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2080688.99,
+      "volume24h": 799966.19
+    },
+    {
+      "address": "0x8BB9eAF3C5A906D20c4CC10eA2F73A3Ac2D5d41A",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x2Ae3F1Ec7F1F5012CFEab0185bfc7aa3cf0DEc22",
+        "symbol": "cbETH",
+        "name": "Coinbase Wrapped Staked ETH",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 93891.7,
+      "volume24h": 288671.83
+    },
+    {
+      "address": "0xaCc2874ed22e811afdc47979c7b7985cCEd53b29",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 177712.68,
+      "volume24h": 45065
+    },
+    {
+      "address": "0x2578365B3dfA7FfE60108e181EFb79FeDdec2319",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2981666.83,
+      "volume24h": 25161.68
+    },
+    {
+      "address": "0x9c38b55f9A9Aba91BbCEDEb12bf4428f47A6a0B8",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 544694.37,
+      "volume24h": 14855.37
+    },
+    {
+      "address": "0x179492f1f9c7b2e2518a01eda215baab8adf0b02dd3a90fe68059c0cac5686f5",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1127980.35,
+      "volume24h": 79488.79
+    },
+    {
+      "address": "0xd800B7e8C0949dFFBD59E3DF9527a22E311C0e7b",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 252787.92,
+      "volume24h": 22176.19
+    },
+    {
+      "address": "0xe6195a1f1c8f5d0bcf0a880db26738a1df4f6863017700a8f6377a72d45366f2",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "symbol": "ETH",
+        "name": "Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 496240.55,
+      "volume24h": 88509.05
+    },
+    {
+      "address": "0x937A0691D85511A9a8bCAC0f5ceb53159AdbE925",
+      "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+      "dexIdentifier": "0x03c01acae3d0173a93d819efdc832c7c4f153b06",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 153139.45,
+      "volume24h": 16975.2
+    },
+    {
+      "address": "0xE85c48401F5964bBaA5b50cB799d668c8Ed1f3eF",
+      "dex": "0x03C01Acae3D0173a93d819efDc832C7C4F153B06",
+      "dexIdentifier": "0x03c01acae3d0173a93d819efdc832c7c4f153b06",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 168400.98,
+      "volume24h": 13519.93
+    },
+    {
+      "address": "0x20897a5fe1b823e02fcea5fd7eeb8af75830d8352d2904b076e98692eff2e0a2",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 250259.71,
+      "volume24h": 4591.11
+    },
+    {
+      "address": "0x64f978ef116d3c2e1231cfd8b80a369dcd8e91b28037c9973b65b59fd2cbbb96",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1833008.87,
+      "volume24h": 52037.58
+    },
+    {
+      "address": "0xf81e1a62cBfA487E807044618661bFD4802B4982",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 318624.51,
+      "volume24h": 44911.33
+    },
+    {
+      "address": "0x138aceE5573fA09e7F215965ff60898cc33c6330",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 299168.07,
+      "volume24h": 25994.28
+    },
+    {
+      "address": "0xA33f162da19C7273BA1205BFD9D4340dA2446E3a",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 235182.98,
+      "volume24h": 14727.77
+    },
+    {
+      "address": "0x2722C8f9B5E2aC72D1f225f8e8c990E449ba0078",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 103448.46,
+      "volume24h": 818.21
+    },
+    {
+      "address": "0xEb58703922961813C19Fa755E83F1396FF9c99B0",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 115916.12,
+      "volume24h": 2139.19
+    },
+    {
+      "address": "0x488d6ea6064eEE9352fdCDB7BC50d98A7fF3AD4E",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 227178.8,
+      "volume24h": 106.58
+    },
+    {
+      "address": "0x434355f7EAfCF3A5b8A6EF755505B845682F906b",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 90332.97,
+      "volume24h": 11495.22
+    },
+    {
+      "address": "0x953F8b29049520eBE5c406ba255e3A9EcD36aDfC",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 41765.53,
+      "volume24h": 8150.06
+    },
+    {
+      "address": "0x720651DE0fE574916fE9846004f3ad7f7E7D4ac4",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 30942.39,
+      "volume24h": 25774.52
+    },
+    {
+      "address": "0x323121CD6F6274c9aeB9f87e0664C8FDa5d343A5",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 11613.72,
+      "volume24h": 313.09
+    },
+    {
+      "address": "0x9fee7385a2979D15277C3467Db7D99EF1A2669D7",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 5248.51,
+      "volume24h": 4.21
+    },
+    {
+      "address": "0xF654A6e07332c0A50e068868AB0aDE3296b42629",
+      "dex": "BaseSwap",
+      "dexIdentifier": "baseswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1143.15,
+      "volume24h": 8.13
+    },
+    {
+      "address": "0xDF7380fBba216F9b76A45e1a129da1fc998cfb88",
+      "dex": "0x8B76C05676D205563ffC1cbd11c0A6e3d83929c5",
+      "dexIdentifier": "0x8b76c05676d205563ffc1cbd11c0a6e3d83929c5",
+      "version": "v2",
+      "token0": {
+        "address": "0x3f9CE84562936Bb1E9c6064A37fDA3663e5CBcF4",
+        "symbol": "SEVEN",
+        "name": "indeX7",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 3839.97,
+      "volume24h": 7.64
+    },
+    {
+      "address": "0xC35D9e6fC72e8EC2935fae56f07afaD2Ce4DCb1b",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x26f3901aC8a79c50fb0d8289C74f0d09AdC42E29",
+        "symbol": "T",
+        "name": "Threshold Network Token",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x236aa50979D5f3De3Bd1Eeb40E81137F22ab794b",
+        "symbol": "tBTC",
+        "name": "Base tBTC v2",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 5551.91,
+      "volume24h": 297.1
+    },
+    {
+      "address": "0x89D0F320ac73dd7d9513FFC5bc58D1161452a657",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xA88594D404727625A9437C3f886C7643872296AE",
+        "symbol": "WELL",
+        "name": "WELL",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1653785.05,
+      "volume24h": 31891.57
+    },
+    {
+      "address": "0x3Ba9ce0f19cF3CcB631b973c83712C7E6E9585ae",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xA88594D404727625A9437C3f886C7643872296AE",
+        "symbol": "WELL",
+        "name": "WELL",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 18867.26,
+      "volume24h": 11371.11
+    },
+    {
+      "address": "0xCd401DE1cBAa0d770eE5FB70ff622c752C92B8c5",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xA88594D404727625A9437C3f886C7643872296AE",
+        "symbol": "WELL",
+        "name": "WELL",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 8998.87,
+      "volume24h": 951.88
+    },
+    {
+      "address": "0x722BcF6c16dAdcC29914E4E64290C46aa1406DE8",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0xA88594D404727625A9437C3f886C7643872296AE",
+        "symbol": "WELL",
+        "name": "WELL",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 9739.83,
+      "volume24h": 2512.63
+    },
+    {
+      "address": "0x9D228792a392838Be03293BA93f406F3e8077B8D",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0xe66E3A37C3274Ac24FE8590f7D84A2427194DC17",
+        "symbol": "stkWELL",
+        "name": "Staked WELL",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xA88594D404727625A9437C3f886C7643872296AE",
+        "symbol": "WELL",
+        "name": "WELL",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 99059.93,
+      "volume24h": 1343.93
+    },
+    {
+      "address": "0x20CB8f872ae894F7c9e32e621C186e5AFCe82Fd0",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 160927.73,
+      "volume24h": 257861.47
+    },
+    {
+      "address": "0xE5B5f522E98B5a2baAe212d4dA66b865B781DB97",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 143450.94,
+      "volume24h": 216055.45
+    },
+    {
+      "address": "0xa4FDd479eda160671636e2eCF8f993Cbf86258a8",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 201926.33,
+      "volume24h": 108787.15
+    },
+    {
+      "address": "0x3d5D143381916280ff91407FeBEB52f2b60f33Cf",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 599406.06,
+      "volume24h": 85444.48
+    },
+    {
+      "address": "0x82321f3BEB69f503380D6B233857d5C43562e2D0",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1126268.24,
+      "volume24h": 464427.72
+    },
+    {
+      "address": "0xdFe5F275020def30993f042174Fc2D335678b626",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 579739.81,
+      "volume24h": 407821.62
+    },
+    {
+      "address": "0xe268e533bf3b4df49b2951ce7b39345f814e7eb93415eda1d39a9c3a57662ec8",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 111157.33,
+      "volume24h": 23589.96
+    },
+    {
+      "address": "0xBE00fF35AF70E8415D0eB605a286D8A45466A4c1",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1219061.73,
+      "volume24h": 46353.67
+    },
+    {
+      "address": "0x0D5959a52E7004b601f0bE70618D01aC3cDce976",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 217941.84,
+      "volume24h": 1021.78
+    },
+    {
+      "address": "0x56a0cd87d81cc71184a4b2dd42964591bf351d0cfdded03f9bc75b7b559344ce",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 67515.56,
+      "volume24h": 5.57
+    },
+    {
+      "address": "0x29a857629E58C531f351Bb7fbd86aa46Ef6aF0B7",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 38909.09,
+      "volume24h": 22135.52
+    },
+    {
+      "address": "0x5dd190c0949646fe9702d439ccf32936134e7da9947af46f418ae285c1032719",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "symbol": "ETH",
+        "name": "Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 32206.64,
+      "volume24h": 1425.26
+    },
+    {
+      "address": "0xF4DFb8647C3Ef75c5A71b7B0ee9240BdccCe8697",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 11318.07,
+      "volume24h": 235.59
+    },
+    {
+      "address": "0x611374654470457AF78aA4056f34E64B9acbEc8B",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 10948.46,
+      "volume24h": 22.9
+    },
+    {
+      "address": "0x2426DC0A657BD481ab48f86C1616431905901238",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 5049.19,
+      "volume24h": 231.29
+    },
+    {
+      "address": "0x7563D4945dB69A206F15Ca97B18dd44CACB84Ec5",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1143.37,
+      "volume24h": 1222.05
+    },
+    {
+      "address": "0x3cD0F250F5F268b7d49c217540E4Cc971fd3A901",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x940181a94A35A4569E4529A3CDfB74e38FD98631",
+        "symbol": "AERO",
+        "name": "Aerodrome",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1304.74,
+      "volume24h": 97.95
+    },
+    {
+      "address": "0xc5E51044eB7318950B1aFb044FccFb25782C48c1",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 998490.73,
+      "volume24h": 8179087.58
+    },
+    {
+      "address": "0x5d4e504EB4c526995E0cC7A6E327FDa75D8B52b5",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 390186.51,
+      "volume24h": 1060405.78
+    },
+    {
+      "address": "0xB20f018Dde5A6FE7F93c31Da05a5Da9EfBc52772",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 642816.06,
+      "volume24h": 746257.45
+    },
+    {
+      "address": "0xE846373C1a92B167b4E9cd5d8E4d6B1Db9E90EC7",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1061991.36,
+      "volume24h": 1071532.39
+    },
+    {
+      "address": "0xb07d7EeCe8866E549601AF5C7622D8cdbEdC914e",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 184091.11,
+      "volume24h": 310773.69
+    },
+    {
+      "address": "0x7b2c99188D8EC7B82d6b3b3b1C1002095F1b8498",
+      "dex": "alien-base",
+      "dexIdentifier": "alien-base",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 292125.23,
+      "volume24h": 205031.46
+    },
+    {
+      "address": "0x1Ca42C7219F0cB1B67927e26502320cB98F725bd",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 201864.81,
+      "volume24h": 123031.24
+    },
+    {
+      "address": "0x48719249515f0283a3230ceddfa29262a48df6783c7ad4363f70a299940ea0dd",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x0000000000000000000000000000000000000000",
+        "symbol": "ETH",
+        "name": "Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 105546.61,
+      "volume24h": 8787.67
+    },
+    {
+      "address": "0x521bf7880c5e567eead09cd7fe67af2a60a21dfd79e8e49fd766e725b972aac2",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 170494.83,
+      "volume24h": 372.34
+    },
+    {
+      "address": "0xb18fad93e3c5a5f932d901f0c22c5639a832d6f29a4392fff3393fb734dd0720",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 115178.97,
+      "volume24h": 983.34
+    },
+    {
+      "address": "0x7682D268f34E86aCCAdfF56Db9668Eb6A449fF07",
+      "dex": "alien-base",
+      "dexIdentifier": "alien-base",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 83191.61,
+      "volume24h": 0.86
+    },
+    {
+      "address": "0x7279c08A36333e12c3Fc81747963264c100D66fB",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 57318.72,
+      "volume24h": 37624.7
+    },
+    {
+      "address": "0xFE4D6560D04fED2c9b6b163cb88979D7Cce3874a",
+      "dex": "hydrex",
+      "dexIdentifier": "hydrex",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0xcbB7C0000aB88B473b1f5aFd9ef808440eed33Bf",
+        "symbol": "cbBTC",
+        "name": "Coinbase Wrapped BTC",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 44315.1,
+      "volume24h": 48029.01
+    },
+    {
+      "address": "0xc07fccE40B3Afd2F795a5Cb451A3F80737539983",
+      "dex": "quickswap",
+      "dexIdentifier": "quickswap",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 46588.7,
+      "volume24h": 14237.88
+    },
+    {
+      "address": "0xb57BdfDb5FE848f999B45A868131a50b2EBE1755",
+      "dex": "PancakeSwap V3",
+      "dexIdentifier": "pancakeswap-v3",
+      "version": "v3",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 12430,
+      "volume24h": 545.47
+    },
+    {
+      "address": "0x64db64264317af2fa1cc5a5deff9900dcf504d426580ab16dc59279b4ade4423",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 19798.21,
+      "volume24h": 6037.05
+    },
+    {
+      "address": "0x8128caf6bb233d20b58F7413388cC18B3647267F",
+      "dex": "solidlycom",
+      "dexIdentifier": "solidlycom",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 12959.74,
+      "volume24h": 125935.69
+    },
+    {
+      "address": "0xa0650991136a18914973850e0c6cb1db3a0c0d5c3125df1aed3ca3efd79bfd88",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 13637.9,
+      "volume24h": 0.65
+    },
+    {
+      "address": "0x9DFf4b5AE4fD673213502Ab8fbf6d36015efb3E1",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x4200000000000000000000000000000000000006",
+        "symbol": "WETH",
+        "name": "Wrapped Ether",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 10412.83,
+      "volume24h": 392.16
+    },
+    {
+      "address": "0x03d8219070e54a55a9CE60889EAD2ffD18eB6aa9",
+      "dex": "Uniswap V2",
+      "dexIdentifier": "uniswap-v2",
+      "version": "v3",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 10841.52,
+      "volume24h": 882.89
+    },
+    {
+      "address": "0xFDF5139b38525627B47538536042A7c8d2686BD9",
+      "dex": "Aerodrome",
+      "dexIdentifier": "aerodrome",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 2507.57,
+      "volume24h": 21.67
+    },
+    {
+      "address": "0x00aF44843F5207dCC574Add652b695d9Fb150069",
+      "dex": "SwapBased",
+      "dexIdentifier": "swapbased",
+      "version": "v2",
+      "token0": {
+        "address": "0x60a3E35Cc302bFA44Cb288Bc5a4F316Fdb1adb42",
+        "symbol": "EURC",
+        "name": "EURC",
+        "decimals": 18
+      },
+      "token1": {
+        "address": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "symbol": "USDC",
+        "name": "USD Coin",
+        "decimals": 18
+      },
+      "isActive": true,
+      "liquidityUSD": 1605.14,
+      "volume24h": 284.88
     }
   ]
 }
