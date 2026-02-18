@@ -1,23 +1,19 @@
 {
   "network": "base",
   "chainId": 8453,
-  
   "_comment_profitability": "LOWERED THRESHOLDS TO FIND MORE OPPORTUNITIES",
   "minProfitBasisPoints": 10,
-  "minNetProfitUSD": 0.50,
+  "minNetProfitUSD": 0.5,
   "maxSlippageBasisPoints": 50,
-  
   "_comment_gas": "Gas settings for Base network",
   "maxGasPriceGwei": 50,
   "gasLimitMultiplier": 1.2,
   "priorityFeeGwei": 1,
-  
   "_comment_execution": "Execution parameters",
   "executionEnabled": true,
   "dryRun": false,
   "maxConcurrentTrades": 3,
   "minTimeBetweenTradesMs": 1000,
-  
   "_comment_scanning": "Pool scanning configuration",
   "scanIntervalMs": 2000,
   "poolRefreshIntervalMs": 300000,
@@ -27,7 +23,6 @@
     "multi-hop",
     "flash-swap"
   ],
-  
   "_comment_dexes": "Supported DEXs on Base",
   "dexes": [
     {
@@ -107,7 +102,6 @@
       "enabled": true
     }
   ],
-  
   "_comment_tokens": "Priority tokens for scanning",
   "priorityTokens": [
     {
@@ -141,24 +135,21 @@
       "priority": 2
     }
   ],
-  
   "_comment_aave": "Aave V3 flash loan configuration",
   "aave": {
     "poolAddressProvider": "0xe20fCBdBfFC4Dd138cE8b2E6FBb6CB49777ad64D",
     "pool": "0xA238Dd80C259a72e81d7e4b422E3588869B8325B",
     "flashLoanFee": 9
   },
-  
   "_comment_security": "Security and safety settings",
   "security": {
-    "maxTradeAmountETH": 1.0,
+    "maxTradeAmountETH": 1,
     "maxDailyLossETH": 0.1,
-    "emergencyStopLossPercent": 5.0,
+    "emergencyStopLossPercent": 5,
     "enableEmergencyStop": true,
     "requireProfitConfirmation": true,
     "minConfirmationBlocks": 1
   },
-  
   "_comment_monitoring": "Monitoring and logging",
   "monitoring": {
     "logLevel": "info",
@@ -168,7 +159,6 @@
     "logFailedTrades": true,
     "saveOpportunityHistory": true
   },
-  
   "_comment_optimization": "Performance optimization",
   "optimization": {
     "usePriceCache": true,
@@ -178,7 +168,6 @@
     "useMulticall": true,
     "parallelScanThreads": 3
   },
-  
   "_comment_advanced": "Advanced settings - modify with caution",
   "advanced": {
     "allowSandwichProtection": true,
@@ -186,5 +175,8 @@
     "mevProtectionEnabled": true,
     "dynamicGasAdjustment": true,
     "adaptiveProfitThreshold": false
-  }
+  },
+  "minProfitPercent": 0.1,
+  "minProfitAfterGas": 0.3,
+  "maxGasPrice": 50000000000
 }

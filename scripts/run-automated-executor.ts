@@ -109,10 +109,10 @@ class AutomatedExecutor {
     }
 
     console.log(`\nConfiguration:`);
-    console.log(`  Minimum profit: ${this.config.minProfitPercent}%`);
-    console.log(`  Minimum profit after gas: ${this.config.minProfitAfterGas}%`);
-    console.log(`  Max gas price: ${ethers.formatUnits(this.config.maxGasPrice, 'gwei')} gwei`);
-    console.log(`  Execution enabled: ${this.config.executionEnabled}\n`);
+    console.log(`  Minimum profit: ${this.config.minProfitPercent || 0.1}%`);
+    console.log(`  Minimum profit after gas: ${this.config.minProfitAfterGas || 0.3}%`);
+    console.log(`  Max gas price: ${ethers.formatUnits(this.config.maxGasPrice || 50000000000, 'gwei')} gwei`);
+    console.log(`  Execution enabled: ${this.config.executionEnabled !== false}\n`);
 
     if (!this.config.executionEnabled) {
       console.log('⚠️  WARNING: Execution is disabled in config.json!');
@@ -175,13 +175,14 @@ class AutomatedExecutor {
     console.log(`  📊 Found ${opportunities.length} opportunities`);
 
     // Filter for profitable opportunities
+    const minProfitAfterGas = this.config.minProfitAfterGas || 0.3;
     const profitableOpps = opportunities.filter((opp: Opportunity) => {
-      return opp.profitAfterGas >= this.config.minProfitAfterGas &&
+      return opp.profitAfterGas >= minProfitAfterGas &&
              opp.status === 'detected';
     });
 
     if (profitableOpps.length === 0) {
-      console.log(`  ℹ️  No opportunities meet profit threshold (${this.config.minProfitAfterGas}% after gas)`);
+      console.log(`  ℹ️  No opportunities meet profit threshold (${minProfitAfterGas}% after gas)`);
       return;
     }
 
@@ -195,8 +196,9 @@ class AutomatedExecutor {
 
     console.log(`  ⛽ Current gas price: ${gasPriceGwei.toFixed(2)} gwei`);
 
-    if (gasPrice > this.config.maxGasPrice) {
-      console.log(`  ⚠️  Gas price too high (${gasPriceGwei.toFixed(2)} > ${ethers.formatUnits(this.config.maxGasPrice, 'gwei')} gwei). Skipping execution.`);
+    const maxGasPrice = BigInt(this.config.maxGasPrice || 50000000000);
+    if (gasPrice > maxGasPrice) {
+      console.log(`  ⚠️  Gas price too high (${gasPriceGwei.toFixed(2)} > ${ethers.formatUnits(maxGasPrice, 'gwei')} gwei). Skipping execution.`);
       this.skippedExecutions += profitableOpps.length;
       return;
     }
