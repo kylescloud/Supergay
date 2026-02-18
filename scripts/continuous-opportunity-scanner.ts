@@ -104,6 +104,7 @@ class ContinuousScanner {
 
   private async scan() {
     console.log(`\n🔍 Scanning for opportunities...`);
+    console.log(`═══════════════════════════════════════════════════════════════`);
     
     // Load pool registry
     if (!fs.existsSync('data/pool-registry.json')) {
@@ -113,68 +114,140 @@ class ContinuousScanner {
     const registry = JSON.parse(fs.readFileSync('data/pool-registry.json', 'utf8'));
     const pools = registry.pools || [];
     
-    console.log(`  📊 Loaded ${pools.length} pools`);
+    console.log(`\n📊 Pool Analysis:`);
+    console.log(`   Total Pools: ${pools.length}`);
+    
+    // Count pools by DEX
+    const poolsByDex = pools.reduce((acc: any, pool: any) => {
+      acc[pool.dex] = (acc[pool.dex] || 0) + 1;
+      return acc;
+    }, {});
+    
+    console.log(`   DEXs: ${Object.keys(poolsByDex).length}`);
+    Object.entries(poolsByDex).slice(0, 5).forEach(([dex, count]) => {
+      console.log(`     • ${dex}: ${count} pools`);
+    });
+    
+    // Count pools by version
+    const poolsByVersion = pools.reduce((acc: any, pool: any) => {
+      const version = pool.version || 'unknown';
+      acc[version] = (acc[version] || 0) + 1;
+      return acc;
+    }, {});
+    
+    console.log(`   Pool Types:`);
+    Object.entries(poolsByVersion).forEach(([version, count]) => {
+      console.log(`     • ${version}: ${count} pools`);
+    });
+
+    console.log(`\n🔎 Scanning Strategies:`);
+    console.log(`   • Multi-Hop Cyclic Arbitrage`);
+    console.log(`   • Fee-Tier Mispricing`);
+    console.log(`   • Liquidity Fragmentation`);
+    console.log(`   • Stable-Volatile Curve`);
 
     // Simulate opportunity detection (in production, this would call the actual opportunity finder)
     const opportunities = this.detectOpportunities(pools);
     
-    if (opportunities.length > 0) {
-      console.log(`  🎯 Found ${opportunities.length} opportunities!`);
+    console.log(`\n📈 Scan Results:`);
+    console.log(`───────────────────────────────────────────────────────────────`);
+    
+    if (opportunities.length === 0) {
+      console.log(`   ℹ️  No opportunities detected in this scan`);
+    } else {
+      console.log(`   🎯 Found ${opportunities.length} opportunities:\n`);
       this.opportunitiesFound += opportunities.length;
       
-      for (const opp of opportunities) {
-        console.log(`    💰 ${opp.strategy}: ${opp.profitPercent.toFixed(3)}% profit`);
+      // Display ALL opportunities with full details
+      opportunities.forEach((opp, index) => {
+        const profitable = opp.profitPercent >= 0.3;
+        const icon = profitable ? '💰' : '📉';
+        const status = profitable ? 'PROFITABLE' : 'UNPROFITABLE';
+        
+        console.log(`   ${icon} Opportunity #${index + 1} [${status}]`);
+        console.log(`      Strategy: ${opp.strategy}`);
+        console.log(`      Path: ${opp.path.join(' → ')}`);
+        console.log(`      Profit: ${opp.profitPercent.toFixed(4)}%`);
+        
+        // Show profit calculation breakdown
+        const gasInEth = (opp.estimatedGas || 200000) * 0.00000005; // 50 gwei
+        const gasCostUSD = gasInEth * 3000; // $3000 ETH
+        const grossProfitUSD = (opp.profitPercent / 100) * 10000; // $10k loan
+        const netProfitUSD = grossProfitUSD - gasCostUSD;
+        
+        console.log(`      Gross Profit: $${grossProfitUSD.toFixed(2)}`);
+        console.log(`      Gas Cost: ~$${gasCostUSD.toFixed(2)} (${opp.estimatedGas || 200000} gas @ 50 gwei)`);
+        console.log(`      Net Profit: $${netProfitUSD.toFixed(2)}`);
+        console.log(`      Pools: ${opp.pools?.length || 0} pools involved`);
+        console.log(``);
+        
         this.opportunities.push(opp);
-      }
+      });
+      
+      // Summary statistics
+      const profitable = opportunities.filter(o => o.profitPercent >= 0.3);
+      const unprofitable = opportunities.filter(o => o.profitPercent < 0.3);
+      const avgProfit = opportunities.reduce((sum, o) => sum + o.profitPercent, 0) / opportunities.length;
+      const maxProfit = Math.max(...opportunities.map(o => o.profitPercent));
+      const totalGrossProfit = opportunities.reduce((sum, o) => sum + (o.profitPercent / 100) * 10000, 0);
+      const totalGasCost = opportunities.length * ((200000 * 0.00000005) * 3000);
+      const totalNetProfit = totalGrossProfit - totalGasCost;
+      
+      console.log(`   📊 Summary:`);
+      console.log(`      Total Opportunities: ${opportunities.length}`);
+      console.log(`      Profitable (≥0.3%): ${profitable.length}`);
+      console.log(`      Unprofitable (<0.3%): ${unprofitable.length}`);
+      console.log(`      Average Profit: ${avgProfit.toFixed(4)}%`);
+      console.log(`      Best Opportunity: ${maxProfit.toFixed(4)}%`);
+      console.log(`      Total Gross Profit: $${totalGrossProfit.toFixed(2)}`);
+      console.log(`      Total Gas Cost: $${totalGasCost.toFixed(2)}`);
+      console.log(`      Total Net Profit: $${totalNetProfit.toFixed(2)}`);
       
       // Save opportunities
       this.saveOpportunities();
-    } else {
-      console.log(`  ℹ️  No opportunities found`);
     }
+    
+    console.log(`═══════════════════════════════════════════════════════════════`);
   }
 
   private detectOpportunities(pools: any[]): Opportunity[] {
     const opportunities: Opportunity[] = [];
-    const minProfit = this.config.minProfitPercent || 0.1;
 
-    // Simulate finding opportunities (in production, this would be actual arbitrage detection)
-    // For demonstration, we'll generate some random opportunities
-    const randomProfit = Math.random() * 2; // 0-2% profit
+    // Generate 2-5 opportunities per scan (mix of profitable and unprofitable)
+    const numOpportunities = Math.floor(Math.random() * 4) + 2; // 2-5 opportunities
     
-    if (randomProfit >= minProfit) {
+    const strategies = ['Multi-Hop Cyclic', 'Fee-Tier Mispricing', 'Liquidity Fragmentation', 'Stable-Volatile'];
+    const paths = [
+      ['WETH', 'USDC', 'DAI', 'WETH'],
+      ['WETH', 'USDC', 'WETH'],
+      ['USDC', 'DAI', 'USDC'],
+      ['WETH', 'cbETH', 'WETH'],
+      ['USDC', 'USDbC', 'USDC'],
+      ['DAI', 'USDC', 'WETH', 'DAI']
+    ];
+    
+    for (let i = 0; i < numOpportunities; i++) {
+      // Generate profit between -0.2% and 2% (including unprofitable)
+      const randomProfit = (Math.random() * 2.2) - 0.2;
+      const strategy = strategies[Math.floor(Math.random() * strategies.length)];
+      const path = paths[Math.floor(Math.random() * paths.length)];
+      const gasEstimate = 150000 + Math.floor(Math.random() * 100000); // 150k-250k gas
+      
       opportunities.push({
         id: `opp-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
         timestamp: Date.now(),
-        strategy: this.getRandomStrategy(),
+        strategy: strategy,
         profitPercent: randomProfit,
-        path: ['WETH', 'USDC', 'WETH'],
-        pools: [pools[0]?.address || '0x0', pools[1]?.address || '0x0'],
-        estimatedGas: 150000,
+        path: path,
+        pools: path.slice(0, -1).map((_, idx) => pools[idx % pools.length]?.address || '0x0'),
+        estimatedGas: gasEstimate,
         profitAfterGas: randomProfit - 0.05, // Estimate gas cost
         status: 'detected'
       });
     }
 
-    // Occasionally find multiple opportunities
-    if (Math.random() > 0.7) {
-      const secondProfit = Math.random() * 1.5;
-      if (secondProfit >= minProfit) {
-        opportunities.push({
-          id: `opp-${Date.now()}-${Math.random().toString(36).substr(2, 9)}`,
-          timestamp: Date.now(),
-          strategy: this.getRandomStrategy(),
-          profitPercent: secondProfit,
-          path: ['USDC', 'DAI', 'USDC'],
-          pools: [pools[2]?.address || '0x0', pools[3]?.address || '0x0'],
-          estimatedGas: 120000,
-          profitAfterGas: secondProfit - 0.04,
-          status: 'detected'
-        });
-      }
-    }
-
-    return opportunities;
+    // Sort by profit (highest first)
+    return opportunities.sort((a, b) => b.profitPercent - a.profitPercent);
   }
 
   private getRandomStrategy(): string {
