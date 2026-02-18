@@ -67,8 +67,8 @@ class ContinuousScanner {
     }
 
     console.log(`\nConfiguration:`);
-    console.log(`  Minimum profit: ${this.config.minProfitPercent}%`);
-    console.log(`  Scan interval: ${this.config.scanning.interval}ms`);
+    console.log(`  Minimum profit: ${this.config.minProfitPercent || 0.1}%`);
+    console.log(`  Scan interval: ${this.config.scanning?.interval || 2000}ms`);
     console.log(`  Dynamic thresholds: ${this.config.dynamicThresholds?.enabled ? 'Enabled' : 'Disabled'}`);
     console.log(`  Flash loans: ${this.config.flashLoan?.enabled ? 'Enabled' : 'Disabled'}\n`);
 
@@ -97,7 +97,7 @@ class ContinuousScanner {
 
       // Wait for next scan
       await new Promise(resolve => 
-        setTimeout(resolve, this.config.scanning.interval)
+        setTimeout(resolve, this.config.scanning?.interval || 2000)
       );
     }
   }
